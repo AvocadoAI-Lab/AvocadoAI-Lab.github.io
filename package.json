@@ -1,0 +1,34 @@
+{
+  "name": "avocado-ai-public-portal",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:pages": "GITHUB_PAGES=true NEXT_PUBLIC_SITE_URL=https://avocadoai-lab.github.io next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "verify:content": "node scripts/verify-content.mjs",
+    "verify:routes": "node scripts/verify-routes.mjs",
+    "check": "npm run verify:content && npm run verify:routes && npm run typecheck && npm run lint"
+  },
+  "dependencies": {
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.3",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5.9.0"
+  }
+}

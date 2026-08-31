@@ -1,0 +1,1 @@
+Place approved founder portraits here after completing `docs/content/FOUNDER_PROFILE_APPROVAL.md`. Recommended source crop: 3:4, at least 2400px high, consistent lighting and color grade. Do not use generated portraits for official identity.

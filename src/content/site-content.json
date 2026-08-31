@@ -1,0 +1,1318 @@
+{
+  "zh-Hant": {
+    "meta": {
+      "title": "Avocado.ai｜AI 原生資安營運與驗證平台",
+      "description": "SenseL 將 EDR、NDR、WAF、OT、CTI 與營運資料轉化為可調查事件、可追溯證據、控制驗證與持續改善。"
+    },
+    "navigation": {
+      "menuLabel": "開啟選單",
+      "localeLabel": "語言",
+      "items": [
+        {
+          "label": "平台",
+          "href": "/platform"
+        },
+        {
+          "label": "解決方案",
+          "href": "#solutions"
+        },
+        {
+          "label": "客戶實證",
+          "href": "#field-proof"
+        },
+        {
+          "label": "資源",
+          "href": "/resources"
+        },
+        {
+          "label": "信任中心",
+          "href": "/trust"
+        },
+        {
+          "label": "公司",
+          "href": "/company/founders"
+        }
+      ],
+      "customerLogin": {
+        "label": "客戶登入",
+        "href": "/contact"
+      },
+      "primaryCta": {
+        "label": "預約工作坊",
+        "href": "/contact"
+      }
+    },
+    "hero": {
+      "eyebrow": "AI-Native Security Operations & Validation Platform",
+      "title": "把分散訊號，變成可驗證的防禦韌性。",
+      "description": "SenseL 連接企業既有的 EDR、NDR、WAF、OT、CTI 與營運資料，透過 AI 關聯事件、保全證據、驗證控制並持續追蹤改善。從 SMB 代管資安，到醫療與半導體高合規場域，共用同一個 AI-native Control Plane。",
+      "primaryCta": {
+        "label": "探索解決方案",
+        "href": "#solutions"
+      },
+      "secondaryCta": {
+        "label": "預約場域工作坊",
+        "href": "/contact"
+      },
+      "visualInputLabel": "Security & Operations Signals",
+      "visualCoreLabel": "SenseL",
+      "visualCoreCaption": "Context · AI Reasoning · Validation",
+      "visualOutputs": [
+        "Episode",
+        "Evidence",
+        "Improvement"
+      ]
+    },
+    "proof": {
+      "label": "ONE PLATFORM · MULTIPLE HIGH-TRUST OUTCOMES",
+      "items": [
+        "跨 EDR / NDR / WAF / OT",
+        "Episode Evidence",
+        "Threat-Informed Validation",
+        "On-Premise Ready",
+        "Healthcare · Fab · SMB"
+      ]
+    },
+    "problem": {
+      "eyebrow": "THE OPERATIONS GAP",
+      "title": "企業不是沒有資安工具，而是沒有形成可持續改善的防禦閉環。",
+      "description": "工具持續產生告警，但真正的營運問題是脈絡、證據、驗證與改善無法連成一條線。",
+      "items": [
+        {
+          "title": "告警過量",
+          "description": "EDR、NDR、WAF 與 Firewall 不斷產生事件，但真正需要優先處理的風險不易辨識。",
+          "icon": "signal"
+        },
+        {
+          "title": "資料孤島",
+          "description": "Endpoint、Network、Web、Identity、OT 與 CTI 各自為政，缺乏共同資產與業務脈絡。",
+          "icon": "layers"
+        },
+        {
+          "title": "防禦未被驗證",
+          "description": "已採購的控制措施缺乏持續演練、回歸測試與改善前後比較。",
+          "icon": "validation"
+        },
+        {
+          "title": "證據難以追溯",
+          "description": "AI 判斷、事件處置、改善結果與稽核文件仍依賴人工整理。",
+          "icon": "evidence"
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "SENSEL CLOSED LOOP",
+      "title": "AI 不只分析事件，更要留下證據並證明改善有效。",
+      "description": "SenseL 將資料、脈絡、推論、驗證、證據與改善設計成同一個營運閉環。",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Collect",
+          "description": "EDR、NDR、WAF、OT、CTI 與能源遙測"
+        },
+        {
+          "number": "02",
+          "title": "Contextualize",
+          "description": "資產、身分、網路、漏洞與業務脈絡"
+        },
+        {
+          "number": "03",
+          "title": "Reason",
+          "description": "AI 關聯、風險排序與攻擊故事"
+        },
+        {
+          "number": "04",
+          "title": "Validate",
+          "description": "情境、BAS、Purple Team 與回歸測試"
+        },
+        {
+          "number": "05",
+          "title": "Preserve",
+          "description": "Episode Evidence、人工確認與稽核"
+        },
+        {
+          "number": "06",
+          "title": "Improve",
+          "description": "修正、工單、重測與基線更新"
+        }
+      ],
+      "highlight": "多數產品止於 Detection 與 Alert。SenseL 將 Alert 轉化為 Episode，再透過 Validation 證明防禦與改善是否真正有效。",
+      "cta": {
+        "label": "了解 SenseL 平台",
+        "href": "/platform"
+      }
+    },
+    "solutionsSection": {
+      "eyebrow": "THREE MARKET ENTRIES",
+      "title": "一個 SenseL 核心，三個高價值市場入口。",
+      "description": "以最急迫的營運需求切入，再將資料、證據與驗證工作流沉澱為可續約的平台服務。"
+    },
+    "solutions": [
+      {
+        "slug": "managed-security",
+        "kicker": "SMB AI MSSP",
+        "title": "沒有專職 SOC，也能擁有持續運作的資安團隊。",
+        "homeSummary": "整合端點、網路與網站事件，由 AI 協助調查、由專業人員確認，持續交付風險通知、管理報告與改善追蹤。",
+        "pageSummary": "SenseL Managed Security 將平台、預設 EDR/NDR、跨來源分析與代管服務組合為可負擔、可續約的安全營運方案。",
+        "audiences": [
+          "中小企業經營者",
+          "IT / 資安主管",
+          "一人資訊部門",
+          "SI / MSP / ERP 生態夥伴"
+        ],
+        "challenges": [
+          "缺乏專職資安人力",
+          "告警分散且缺少研判",
+          "管理層看不到風險趨勢",
+          "缺乏持續改善與合規證據"
+        ],
+        "capabilities": [
+          "AI SOC / AI XDR",
+          "預設或既有 EDR / NDR 串接",
+          "WAF 與 Firewall 事件整合",
+          "Episode Evidence",
+          "月報、季報與風險摘要",
+          "事件通報與改善追蹤",
+          "選配 Validation Service"
+        ],
+        "outcomes": [
+          "更快辨識真正需要處理的事件",
+          "將既有工具轉成可讀、可交付的營運成果",
+          "建立固定管理報告與改善節奏",
+          "以年約服務降低自建 SOC 門檻"
+        ],
+        "process": [
+          "現況與工具盤點",
+          "資料接入與基線",
+          "代管分析與事件分級",
+          "月報與改善追蹤",
+          "季度驗證與擴充"
+        ],
+        "cta": {
+          "label": "評估 SMB 資安營運成熟度",
+          "href": "/contact"
+        }
+      },
+      {
+        "slug": "fab-intelligence",
+        "kicker": "SEMICONDUCTOR ENMS + OT",
+        "title": "把上千顆 CT 的資料，轉成可稽核的能源績效與 OT 韌性。",
+        "homeSummary": "建立 Fab 的 CT、Gateway、設備祖譜與 OT 資料底座，支援 ISO 50001 EnMS、M&V、異常分析與後續 OT Security。",
+        "pageSummary": "SenseL Fab Intelligence 以能源與資料價值切入，建立可追溯的 Fab Data Foundation，再延伸到 OT 資產、異常與安全驗證。",
+        "audiences": [
+          "Fab 廠長與營運主管",
+          "能源管理代表",
+          "廠務與設備團隊",
+          "OT / 資安主管",
+          "ESG 與稽核窗口"
+        ],
+        "challenges": [
+          "大量 CT 與 Gateway 資料停留在快照或 Excel",
+          "設備祖譜與感測器映射不完整",
+          "ISO 50001 的 EnB、EnPI 與 M&V 準備繁重",
+          "能源異常與 OT 風險無法在共同脈絡中判讀"
+        ],
+        "capabilities": [
+          "CT / MQTT / Gateway Data Foundation",
+          "資料品質與祖譜映射",
+          "ISO 50001 EnB / EnPI",
+          "M&V 與管理審查素材",
+          "Ghost Load、待機浪費與預測",
+          "OT 資產與網路基線",
+          "ISO 27001 / 50001 Evidence"
+        ],
+        "outcomes": [
+          "把感測資料轉成可追溯的能源管理證據",
+          "由短期快照進入連續趨勢與改善驗證",
+          "建立跨廠務、能源與資安的共同資料底座",
+          "保留 On-Premise 與後續 OT Security 擴充路徑"
+        ],
+        "process": [
+          "資料可行性評估",
+          "CT / Gateway 接入與治理",
+          "EnMS 基線與分析",
+          "M&V 與管理報告",
+          "OT Security / Validation 擴充"
+        ],
+        "cta": {
+          "label": "預約 Fab Data Readiness Workshop",
+          "href": "/contact"
+        }
+      },
+      {
+        "slug": "healthcare-resilience",
+        "kicker": "THREAT-INFORMED HEALTHCARE",
+        "title": "從威脅情報到修正重測，讓醫療防禦能力真正被證明。",
+        "homeSummary": "整合醫院既有防護資料，以 CTI 驅動隔離式驗證、保存 Episode Evidence，並將結果回饋到日常資安營運。",
+        "pageSummary": "SenseL Healthcare Resilience 將日常 AI XDR、醫療 Web / API 評估、IoMT / OT 可視性與受治理的 Validation Lab 串成年度韌性服務。",
+        "audiences": [
+          "醫院 CIO / CISO",
+          "資安與 IT 團隊",
+          "醫療資訊與系統負責人",
+          "IoMT / OT 管理者",
+          "法遵、稽核與演練窗口"
+        ],
+        "challenges": [
+          "醫療服務不能因測試而中斷",
+          "端點、網路、網站、身分與 IoMT 證據分散",
+          "威脅情資難以轉成與院內資產相關的情境",
+          "修補後缺乏一致的重測與改善證據"
+        ],
+        "capabilities": [
+          "Threat Intelligence Mapping",
+          "Healthcare AI XDR",
+          "Web / API Security Assessment",
+          "IoMT / OT Passive Visibility",
+          "Isolated Validation Lab",
+          "AI Red Team with Human Approval",
+          "Remediation, Re-test and Evidence Package"
+        ],
+        "outcomes": [
+          "在不干擾臨床營運的前提下提高可視性",
+          "把跨來源告警整併為可追溯 Episode",
+          "用威脅導向情境驗證控制是否有效",
+          "讓修正、重測與演練成果支援治理決策"
+        ],
+        "process": [
+          "資產、威脅與治理邊界盤點",
+          "日常營運基線",
+          "隔離式情境設計",
+          "控制驗證與 Episode Evidence",
+          "修正、重測與年度改善"
+        ],
+        "cta": {
+          "label": "規劃 90-Day Healthcare Resilience Program",
+          "href": "/contact"
+        }
+      }
+    ],
+    "fieldProof": {
+      "eyebrow": "FIELD PROOF",
+      "title": "把每一次場域交付，沉澱成可複製的產品證據。",
+      "description": "以下採匿名、保守的公開架構敘事；正式客戶名稱、數字與商標須經 Claims Ledger 核准。",
+      "items": [
+        {
+          "sector": "大型醫療場域（匿名）",
+          "status": "Security Operations + Validation Pattern",
+          "title": "從端點可視性走向醫療資安營運與隔離式驗證",
+          "description": "以既有端點與事件資料建立共同營運視角，再延伸至 IoMT / OT 被動可視性、情境演練、Evidence Package 與重測。",
+          "highlights": [
+            "低干擾營運",
+            "跨來源 Episode",
+            "隔離 Validation Lab"
+          ]
+        },
+        {
+          "sector": "半導體 Fab（匿名）",
+          "status": "EnMS + OT PoC Evidence Model",
+          "title": "從 CT 資料底座走向可稽核的能源與 OT 決策",
+          "description": "整合 CT、Gateway、祖譜與長期資料，建立 EnB、EnPI、M&V 與管理報告，再保留 OT Security 擴充路徑。",
+          "highlights": [
+            "連續資料",
+            "ISO 50001 閉環",
+            "On-Premise 路徑"
+          ]
+        },
+        {
+          "sector": "醫療 Web / API",
+          "status": "Security Assessment Service Blueprint",
+          "title": "AI 輔助、人工驗證與滾動回報的醫療測試方法",
+          "description": "將攻擊面盤點、自動化初篩、人工業務邏輯測試、高風險即時通報、教育訓練與複測整合為可治理服務。",
+          "highlights": [
+            "低干擾測試",
+            "人工邏輯驗證",
+            "Remediation + Re-test"
+          ]
+        }
+      ]
+    },
+    "foundersSection": {
+      "eyebrow": "FOUNDERS & LEADERSHIP",
+      "title": "由懂得市場、產品與真實場域的人，共同打造。",
+      "description": "Rain 將高合規產業需求轉化為市場、合作與可續約服務；Eric 將需求轉化為 SenseL 的平台架構、AI 安全與驗證能力。",
+      "bridgeLabel": "Market Need → SenseL Platform → Field Evidence",
+      "cta": {
+        "label": "認識創辦團隊",
+        "href": "/company/founders"
+      },
+      "people": [
+        {
+          "id": "rain-chung",
+          "name": "Rain Chung",
+          "localName": "鍾雨靜",
+          "role": "Co-Founder & CEO",
+          "email": "rain.chung@mail.avocadolab.ai",
+          "whatsapp": "+886 976 116 035",
+          "shortBio": "負責 Avocado.ai 的公司策略、商業營運、客戶成功與合作生態，推動 SenseL 進入醫療、SMB、半導體與高合規市場，並建立可重複銷售與長期續約的商業模式。",
+          "domains": [
+            "Strategy",
+            "Go-to-Market",
+            "Customer Success",
+            "Partnerships"
+          ]
+        },
+        {
+          "id": "eric-mao",
+          "name": "Eric Mao, Ph.D.",
+          "localName": "毛敬豪 博士",
+          "role": "Co-Founder & CTO / Chief Architect",
+          "email": "eric.mao@mail.avocadolab.ai",
+          "whatsapp": "+886 939 097 985",
+          "shortBio": "負責 SenseL 的產品架構與技術發展，涵蓋 AI-native Security Operations、XDR、OT / IoMT、Threat Intelligence、Security Validation 與 Secure AI Governance。",
+          "domains": [
+            "Architecture",
+            "AI Security",
+            "Validation",
+            "Product Engineering"
+          ]
+        }
+      ]
+    },
+    "integrations": {
+      "eyebrow": "INTEGRATE, DON'T REPLACE",
+      "title": "保留既有投資，補上脈絡、證據與驗證層。",
+      "description": "SenseL 不要求客戶一次替換既有安全堆疊，而是透過標準化資料與工作流提高跨工具營運價值。",
+      "items": [
+        "EDR",
+        "NDR",
+        "WAF",
+        "Firewall",
+        "SIEM / Log",
+        "Identity",
+        "OT Gateway",
+        "CT / MQTT",
+        "CTI"
+      ],
+      "statement": "Keep your stack. Add the intelligence, evidence and validation layer."
+    },
+    "trust": {
+      "eyebrow": "TRUST BY DESIGN",
+      "title": "高信任場域需要的不只是 AI，而是清楚的資料、權限與證據邊界。",
+      "description": "公開 Trust Center 將只陳述已實作且經核准的控制，不以未取得的認證或模糊 SLA 建立信任。",
+      "items": [
+        {
+          "title": "Deployment Choice",
+          "description": "依實際方案支援 SaaS、On-Premise 或隔離部署路徑。",
+          "icon": "deployment"
+        },
+        {
+          "title": "Human Approval",
+          "description": "高風險建議與驗證動作保留核准、權限與稽核軌跡。",
+          "icon": "approval"
+        },
+        {
+          "title": "Evidence Preservation",
+          "description": "保留事件來源、AI 理由、人工確認、處置與重測脈絡。",
+          "icon": "evidence"
+        },
+        {
+          "title": "Data Minimization",
+          "description": "公開網站與驗證流程均以最小必要資料及清楚邊界為原則。",
+          "icon": "shield"
+        }
+      ],
+      "cta": {
+        "label": "查看 Trust Center",
+        "href": "/trust"
+      }
+    },
+    "resources": {
+      "eyebrow": "INTELLIGENCE & FIELD NOTES",
+      "title": "用威脅、場域與產品證據，持續說明我們如何做判斷。",
+      "description": "第一波內容聚焦 Threat-Informed Resilience、AI-native Security Operations、Fab EnMS / OT 與公開活動紀錄。",
+      "items": [
+        {
+          "type": "Threat Brief",
+          "title": "從威脅情資到可回歸驗證的防禦情境",
+          "summary": "說明如何把 IOC、TTP、CVE 與資產脈絡轉成受治理的驗證假設。"
+        },
+        {
+          "type": "Field Note",
+          "title": "為什麼連續資料與單點快照回答不同問題",
+          "summary": "從 EnB、EnPI、M&V 與資料血緣理解 Fab 連續資料的營運價值。"
+        },
+        {
+          "type": "Event Record",
+          "title": "Avocado SenseL at CES 2025",
+          "summary": "以展位展示與現場交流，向國際訪客介紹 SenseL 的 AI 輔助資安分析與跨場域營運方法。"
+        }
+      ],
+      "cta": {
+        "label": "瀏覽所有資源",
+        "href": "/resources"
+      }
+    },
+    "finalCta": {
+      "eyebrow": "START WITH A REAL OPERATING QUESTION",
+      "title": "您的資安工具已經很多。下一步是證明它們真正有效。",
+      "description": "從一場聚焦場域、資料與驗證目標的工作坊開始，定義可交付、可量測、可回歸的第一階段。",
+      "primaryCta": {
+        "label": "預約 45 分鐘 Readiness Workshop",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "先了解 SenseL 平台",
+        "href": "/platform"
+      }
+    },
+    "footer": {
+      "tagline": "AI-native Security Operations & Validation Platform",
+      "note": "所有客戶名稱、案例數字、認證、SLA 與合作關係，以正式核准公開內容為準。",
+      "links": [
+        {
+          "label": "平台",
+          "href": "/platform"
+        },
+        {
+          "label": "創辦團隊",
+          "href": "/company/founders"
+        },
+        {
+          "label": "信任中心",
+          "href": "/trust"
+        },
+        {
+          "label": "聯絡我們",
+          "href": "/contact"
+        }
+      ]
+    },
+    "platformPage": {
+      "eyebrow": "SENSEL PLATFORM",
+      "title": "把 Security Telemetry 轉成可調查、可驗證、可持續改善的營運成果。",
+      "summary": "SenseL 是 Avocado.ai 的 AI-native Control & Validation Platform。它不與每一個 EDR、NDR 或 WAF 正面替代，而是建立跨來源的 Context、Episode Evidence、Validation 與治理工作流。",
+      "principlesTitle": "平台設計原則",
+      "principles": [
+        {
+          "title": "Integrate before replace",
+          "description": "先接入既有工具與資料，再擴大脈絡、分析與驗證價值。"
+        },
+        {
+          "title": "Evidence before automation",
+          "description": "AI 判斷必須保留來源、理由、不確定性與人工確認。"
+        },
+        {
+          "title": "Validation before assumption",
+          "description": "以情境與重測確認控制是否有效，而不是假設部署即等於防禦。"
+        },
+        {
+          "title": "Human control for high-risk actions",
+          "description": "高風險操作保留權限、核准、時段、範圍與 Audit Trail。"
+        }
+      ],
+      "capabilitiesTitle": "從事件資料建立可執行的安全脈絡",
+      "capabilitiesDescription": "SenseL 將 AI Agent、XDR、端點與網路可視性及營運報告能力，整合進同一個可追溯工作流。",
+      "capabilities": [
+        {
+          "title": "SenseL AI Agent",
+          "description": "以 LLM 輔助整理跨來源事件，形成攻擊脈絡、根因假設、證據與處置建議，並保留人工確認。"
+        },
+        {
+          "title": "跨場域 XDR Context",
+          "description": "連接 EDR、NDR、WAF、OT、CTI 與日誌資料，在共同資產與業務脈絡下關聯事件。"
+        },
+        {
+          "title": "端點與網路可視性",
+          "description": "整合既有端點、網路與工控遙測，讓調查可以跨越 IT、AIoT 與 OT 的資料邊界。"
+        },
+        {
+          "title": "戰情與報告工作流",
+          "description": "將安全狀態、Episode Evidence、分析結論與改善建議整理為管理與技術團隊可共同使用的報告。"
+        }
+      ],
+      "architectureTitle": "五層控制與驗證架構",
+      "architectureDescription": "Data Plane、Context Plane、AI Reasoning、Validation Plane 與 Trust & Governance 共同形成可稽核閉環。",
+      "cta": {
+        "label": "討論您的資料與控制驗證需求",
+        "href": "/contact"
+      }
+    },
+    "foundersPage": {
+      "eyebrow": "COMPANY & CONTACT",
+      "title": "公司與聯絡資訊",
+      "summary": "Avocado.ai 創辦團隊的職稱、聯絡方式與公司資訊。",
+      "leadershipTitle": "創辦團隊",
+      "companyInfoTitle": "公司資訊",
+      "registrationNumberLabel": "統一編號",
+      "registrationNumber": "95433935"
+    },
+    "trustPage": {
+      "eyebrow": "TRUST CENTER",
+      "title": "以可查證的邊界建立信任，而不是用模糊承諾取代證據。",
+      "summary": "此頁為 Trust Center 的第一階段架構。正式上線內容只會包含已實作、可佐證且經安全與法務核准的敘述。",
+      "sections": [
+        {
+          "title": "Data Handling",
+          "items": [
+            "最小必要資料",
+            "清楚的資料用途",
+            "保存與刪除原則",
+            "禁止透過公開表單提交敏感營運資料"
+          ]
+        },
+        {
+          "title": "AI Governance",
+          "items": [
+            "AI 輸出保留理由與來源",
+            "高風險動作需人工核准",
+            "模型與客戶資料使用邊界",
+            "可回歸的驗證紀錄"
+          ]
+        },
+        {
+          "title": "Security Controls",
+          "items": [
+            "身分與角色權限",
+            "加密與密鑰治理",
+            "稽核日誌",
+            "弱點通報與供應鏈管理"
+          ]
+        },
+        {
+          "title": "Deployment & Assurance",
+          "items": [
+            "SaaS / On-Premise / 隔離路徑以實際方案為準",
+            "敏感證據採 NDA 與控管分享",
+            "SLA 與認證只引用有效文件",
+            "定期重新檢視公開聲明"
+          ]
+        }
+      ],
+      "cta": {
+        "label": "申請安全與架構說明",
+        "href": "/contact"
+      }
+    },
+    "resourcesPage": {
+      "eyebrow": "RESOURCES",
+      "title": "Threat Intelligence、Field Proof 與活動紀錄。",
+      "summary": "內容服務真實決策，也保留產品與團隊在實際場域中的公開紀錄。",
+      "topics": [
+        "Threat-Informed Resilience",
+        "AI-Native Security Operations",
+        "Healthcare Validation",
+        "Fab EnMS & OT",
+        "Secure AI Governance",
+        "Event Records"
+      ],
+      "eventGallery": {
+        "eyebrow": "FIELD NOTE · CES 2025",
+        "title": "Avocado SenseL at CES 2025",
+        "summary": "Avocado SenseL 於 CES 2025 透過展位展示與現場交流，介紹 AI 輔助資安分析、跨來源事件脈絡與安全營運方法。",
+        "images": [
+          {
+            "src": "/events/ces-2025/live-presentation.webp",
+            "alt": "CES 2025 現場的 Avocado SenseL 產品交流與展示",
+            "caption": "SenseL 現場產品交流"
+          },
+          {
+            "src": "/events/ces-2025/product-booth.webp",
+            "alt": "CES 2025 Avocado SenseL 展位與產品展示設備",
+            "caption": "SenseL 展位與產品展示"
+          },
+          {
+            "src": "/events/ces-2025/tta-pavilion.webp",
+            "alt": "CES 2025 Taiwan Tech Arena 展區的團隊與訪客合影",
+            "caption": "Taiwan Tech Arena 展區紀錄"
+          },
+          {
+            "src": "/events/ces-2025/team-and-guests.webp",
+            "alt": "Avocado SenseL 團隊與訪客在 CES 2025 展位前合影",
+            "caption": "團隊與訪客交流紀錄"
+          }
+        ]
+      },
+      "cta": {
+        "label": "訂閱與媒體合作洽詢",
+        "href": "/contact"
+      }
+    },
+    "contactPage": {
+      "eyebrow": "BOOK A WORKSHOP",
+      "title": "先定義真實營運問題，再決定技術與範圍。",
+      "summary": "請選擇最接近的主題。正式聯絡信箱與預約工具由環境設定提供；在串接 CRM 前，本頁不會收集或儲存表單內容。",
+      "workshops": [
+        {
+          "title": "SMB Security Operations Readiness",
+          "description": "盤點現有工具、告警、人力、月報與代管服務需求。"
+        },
+        {
+          "title": "Fab Data & EnMS Readiness",
+          "description": "盤點 CT、Gateway、祖譜、資料品質、ISO 50001 與 OT 擴充目標。"
+        },
+        {
+          "title": "Healthcare Resilience Program",
+          "description": "盤點 EDR / NDR / WAF / Identity / IoMT、威脅情境、Lab 邊界與重測目標。"
+        },
+        {
+          "title": "Partner & Investor Briefing",
+          "description": "討論通路、共同方案、產品策略、案例證據與合作模式。"
+        }
+      ],
+      "privacyNote": "請勿透過公開聯絡管道提供病患資料、正式環境帳密、網路拓樸、未公開漏洞、事件證據或其他敏感資訊。",
+      "officeLabel": "公司地址",
+      "officeName": "金融科技創新園區（仰德大樓）",
+      "officeAddress": "100 台北市中正區南海路 1 號 13 樓",
+      "emailLabel": "以電子郵件聯絡",
+      "bookingLabel": "開啟預約連結"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Avocado.ai | AI-Native Security Operations & Validation",
+      "description": "SenseL turns EDR, NDR, WAF, OT, CTI, and operational data into investigations, traceable evidence, control validation, and continuous improvement."
+    },
+    "navigation": {
+      "menuLabel": "Open menu",
+      "localeLabel": "Language",
+      "items": [
+        {
+          "label": "Platform",
+          "href": "/platform"
+        },
+        {
+          "label": "Solutions",
+          "href": "#solutions"
+        },
+        {
+          "label": "Field Proof",
+          "href": "#field-proof"
+        },
+        {
+          "label": "Resources",
+          "href": "/resources"
+        },
+        {
+          "label": "Trust Center",
+          "href": "/trust"
+        },
+        {
+          "label": "Company",
+          "href": "/company/founders"
+        }
+      ],
+      "customerLogin": {
+        "label": "Customer Login",
+        "href": "/contact"
+      },
+      "primaryCta": {
+        "label": "Book a Workshop",
+        "href": "/contact"
+      }
+    },
+    "hero": {
+      "eyebrow": "AI-Native Security Operations & Validation Platform",
+      "title": "Turn fragmented signals into verifiable cyber resilience.",
+      "description": "SenseL connects existing EDR, NDR, WAF, OT, CTI, and operational data to correlate incidents, preserve evidence, validate controls, and track improvement. One AI-native control plane supports managed security for SMBs and high-trust healthcare and semiconductor environments.",
+      "primaryCta": {
+        "label": "Explore Solutions",
+        "href": "#solutions"
+      },
+      "secondaryCta": {
+        "label": "Book a Field Workshop",
+        "href": "/contact"
+      },
+      "visualInputLabel": "Security & Operations Signals",
+      "visualCoreLabel": "SenseL",
+      "visualCoreCaption": "Context · AI Reasoning · Validation",
+      "visualOutputs": [
+        "Episode",
+        "Evidence",
+        "Improvement"
+      ]
+    },
+    "proof": {
+      "label": "ONE PLATFORM · MULTIPLE HIGH-TRUST OUTCOMES",
+      "items": [
+        "Cross EDR / NDR / WAF / OT",
+        "Episode Evidence",
+        "Threat-Informed Validation",
+        "On-Premise Ready",
+        "Healthcare · Fab · SMB"
+      ]
+    },
+    "problem": {
+      "eyebrow": "THE OPERATIONS GAP",
+      "title": "Enterprises do not lack security tools. They lack a closed loop for continuous improvement.",
+      "description": "Tools keep producing alerts, while context, evidence, validation, and improvement remain disconnected.",
+      "items": [
+        {
+          "title": "Alert overload",
+          "description": "EDR, NDR, WAF, and firewalls generate events continuously, but the risks that truly deserve attention remain hard to identify.",
+          "icon": "signal"
+        },
+        {
+          "title": "Data silos",
+          "description": "Endpoint, network, web, identity, OT, and CTI data lack a shared asset and business context.",
+          "icon": "layers"
+        },
+        {
+          "title": "Controls remain unproven",
+          "description": "Deployed controls often lack continuous exercises, regression tests, and before-and-after comparison.",
+          "icon": "validation"
+        },
+        {
+          "title": "Evidence is hard to trace",
+          "description": "AI reasoning, incident actions, improvement results, and audit material still require manual assembly.",
+          "icon": "evidence"
+        }
+      ]
+    },
+    "platform": {
+      "eyebrow": "SENSEL CLOSED LOOP",
+      "title": "AI should not only analyze incidents. It should preserve evidence and prove that improvement worked.",
+      "description": "SenseL designs data, context, reasoning, validation, evidence, and improvement as one operating loop.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Collect",
+          "description": "EDR, NDR, WAF, OT, CTI, and energy telemetry"
+        },
+        {
+          "number": "02",
+          "title": "Contextualize",
+          "description": "Assets, identities, networks, vulnerabilities, and business context"
+        },
+        {
+          "number": "03",
+          "title": "Reason",
+          "description": "AI correlation, prioritization, and attack narratives"
+        },
+        {
+          "number": "04",
+          "title": "Validate",
+          "description": "Scenarios, BAS, purple team, and regression testing"
+        },
+        {
+          "number": "05",
+          "title": "Preserve",
+          "description": "Episode evidence, human confirmation, and audit history"
+        },
+        {
+          "number": "06",
+          "title": "Improve",
+          "description": "Remediation, work items, re-test, and baseline updates"
+        }
+      ],
+      "highlight": "Most products stop at detection and alerts. SenseL turns alerts into episodes, then uses validation to prove whether defenses and improvements actually work.",
+      "cta": {
+        "label": "Explore the SenseL Platform",
+        "href": "/platform"
+      }
+    },
+    "solutionsSection": {
+      "eyebrow": "THREE MARKET ENTRIES",
+      "title": "One SenseL core. Three high-value market entries.",
+      "description": "Land through urgent operating needs, then turn data, evidence, and validation workflows into recurring platform services."
+    },
+    "solutions": [
+      {
+        "slug": "managed-security",
+        "kicker": "SMB AI MSSP",
+        "title": "Operate a continuous security function without building a full SOC.",
+        "homeSummary": "Bring endpoint, network, and web events together. AI assists investigation, specialists confirm decisions, and the service delivers risk notifications, management reporting, and improvement tracking.",
+        "pageSummary": "SenseL Managed Security combines the platform, default or existing EDR/NDR, cross-source analysis, and managed operations into an affordable recurring service.",
+        "audiences": [
+          "SMB executives",
+          "IT and security leaders",
+          "Lean internal IT teams",
+          "SI, MSP, and ERP ecosystem partners"
+        ],
+        "challenges": [
+          "No dedicated security staff",
+          "Fragmented alerts without investigation",
+          "Limited management visibility",
+          "No continuous improvement or audit evidence"
+        ],
+        "capabilities": [
+          "AI SOC / AI XDR",
+          "Default or existing EDR / NDR integration",
+          "WAF and firewall event integration",
+          "Episode Evidence",
+          "Monthly and quarterly risk reporting",
+          "Incident notification and improvement tracking",
+          "Optional Validation Service"
+        ],
+        "outcomes": [
+          "Identify the incidents that truly need attention sooner",
+          "Turn existing tools into readable operating outcomes",
+          "Establish a recurring reporting and improvement cadence",
+          "Reduce the barrier to a managed security function"
+        ],
+        "process": [
+          "Current-state and tooling assessment",
+          "Data onboarding and baseline",
+          "Managed analysis and incident triage",
+          "Reporting and improvement tracking",
+          "Quarterly validation and expansion"
+        ],
+        "cta": {
+          "label": "Assess SMB Security Operations Readiness",
+          "href": "/contact"
+        }
+      },
+      {
+        "slug": "fab-intelligence",
+        "kicker": "SEMICONDUCTOR ENMS + OT",
+        "title": "Turn thousands of CT data points into auditable energy performance and OT resilience.",
+        "homeSummary": "Build a shared foundation for CT, gateways, equipment hierarchy, and OT data to support ISO 50001 EnMS, M&V, anomaly analysis, and an OT security expansion path.",
+        "pageSummary": "SenseL Fab Intelligence enters through measurable energy and data value, creates a traceable Fab Data Foundation, and expands toward OT assets, anomalies, and security validation.",
+        "audiences": [
+          "Fab and operations leaders",
+          "Energy management representatives",
+          "Facilities and equipment teams",
+          "OT and security leaders",
+          "ESG and audit stakeholders"
+        ],
+        "challenges": [
+          "CT and gateway data remains trapped in snapshots or spreadsheets",
+          "Equipment hierarchy and sensor mapping are incomplete",
+          "EnB, EnPI, and M&V preparation is labor intensive",
+          "Energy anomalies and OT risks lack shared context"
+        ],
+        "capabilities": [
+          "CT / MQTT / Gateway Data Foundation",
+          "Data quality and hierarchy mapping",
+          "ISO 50001 EnB / EnPI",
+          "M&V and management review material",
+          "Ghost load, standby waste, and forecasting",
+          "OT asset and network baselines",
+          "ISO 27001 / 50001 Evidence"
+        ],
+        "outcomes": [
+          "Turn sensor data into traceable energy-management evidence",
+          "Move from snapshots to continuous improvement verification",
+          "Create shared data across facilities, energy, and security teams",
+          "Preserve on-premise deployment and OT security expansion options"
+        ],
+        "process": [
+          "Data feasibility assessment",
+          "CT and gateway onboarding",
+          "EnMS baseline and analytics",
+          "M&V and management reporting",
+          "OT security and validation expansion"
+        ],
+        "cta": {
+          "label": "Book a Fab Data Readiness Workshop",
+          "href": "/contact"
+        }
+      },
+      {
+        "slug": "healthcare-resilience",
+        "kicker": "THREAT-INFORMED HEALTHCARE",
+        "title": "From threat intelligence to remediation re-test, prove healthcare defenses work.",
+        "homeSummary": "Connect existing hospital security data, use CTI to drive controlled validation, preserve episode evidence, and feed results back into daily operations.",
+        "pageSummary": "SenseL Healthcare Resilience combines daily AI XDR, healthcare web and API assessment, IoMT and OT visibility, and a governed validation lab as an annual resilience service.",
+        "audiences": [
+          "Hospital CIOs and CISOs",
+          "Security and IT teams",
+          "Clinical information-system owners",
+          "IoMT and OT operators",
+          "Compliance, audit, and exercise owners"
+        ],
+        "challenges": [
+          "Clinical services cannot be disrupted by testing",
+          "Endpoint, network, web, identity, and IoMT evidence is fragmented",
+          "Threat intelligence is difficult to translate into hospital-specific scenarios",
+          "Remediation lacks consistent re-test and improvement evidence"
+        ],
+        "capabilities": [
+          "Threat Intelligence Mapping",
+          "Healthcare AI XDR",
+          "Web / API Security Assessment",
+          "IoMT / OT Passive Visibility",
+          "Isolated Validation Lab",
+          "AI Red Team with Human Approval",
+          "Remediation, Re-test, and Evidence Package"
+        ],
+        "outcomes": [
+          "Improve visibility without disrupting clinical operations",
+          "Merge cross-source alerts into traceable episodes",
+          "Use threat-informed scenarios to validate controls",
+          "Support governance with remediation and re-test evidence"
+        ],
+        "process": [
+          "Asset, threat, and governance assessment",
+          "Daily operations baseline",
+          "Controlled scenario design",
+          "Control validation and episode evidence",
+          "Remediation, re-test, and annual improvement"
+        ],
+        "cta": {
+          "label": "Plan a 90-Day Healthcare Resilience Program",
+          "href": "/contact"
+        }
+      }
+    ],
+    "fieldProof": {
+      "eyebrow": "FIELD PROOF",
+      "title": "Turn every field engagement into reusable product evidence.",
+      "description": "The initial portal uses conservative, anonymous narratives. Customer names, metrics, and marks require Claims Ledger approval.",
+      "items": [
+        {
+          "sector": "Large healthcare environment — anonymous",
+          "status": "Security Operations + Validation Pattern",
+          "title": "From endpoint visibility to healthcare operations and isolated validation",
+          "description": "Build a shared operating view from existing endpoint and event data, then extend toward passive IoMT/OT visibility, controlled scenarios, evidence packages, and re-test.",
+          "highlights": [
+            "Low-disruption operations",
+            "Cross-source episodes",
+            "Isolated validation lab"
+          ]
+        },
+        {
+          "sector": "Semiconductor Fab — anonymous",
+          "status": "EnMS + OT PoC Evidence Model",
+          "title": "From CT data foundation to auditable energy and OT decisions",
+          "description": "Bring CT, gateways, equipment hierarchy, and long-running data together for EnB, EnPI, M&V, and management reporting while preserving an OT security path.",
+          "highlights": [
+            "Continuous data",
+            "ISO 50001 loop",
+            "On-premise path"
+          ]
+        },
+        {
+          "sector": "Healthcare Web / API",
+          "status": "Security Assessment Service Blueprint",
+          "title": "AI-assisted, human-verified healthcare testing with rolling communication",
+          "description": "Combine attack-surface mapping, automated triage, manual business-logic testing, immediate high-risk communication, training, and re-test in a governed service.",
+          "highlights": [
+            "Low-disruption testing",
+            "Manual logic validation",
+            "Remediation + re-test"
+          ]
+        }
+      ]
+    },
+    "foundersSection": {
+      "eyebrow": "FOUNDERS & LEADERSHIP",
+      "title": "Built by leaders who understand markets, products, and real operating environments.",
+      "description": "Rain translates high-compliance needs into markets, partnerships, and recurring services. Eric translates those needs into SenseL architecture, AI security, and validation capabilities.",
+      "bridgeLabel": "Market Need → SenseL Platform → Field Evidence",
+      "cta": {
+        "label": "Meet the Founders",
+        "href": "/company/founders"
+      },
+      "people": [
+        {
+          "id": "rain-chung",
+          "name": "Rain Chung",
+          "localName": "鍾雨靜",
+          "role": "Co-Founder & CEO",
+          "email": "rain.chung@mail.avocadolab.ai",
+          "whatsapp": "+886 976 116 035",
+          "shortBio": "Rain leads company strategy, go-to-market, customer success, partnerships, and operations at Avocado.ai. She focuses on turning complex security and compliance needs in healthcare, SMB, semiconductor, and high-trust industries into scalable products and recurring services.",
+          "domains": [
+            "Strategy",
+            "Go-to-Market",
+            "Customer Success",
+            "Partnerships"
+          ]
+        },
+        {
+          "id": "eric-mao",
+          "name": "Eric Mao, Ph.D.",
+          "localName": "毛敬豪 博士",
+          "role": "Co-Founder & CTO / Chief Architect",
+          "email": "eric.mao@mail.avocadolab.ai",
+          "whatsapp": "+886 939 097 985",
+          "shortBio": "Eric leads SenseL product architecture and technology strategy across AI-native security operations, XDR, OT and IoMT security, threat intelligence, security validation, and secure AI governance.",
+          "domains": [
+            "Architecture",
+            "AI Security",
+            "Validation",
+            "Product Engineering"
+          ]
+        }
+      ]
+    },
+    "integrations": {
+      "eyebrow": "INTEGRATE, DON'T REPLACE",
+      "title": "Keep existing investments. Add context, evidence, and validation.",
+      "description": "SenseL does not require a complete replacement of the security stack. Standardized data and workflows increase cross-tool operating value.",
+      "items": [
+        "EDR",
+        "NDR",
+        "WAF",
+        "Firewall",
+        "SIEM / Log",
+        "Identity",
+        "OT Gateway",
+        "CT / MQTT",
+        "CTI"
+      ],
+      "statement": "Keep your stack. Add the intelligence, evidence and validation layer."
+    },
+    "trust": {
+      "eyebrow": "TRUST BY DESIGN",
+      "title": "High-trust environments need clear data, authority, and evidence boundaries—not AI alone.",
+      "description": "The public Trust Center will describe only implemented and approved controls, without relying on unearned certifications or ambiguous SLAs.",
+      "items": [
+        {
+          "title": "Deployment Choice",
+          "description": "SaaS, on-premise, or isolated paths are described only where the actual service supports them.",
+          "icon": "deployment"
+        },
+        {
+          "title": "Human Approval",
+          "description": "High-risk recommendations and validation actions retain approval, authority, and audit history.",
+          "icon": "approval"
+        },
+        {
+          "title": "Evidence Preservation",
+          "description": "Preserve event sources, AI reasoning, human confirmation, actions, and re-test context.",
+          "icon": "evidence"
+        },
+        {
+          "title": "Data Minimization",
+          "description": "Public-site and validation workflows follow clearly bounded, minimum-necessary data principles.",
+          "icon": "shield"
+        }
+      ],
+      "cta": {
+        "label": "View the Trust Center",
+        "href": "/trust"
+      }
+    },
+    "resources": {
+      "eyebrow": "INTELLIGENCE & FIELD NOTES",
+      "title": "Explain decisions with threat, field, and product evidence.",
+      "description": "The first editorial tracks cover threat-informed resilience, AI-native security operations, Fab EnMS and OT, and public event records.",
+      "items": [
+        {
+          "type": "Threat Brief",
+          "title": "From threat intelligence to repeatable validation scenarios",
+          "summary": "How IOC, TTP, CVE, and asset context become governed validation hypotheses."
+        },
+        {
+          "type": "Field Note",
+          "title": "Why continuous data and point-in-time snapshots answer different questions",
+          "summary": "Understanding the operating value of continuous Fab data through EnB, EnPI, M&V, and lineage."
+        },
+        {
+          "type": "Event Record",
+          "title": "Avocado SenseL at CES 2025",
+          "summary": "Presenting SenseL's AI-assisted security analysis and cross-domain operating approach through booth demonstrations and live conversations."
+        }
+      ],
+      "cta": {
+        "label": "Browse All Resources",
+        "href": "/resources"
+      }
+    },
+    "finalCta": {
+      "eyebrow": "START WITH A REAL OPERATING QUESTION",
+      "title": "You already own many security tools. The next step is proving they work.",
+      "description": "Begin with a workshop focused on operating context, data, and validation goals, then define a measurable and repeatable first phase.",
+      "primaryCta": {
+        "label": "Book a 45-Minute Readiness Workshop",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Explore the SenseL Platform",
+        "href": "/platform"
+      }
+    },
+    "footer": {
+      "tagline": "AI-native Security Operations & Validation Platform",
+      "note": "Customer names, case metrics, certifications, SLAs, and partnerships are subject to formal publication approval.",
+      "links": [
+        {
+          "label": "Platform",
+          "href": "/platform"
+        },
+        {
+          "label": "Founders",
+          "href": "/company/founders"
+        },
+        {
+          "label": "Trust Center",
+          "href": "/trust"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "platformPage": {
+      "eyebrow": "SENSEL PLATFORM",
+      "title": "Turn security telemetry into investigations, verifiable evidence, and continuous improvement.",
+      "summary": "SenseL is Avocado.ai's AI-native Control & Validation Platform. It complements rather than replaces every EDR, NDR, or WAF by creating cross-source context, episode evidence, validation, and governance workflows.",
+      "principlesTitle": "Platform principles",
+      "principles": [
+        {
+          "title": "Integrate before replace",
+          "description": "Connect existing tools and data first, then expand context, analysis, and validation value."
+        },
+        {
+          "title": "Evidence before automation",
+          "description": "AI decisions retain sources, rationale, uncertainty, and human confirmation."
+        },
+        {
+          "title": "Validation before assumption",
+          "description": "Use scenarios and re-test to confirm control effectiveness instead of assuming deployment equals defense."
+        },
+        {
+          "title": "Human control for high-risk actions",
+          "description": "High-risk operations retain authority, approval, time, scope, and audit boundaries."
+        }
+      ],
+      "capabilitiesTitle": "Build actionable security context from event data",
+      "capabilitiesDescription": "SenseL brings AI agent, XDR, endpoint and network visibility, and operating-report capabilities into one traceable workflow.",
+      "capabilities": [
+        {
+          "title": "SenseL AI Agent",
+          "description": "Use LLM-assisted analysis to organize cross-source events into attack context, root-cause hypotheses, evidence, and response recommendations with human confirmation."
+        },
+        {
+          "title": "Cross-domain XDR context",
+          "description": "Connect EDR, NDR, WAF, OT, CTI, and log data under shared asset and business context for correlated investigation."
+        },
+        {
+          "title": "Endpoint and network visibility",
+          "description": "Combine existing endpoint, network, and industrial telemetry so investigations can cross IT, AIoT, and OT data boundaries."
+        },
+        {
+          "title": "Operations and reporting workflow",
+          "description": "Organize security posture, episode evidence, analysis, and improvement recommendations into reports shared by management and technical teams."
+        }
+      ],
+      "architectureTitle": "Five-layer control and validation architecture",
+      "architectureDescription": "Data Plane, Context Plane, AI Reasoning, Validation Plane, and Trust & Governance create an auditable operating loop.",
+      "cta": {
+        "label": "Discuss Your Data and Validation Needs",
+        "href": "/contact"
+      }
+    },
+    "foundersPage": {
+      "eyebrow": "COMPANY & CONTACT",
+      "title": "Company and contact information",
+      "summary": "Titles, contact details, and company information for the Avocado.ai founding team.",
+      "leadershipTitle": "Founding team",
+      "companyInfoTitle": "Company information",
+      "registrationNumberLabel": "Unified Business Number",
+      "registrationNumber": "95433935"
+    },
+    "trustPage": {
+      "eyebrow": "TRUST CENTER",
+      "title": "Build trust with verifiable boundaries, not vague promises.",
+      "summary": "This page is the first-stage Trust Center architecture. Production statements will include only implemented, supportable, and security- and legal-approved controls.",
+      "sections": [
+        {
+          "title": "Data Handling",
+          "items": [
+            "Minimum necessary data",
+            "Clear purpose limitations",
+            "Retention and deletion principles",
+            "No sensitive operating data through public forms"
+          ]
+        },
+        {
+          "title": "AI Governance",
+          "items": [
+            "AI output retains rationale and sources",
+            "Human approval for high-risk actions",
+            "Clear model and customer-data boundaries",
+            "Repeatable validation records"
+          ]
+        },
+        {
+          "title": "Security Controls",
+          "items": [
+            "Identity and role controls",
+            "Encryption and key governance",
+            "Audit logs",
+            "Vulnerability disclosure and supply-chain management"
+          ]
+        },
+        {
+          "title": "Deployment & Assurance",
+          "items": [
+            "SaaS, on-premise, and isolated paths only where supported",
+            "Sensitive evidence shared through controlled NDA processes",
+            "SLAs and certifications reference current documents only",
+            "Public statements are reviewed regularly"
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Request a Security and Architecture Brief",
+        "href": "/contact"
+      }
+    },
+    "resourcesPage": {
+      "eyebrow": "RESOURCES",
+      "title": "Threat intelligence, field proof, and event records.",
+      "summary": "Content supports real decisions while preserving public records of the product and team in real operating environments.",
+      "topics": [
+        "Threat-Informed Resilience",
+        "AI-Native Security Operations",
+        "Healthcare Validation",
+        "Fab EnMS & OT",
+        "Secure AI Governance",
+        "Event Records"
+      ],
+      "eventGallery": {
+        "eyebrow": "FIELD NOTE · CES 2025",
+        "title": "Avocado SenseL at CES 2025",
+        "summary": "At CES 2025, Avocado SenseL presented its approach to AI-assisted security analysis, cross-source event context, and security operations through booth demonstrations and live conversations.",
+        "images": [
+          {
+            "src": "/events/ces-2025/live-presentation.webp",
+            "alt": "An Avocado SenseL product conversation and presentation at CES 2025",
+            "caption": "Live SenseL product conversation"
+          },
+          {
+            "src": "/events/ces-2025/product-booth.webp",
+            "alt": "The Avocado SenseL booth and product demonstration equipment at CES 2025",
+            "caption": "SenseL booth and product demonstration"
+          },
+          {
+            "src": "/events/ces-2025/tta-pavilion.webp",
+            "alt": "Team members and visitors at the Taiwan Tech Arena pavilion during CES 2025",
+            "caption": "Taiwan Tech Arena pavilion"
+          },
+          {
+            "src": "/events/ces-2025/team-and-guests.webp",
+            "alt": "The Avocado SenseL team and guests in front of the CES 2025 exhibition booth",
+            "caption": "Team and guest conversations at the booth"
+          }
+        ]
+      },
+      "cta": {
+        "label": "Discuss Subscriptions and Media Collaboration",
+        "href": "/contact"
+      }
+    },
+    "contactPage": {
+      "eyebrow": "BOOK A WORKSHOP",
+      "title": "Define the operating problem before selecting technology and scope.",
+      "summary": "Choose the closest topic. The approved email and booking destination are provided through environment configuration. This page does not collect or store form content before a CRM is integrated.",
+      "workshops": [
+        {
+          "title": "SMB Security Operations Readiness",
+          "description": "Review existing tools, alert handling, staffing, reporting, and managed-service needs."
+        },
+        {
+          "title": "Fab Data & EnMS Readiness",
+          "description": "Review CT, gateways, hierarchy, data quality, ISO 50001, and OT expansion goals."
+        },
+        {
+          "title": "Healthcare Resilience Program",
+          "description": "Review EDR, NDR, WAF, identity, IoMT, threat scenarios, lab boundaries, and re-test goals."
+        },
+        {
+          "title": "Partner & Investor Briefing",
+          "description": "Discuss channels, joint solutions, product strategy, field evidence, and collaboration models."
+        }
+      ],
+      "privacyNote": "Do not submit patient data, production credentials, network diagrams, unpublished vulnerabilities, incident evidence, or other sensitive information through public contact channels.",
+      "officeLabel": "Office",
+      "officeName": "Financial Technology Innovation Park (Yangde Building)",
+      "officeAddress": "13F., No. 1, Nanhai Rd., Zhongzheng Dist., Taipei City 100, Taiwan (R.O.C.)",
+      "emailLabel": "Contact by email",
+      "bookingLabel": "Open booking link"
+    }
+  }
+}
