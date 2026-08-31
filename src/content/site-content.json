@@ -596,29 +596,55 @@
         "Event Records"
       ],
       "eventGallery": {
-        "eyebrow": "FIELD NOTE · CES 2025",
-        "title": "Avocado SenseL at CES 2025",
-        "summary": "Avocado SenseL 於 CES 2025 透過展位展示與現場交流，介紹 AI 輔助資安分析、跨來源事件脈絡與安全營運方法。",
-        "images": [
+        "eyebrow": "EVENT RECORDS",
+        "title": "活動現場與產品展示",
+        "summary": "切換活動與照片，查看 Avocado.ai 如何在公開場合展示 SenseL 並交流真實場域需求。",
+        "events": [
           {
-            "src": "/events/ces-2025/live-presentation.webp",
-            "alt": "CES 2025 現場的 Avocado SenseL 產品交流與展示",
-            "caption": "SenseL 現場產品交流"
+            "id": "ces-2025",
+            "eyebrow": "FIELD NOTE · CES 2025",
+            "title": "Avocado SenseL at CES 2025",
+            "summary": "Avocado SenseL 於 CES 2025 透過展位展示與現場交流，介紹 AI 輔助資安分析、跨來源事件脈絡與安全營運方法。",
+            "images": [
+              {
+                "src": "/events/ces-2025/live-presentation.webp",
+                "alt": "CES 2025 現場的 Avocado SenseL 產品交流與展示",
+                "caption": "SenseL 現場產品交流"
+              },
+              {
+                "src": "/events/ces-2025/product-booth.webp",
+                "alt": "CES 2025 Avocado SenseL 展位與產品展示設備",
+                "caption": "SenseL 展位與產品展示"
+              },
+              {
+                "src": "/events/ces-2025/tta-pavilion.webp",
+                "alt": "CES 2025 Taiwan Tech Arena 展區的團隊與訪客合影",
+                "caption": "Taiwan Tech Arena 展區紀錄"
+              },
+              {
+                "src": "/events/ces-2025/team-and-guests.webp",
+                "alt": "Avocado SenseL 團隊與訪客在 CES 2025 展位前合影",
+                "caption": "團隊與訪客交流紀錄"
+              }
+            ]
           },
           {
-            "src": "/events/ces-2025/product-booth.webp",
-            "alt": "CES 2025 Avocado SenseL 展位與產品展示設備",
-            "caption": "SenseL 展位與產品展示"
-          },
-          {
-            "src": "/events/ces-2025/tta-pavilion.webp",
-            "alt": "CES 2025 Taiwan Tech Arena 展區的團隊與訪客合影",
-            "caption": "Taiwan Tech Arena 展區紀錄"
-          },
-          {
-            "src": "/events/ces-2025/team-and-guests.webp",
-            "alt": "Avocado SenseL 團隊與訪客在 CES 2025 展位前合影",
-            "caption": "團隊與訪客交流紀錄"
+            "id": "aiot-accelerator-2025",
+            "eyebrow": "DEMO DAY · 2025",
+            "title": "新漢 AIoT 新創加速器 2025 成果發表",
+            "summary": "Avocado.ai 於新漢 AIoT 新創加速器 2025 成果發表現場展示 SenseL，並與來賓交流 AI 輔助資安分析與跨來源事件脈絡。",
+            "images": [
+              {
+                "src": "/events/aiot-accelerator-2025/live-demo.jpg",
+                "alt": "新漢 AIoT 新創加速器 2025 成果發表現場，Avocado.ai 向來賓進行 SenseL 展示",
+                "caption": "SenseL 現場展示與交流"
+              },
+              {
+                "src": "/events/aiot-accelerator-2025/exhibition-booth.jpg",
+                "alt": "新漢 AIoT 新創加速器 2025 成果發表的 Avocado.ai 展位與技術海報",
+                "caption": "Avocado.ai 展位與技術海報"
+              }
+            ]
           }
         ]
       },
@@ -1254,29 +1280,55 @@
         "Event Records"
       ],
       "eventGallery": {
-        "eyebrow": "FIELD NOTE · CES 2025",
-        "title": "Avocado SenseL at CES 2025",
-        "summary": "At CES 2025, Avocado SenseL presented its approach to AI-assisted security analysis, cross-source event context, and security operations through booth demonstrations and live conversations.",
-        "images": [
+        "eyebrow": "EVENT RECORDS",
+        "title": "Events and product demonstrations",
+        "summary": "Switch between events and photographs to see how Avocado.ai presents SenseL and discusses real operating needs in public settings.",
+        "events": [
           {
-            "src": "/events/ces-2025/live-presentation.webp",
-            "alt": "An Avocado SenseL product conversation and presentation at CES 2025",
-            "caption": "Live SenseL product conversation"
+            "id": "ces-2025",
+            "eyebrow": "FIELD NOTE · CES 2025",
+            "title": "Avocado SenseL at CES 2025",
+            "summary": "At CES 2025, Avocado SenseL presented its approach to AI-assisted security analysis, cross-source event context, and security operations through booth demonstrations and live conversations.",
+            "images": [
+              {
+                "src": "/events/ces-2025/live-presentation.webp",
+                "alt": "An Avocado SenseL product conversation and presentation at CES 2025",
+                "caption": "Live SenseL product conversation"
+              },
+              {
+                "src": "/events/ces-2025/product-booth.webp",
+                "alt": "The Avocado SenseL booth and product demonstration equipment at CES 2025",
+                "caption": "SenseL booth and product demonstration"
+              },
+              {
+                "src": "/events/ces-2025/tta-pavilion.webp",
+                "alt": "Team members and visitors at the Taiwan Tech Arena pavilion during CES 2025",
+                "caption": "Taiwan Tech Arena pavilion"
+              },
+              {
+                "src": "/events/ces-2025/team-and-guests.webp",
+                "alt": "The Avocado SenseL team and guests in front of the CES 2025 exhibition booth",
+                "caption": "Team and guest conversations at the booth"
+              }
+            ]
           },
           {
-            "src": "/events/ces-2025/product-booth.webp",
-            "alt": "The Avocado SenseL booth and product demonstration equipment at CES 2025",
-            "caption": "SenseL booth and product demonstration"
-          },
-          {
-            "src": "/events/ces-2025/tta-pavilion.webp",
-            "alt": "Team members and visitors at the Taiwan Tech Arena pavilion during CES 2025",
-            "caption": "Taiwan Tech Arena pavilion"
-          },
-          {
-            "src": "/events/ces-2025/team-and-guests.webp",
-            "alt": "The Avocado SenseL team and guests in front of the CES 2025 exhibition booth",
-            "caption": "Team and guest conversations at the booth"
+            "id": "aiot-accelerator-2025",
+            "eyebrow": "DEMO DAY · 2025",
+            "title": "NEXCOM AIoT Startup Accelerator 2025 Demo Day",
+            "summary": "At the NEXCOM AIoT Startup Accelerator 2025 Demo Day, Avocado.ai demonstrated SenseL and discussed AI-assisted security analysis and cross-source event context with visitors.",
+            "images": [
+              {
+                "src": "/events/aiot-accelerator-2025/live-demo.jpg",
+                "alt": "Avocado.ai presenting a SenseL demonstration to visitors at the NEXCOM AIoT Startup Accelerator 2025 Demo Day",
+                "caption": "Live SenseL demonstration and discussion"
+              },
+              {
+                "src": "/events/aiot-accelerator-2025/exhibition-booth.jpg",
+                "alt": "The Avocado.ai booth and technical poster at the NEXCOM AIoT Startup Accelerator 2025 Demo Day",
+                "caption": "Avocado.ai booth and technical poster"
+              }
+            ]
           }
         ]
       },

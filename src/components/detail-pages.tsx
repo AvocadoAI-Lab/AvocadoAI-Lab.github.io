@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { Locale, SiteContent, Solution } from "@/types/content";
-import { basePath, bookingUrl, contactEmail, contactName } from "@/lib/site";
+import { bookingUrl, contactEmail, contactName } from "@/lib/site";
+import { EventGallery } from "@/components/event-gallery";
 import { Container, CtaLink, Eyebrow, PageHero, SectionHeader, Tag } from "@/components/ui";
 
 function CtaPanel({ locale, eyebrow, title, description, cta }: { locale: Locale; eyebrow: string; title: string; description: string; cta: { label: string; href: string } }) {
@@ -266,31 +266,7 @@ export function ResourcesDetail({ locale, content }: { locale: Locale; content: 
           </div>
         </Container>
       </section>
-      <section className="surface-grid bg-graphite py-20 text-warm-white sm:py-28">
-        <Container>
-          <SectionHeader description={gallery.summary} eyebrow={gallery.eyebrow} inverse title={gallery.title} />
-          <div className="mt-12 grid gap-4 lg:grid-cols-12">
-            {gallery.images.map((item, index) => (
-              <figure
-                className={`overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.035] ${index === 0 ? "lg:col-span-8" : index === 1 ? "lg:col-span-4 lg:row-span-2" : "lg:col-span-4"}`}
-                key={item.src}
-              >
-                <div className={`relative overflow-hidden ${index === 1 ? "aspect-[3/4] lg:h-full lg:min-h-[34rem]" : index === 0 ? "aspect-video" : "aspect-[4/3]"}`}>
-                  <Image
-                    alt={item.alt}
-                    className="object-cover"
-                    fill
-                    sizes={index === 1 ? "(min-width: 1024px) 33vw, 100vw" : index === 0 ? "(min-width: 1024px) 67vw, 100vw" : "(min-width: 1024px) 33vw, 100vw"}
-                    src={`${basePath}${item.src}`}
-                    unoptimized
-                  />
-                </div>
-                <figcaption className="px-5 py-4 text-sm font-semibold text-white/68">{item.caption}</figcaption>
-              </figure>
-            ))}
-          </div>
-        </Container>
-      </section>
+      <EventGallery events={gallery.events} eyebrow={gallery.eyebrow} locale={locale} summary={gallery.summary} title={gallery.title} />
       <CtaPanel cta={page.cta} description={page.summary} eyebrow="INTELLIGENCE & FIELD NOTES" locale={locale} title={page.title} />
     </>
   );

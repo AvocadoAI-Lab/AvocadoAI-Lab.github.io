@@ -74,6 +74,14 @@ export type MediaItem = {
   caption: string;
 };
 
+export type EventRecord = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  summary: string;
+  images: MediaItem[];
+};
+
 export type Principle = {
   title: string;
   description: string;
@@ -191,7 +199,7 @@ export type SiteContent = {
       eyebrow: string;
       title: string;
       summary: string;
-      images: MediaItem[];
+      events: EventRecord[];
     };
     cta: Cta;
   };

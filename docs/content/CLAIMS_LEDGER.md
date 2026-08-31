@@ -22,6 +22,7 @@ No entry below is approved merely because it appears in a draft deck or proposal
 | C-016 | Unified Business Number 95433935 and Taipei office address. | Explicit publication instruction, 2026-08-31 | Publication owner | Approved for public use |
 | C-017 | SenseL provides AI-assisted incident analysis, cross-domain context, endpoint and network visibility, and operations-report workflows. | Legacy public site plus explicit reuse instruction, 2026-08-31 | Publication owner / product | Approved for public use |
 | C-018 | Avocado SenseL exhibited at CES 2025; the four supplied event photographs may be reused on the public portal. | Legacy public site plus explicit reuse instruction, 2026-08-31 | Publication owner / media rights | Approved for public use |
+| C-019 | Avocado.ai participated in the 新漢 AIoT 新創加速器 2025 成果發表; the two supplied event photographs may be reused on the public portal. | Explicit publication instruction and supplied photographs, 2026-08-31 | Publication owner / media rights | Approved for public use |
 
 ## Release rule
 

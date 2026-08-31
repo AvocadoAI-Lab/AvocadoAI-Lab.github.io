@@ -14,6 +14,7 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 
 ## Progress
 
+- [x] 2026-08-31: Added the 新漢 AIoT 新創加速器 2025 成果發表 record and two supplied photographs, then replaced the single-event photo grid with an accessible event and image switcher.
 - [x] 2026-08-31: Migrated the complete portal source to `AvocadoAI-Lab/AvocadoAI-Lab.github.io`, configured root-path static export, and prepared the repository for GitHub Actions Pages at `https://avocadoai-lab.github.io/`.
 - [x] 2026-08-31: Published and browser-verified the public GitHub Pages preview from `AvocadoAI-Lab/AvocadoAIPortal` at `https://avocadoai-lab.github.io/AvocadoAIPortal/`.
 - [x] 2026-08-31: Created repository guidance, product requirements, system design, design system, content governance, security documents, roadmap, backlog, and test plan.
@@ -49,6 +50,7 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 - Founder positioning is commercially valuable but must be subordinate to platform and field evidence on the homepage.
 - The legacy `https://www.avocadolab.ai/zh-Hant` homepage mixes reusable SenseL capability copy and four owned CES 2025 photographs with unapproved SLA numbers, partner names, and interview-style personas. Only the capability copy and explicitly requested CES photographs are in scope for migration.
 - The legacy CES photographs are lazy-loaded through Next.js image optimization and are available as four 1920-pixel WebP assets after scrolling the live page to the event section.
+- The two supplied AIoT event photographs use complementary landscape and portrait orientations. An `object-contain` main stage preserves the full image while thumbnails remain compact and scannable.
 
 ## Decision Log
 
@@ -61,6 +63,7 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 - Decision: place detailed legacy SenseL capability copy on the platform page and the CES 2025 photographs on the resources page, while adding only a concise event-note teaser to the homepage resources section. Rationale: product detail belongs with platform architecture, event photography belongs with public field notes, and the newly simplified founder contact page should remain concise.
 - Decision: exclude the legacy `1-3 days`, `7×24`, `<2 hours`, partner names, compliance output claims, and interview personas from this migration. Rationale: they are either governed SLA/partner claims or lack the publication evidence required by the claims ledger.
 - Decision: retain the target repository's existing history and replace only its placeholder page with the reviewed portal source. Build the organization site at the root path without `/AvocadoAIPortal`. Rationale: `AvocadoAI-Lab.github.io` is a GitHub Pages organization-site repository and is served directly from `/`.
+- Decision: use manual event tabs plus previous, next, and thumbnail controls instead of autoplay. Rationale: the interaction remains understandable, keyboard-accessible, mobile-friendly, and scalable as additional event records are published without adding an unbounded vertical photo wall.
 
 ## Implementation plan
 
@@ -87,6 +90,10 @@ Convert the application to a static export without introducing authenticated or 
 ### Milestone 6 — Legacy content and CES media migration
 
 Copy the four approved CES 2025 photographs from the legacy public site into `public/events/ces-2025/` with descriptive file names. Extend the bilingual content model with reviewed SenseL capability descriptions and a CES event-gallery record. Render capability detail on the platform page, render the responsive and accessible photo gallery on the resources page, and add a concise event-note teaser to the homepage resource cards. Do not migrate legacy SLA metrics, partner identities, or interview personas. At the end, both locales must render equivalent copy and descriptive image alternatives with no horizontal overflow.
+
+### Milestone 7 — Multi-event resource gallery
+
+Model event records as a bilingual list rather than a single gallery. Add the owner-supplied 新漢 AIoT 新創加速器 2025 成果發表 photographs with provenance, descriptive alternatives, and approved event wording. Render a manually controlled event switcher with keyboard-operable tabs, previous and next image controls, and a horizontally scrollable thumbnail strip. Do not autoplay. At the end, CES 2025 and the AIoT event must switch without navigation, preserve image aspect ratios, and work without horizontal page overflow on desktop and mobile.
 
 ## Validation and acceptance
 
@@ -124,3 +131,5 @@ The preview still contains deliberately pending publication items: approved bran
 The legacy-content milestone added a four-card SenseL capability section to the platform page, a bilingual CES 2025 event record and four-image gallery to the resources page, and a concise CES resource teaser on the homepage. The source images are stored locally with provenance notes and descriptive alternatives. Legacy SLA metrics, partner identities, and interview personas were deliberately excluded. Desktop and mobile browser checks confirmed correct responsive image loading, bilingual parity, and no horizontal overflow; content verification, route verification, strict TypeScript, ESLint, and the production build all passed afterward.
 
 The organization-site migration retained the target repository's initial commit, removed its placeholder `index.html`, and copied the complete reviewed portal source into `AvocadoAI-Lab/AvocadoAI-Lab.github.io`. The Pages build now exports for the domain root rather than the former `/AvocadoAIPortal` project path. Content verification, route verification, strict TypeScript, ESLint, the standard build, and the root-path Pages build all passed in the target repository before publication.
+
+The multi-event resource milestone added a bilingual 新漢 AIoT 新創加速器 2025 成果發表 record and two owner-supplied photographs with provenance notes. The former static CES photo grid is now a manual event and image switcher with ARIA tabs, arrow-key event navigation, previous and next controls, and scrollable thumbnails. Desktop and mobile browser tests confirmed both event and image switching, preserved natural image dimensions, hidden component scrollbars, no page overflow, and no console errors. All repository checks and both production build modes passed afterward.
