@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Founder, Locale, SiteContent } from "@/types/content";
+import type { Locale, SiteContent } from "@/types/content";
 import { localizedHref } from "@/lib/links";
 import { basePath } from "@/lib/site";
 import { ArrowIcon, Icon } from "@/components/icons";
@@ -46,26 +46,6 @@ function HeroVisual({ content }: { content: SiteContent["hero"] }) {
         ))}
       </div>
     </div>
-  );
-}
-
-function FounderCard({ founder, side }: { founder: Founder; side: "left" | "right" }) {
-  const initials = founder.id === "rain-chung" ? "RC" : "EM";
-  return (
-    <article className={`rounded-[2rem] border border-black/10 bg-white/65 p-6 shadow-sm sm:p-8 ${side === "right" ? "md:text-right" : ""}`}>
-      <div className={`flex items-center gap-4 ${side === "right" ? "md:flex-row-reverse" : ""}`}>
-        <div className="grid h-20 w-20 shrink-0 place-items-center rounded-[1.4rem] bg-graphite text-xl font-black text-avocado">{initials}</div>
-        <div>
-          <p className="text-xl font-black tracking-[-0.03em] text-graphite">{founder.name}</p>
-          <p className="mt-1 text-sm font-semibold text-evidence">{founder.localName}</p>
-          <p className="mt-2 font-mono text-[0.68rem] font-bold uppercase tracking-[0.12em] text-forest">{founder.role}</p>
-        </div>
-      </div>
-      <p className="mt-6 text-sm leading-7 text-evidence sm:text-base">{founder.shortBio}</p>
-      <div className={`mt-6 flex flex-wrap gap-2 ${side === "right" ? "md:justify-end" : ""}`}>
-        {founder.domains.map((domain) => <Tag key={domain}>{domain}</Tag>)}
-      </div>
-    </article>
   );
 }
 
@@ -167,22 +147,6 @@ export function HomePage({ locale, content }: { locale: Locale; content: SiteCon
                 <div className="mt-7 flex flex-wrap gap-2">{item.highlights.map((highlight) => <Tag key={highlight}>{highlight}</Tag>)}</div>
               </article>
             ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="soft-grid py-24 sm:py-32">
-        <Container>
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-            <div>
-              <SectionHeader description={content.foundersSection.description} eyebrow={content.foundersSection.eyebrow} title={content.foundersSection.title} />
-              <p className="mt-8 inline-flex rounded-full border border-forest/15 bg-forest/5 px-4 py-2 font-mono text-[0.65rem] font-bold uppercase tracking-[0.12em] text-forest">{content.foundersSection.bridgeLabel}</p>
-              <div className="mt-8"><CtaLink cta={content.foundersSection.cta} locale={locale} variant="secondary" /></div>
-            </div>
-            <div className="grid gap-5 md:grid-cols-2">
-              <FounderCard founder={content.foundersSection.people[0]} side="left" />
-              <FounderCard founder={content.foundersSection.people[1]} side="right" />
-            </div>
           </div>
         </Container>
       </section>
