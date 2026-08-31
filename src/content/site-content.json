@@ -144,8 +144,8 @@
     },
     "solutionsSection": {
       "eyebrow": "THREE MARKET ENTRIES",
-      "title": "一個 SenseL 核心，三個高價值市場入口。",
-      "description": "以最急迫的營運需求切入，再將資料、證據與驗證工作流沉澱為可續約的平台服務。"
+      "title": "一個 SenseL 核心，回應三種高信任場域。",
+      "description": "依 SMB、半導體與醫療場域的不同需求，導入一致的資料脈絡、證據與持續驗證能力。"
     },
     "solutions": [
       {
@@ -288,8 +288,8 @@
     ],
     "fieldProof": {
       "eyebrow": "FIELD PROOF",
-      "title": "把每一次場域交付，沉澱成可複製的產品證據。",
-      "description": "以下採匿名、保守的公開架構敘事；正式客戶名稱、數字與商標須經 Claims Ledger 核准。",
+      "title": "讓每一次安全改善，都留下可追溯、可重複驗證的證據。",
+      "description": "探索醫療、半導體與 SMB 場域如何透過脈絡、證據與驗證，將安全投資轉化為可持續改善的營運能力。",
       "items": [
         {
           "sector": "大型醫療場域（匿名）",
@@ -388,7 +388,7 @@
     "trust": {
       "eyebrow": "TRUST BY DESIGN",
       "title": "高信任場域需要的不只是 AI，而是清楚的資料、權限與證據邊界。",
-      "description": "公開 Trust Center 將只陳述已實作且經核准的控制，不以未取得的認證或模糊 SLA 建立信任。",
+      "description": "從資料隔離、最小權限、人工核准到稽核軌跡，讓 AI 輔助營運仍然可治理、可追溯。",
       "items": [
         {
           "title": "Deployment Choice",
@@ -419,7 +419,7 @@
     "resources": {
       "eyebrow": "INTELLIGENCE & FIELD NOTES",
       "title": "用威脅、場域與產品證據，持續說明我們如何做判斷。",
-      "description": "第一波內容聚焦 Threat-Informed Resilience、AI-native Security Operations、Fab EnMS / OT 與公開活動紀錄。",
+      "description": "從威脅情資、AI-native 安全營運、Fab EnMS / OT 與公開活動紀錄，分享可應用於真實場域的洞察。",
       "items": [
         {
           "type": "Threat Brief",
@@ -530,7 +530,7 @@
     "foundersPage": {
       "eyebrow": "COMPANY & CONTACT",
       "title": "公司與聯絡資訊",
-      "summary": "Avocado.ai 創辦團隊的職稱、聯絡方式與公司資訊。",
+      "summary": "認識帶領 Avocado.ai 的創辦團隊，並與我們討論資安營運、AI 治理與場域韌性需求。",
       "leadershipTitle": "創辦團隊",
       "companyInfoTitle": "公司資訊",
       "registrationNumberLabel": "統一編號",
@@ -539,7 +539,7 @@
     "trustPage": {
       "eyebrow": "TRUST CENTER",
       "title": "以可查證的邊界建立信任，而不是用模糊承諾取代證據。",
-      "summary": "此頁為 Trust Center 的第一階段架構。正式上線內容只會包含已實作、可佐證且經安全與法務核准的敘述。",
+      "summary": "了解 SenseL 如何以資料邊界、權限治理、證據追溯與人工控制，支援高信任場域的安全營運。",
       "sections": [
         {
           "title": "Data Handling",
@@ -586,7 +586,7 @@
     "resourcesPage": {
       "eyebrow": "RESOURCES",
       "title": "Threat Intelligence、Field Proof 與活動紀錄。",
-      "summary": "內容服務真實決策，也保留產品與團隊在實際場域中的公開紀錄。",
+      "summary": "從威脅情資、場域實證與活動紀錄，掌握 SenseL 如何把安全訊號轉化為可驗證的決策依據。",
       "topics": [
         "Threat-Informed Resilience",
         "AI-Native Security Operations",
@@ -630,7 +630,7 @@
     "contactPage": {
       "eyebrow": "BOOK A WORKSHOP",
       "title": "先定義真實營運問題，再決定技術與範圍。",
-      "summary": "請選擇最接近的主題。正式聯絡信箱與預約工具由環境設定提供；在串接 CRM 前，本頁不會收集或儲存表單內容。",
+      "summary": "告訴我們您關注的場域與營運挑戰，我們將協助釐清資料、驗證目標與可行的導入範圍。",
       "workshops": [
         {
           "title": "SMB Security Operations Readiness",
@@ -802,8 +802,8 @@
     },
     "solutionsSection": {
       "eyebrow": "THREE MARKET ENTRIES",
-      "title": "One SenseL core. Three high-value market entries.",
-      "description": "Land through urgent operating needs, then turn data, evidence, and validation workflows into recurring platform services."
+      "title": "One SenseL core for three high-trust operating environments.",
+      "description": "Bring consistent context, evidence, and continuous validation to the distinct needs of SMB, semiconductor, and healthcare environments."
     },
     "solutions": [
       {
@@ -946,8 +946,8 @@
     ],
     "fieldProof": {
       "eyebrow": "FIELD PROOF",
-      "title": "Turn every field engagement into reusable product evidence.",
-      "description": "The initial portal uses conservative, anonymous narratives. Customer names, metrics, and marks require Claims Ledger approval.",
+      "title": "Make every security improvement traceable and repeatably verifiable.",
+      "description": "Explore how healthcare, semiconductor, and SMB environments can turn security investment into continuous improvement through context, evidence, and validation.",
       "items": [
         {
           "sector": "Large healthcare environment — anonymous",
@@ -1046,7 +1046,7 @@
     "trust": {
       "eyebrow": "TRUST BY DESIGN",
       "title": "High-trust environments need clear data, authority, and evidence boundaries—not AI alone.",
-      "description": "The public Trust Center will describe only implemented and approved controls, without relying on unearned certifications or ambiguous SLAs.",
+      "description": "Data isolation, least privilege, human approval, and audit trails keep AI-assisted operations governable and traceable.",
       "items": [
         {
           "title": "Deployment Choice",
@@ -1077,7 +1077,7 @@
     "resources": {
       "eyebrow": "INTELLIGENCE & FIELD NOTES",
       "title": "Explain decisions with threat, field, and product evidence.",
-      "description": "The first editorial tracks cover threat-informed resilience, AI-native security operations, Fab EnMS and OT, and public event records.",
+      "description": "Explore practical insight from threat intelligence, AI-native security operations, Fab EnMS and OT, and public event records.",
       "items": [
         {
           "type": "Threat Brief",
@@ -1188,7 +1188,7 @@
     "foundersPage": {
       "eyebrow": "COMPANY & CONTACT",
       "title": "Company and contact information",
-      "summary": "Titles, contact details, and company information for the Avocado.ai founding team.",
+      "summary": "Meet the founders leading Avocado.ai and discuss your security operations, AI governance, and operational resilience needs with us.",
       "leadershipTitle": "Founding team",
       "companyInfoTitle": "Company information",
       "registrationNumberLabel": "Unified Business Number",
@@ -1197,7 +1197,7 @@
     "trustPage": {
       "eyebrow": "TRUST CENTER",
       "title": "Build trust with verifiable boundaries, not vague promises.",
-      "summary": "This page is the first-stage Trust Center architecture. Production statements will include only implemented, supportable, and security- and legal-approved controls.",
+      "summary": "See how SenseL supports security operations in high-trust environments through data boundaries, authority governance, traceable evidence, and human control.",
       "sections": [
         {
           "title": "Data Handling",
@@ -1244,7 +1244,7 @@
     "resourcesPage": {
       "eyebrow": "RESOURCES",
       "title": "Threat intelligence, field proof, and event records.",
-      "summary": "Content supports real decisions while preserving public records of the product and team in real operating environments.",
+      "summary": "Use threat intelligence, field evidence, and event records to see how SenseL turns security signals into verifiable decisions.",
       "topics": [
         "Threat-Informed Resilience",
         "AI-Native Security Operations",
@@ -1288,7 +1288,7 @@
     "contactPage": {
       "eyebrow": "BOOK A WORKSHOP",
       "title": "Define the operating problem before selecting technology and scope.",
-      "summary": "Choose the closest topic. The approved email and booking destination are provided through environment configuration. This page does not collect or store form content before a CRM is integrated.",
+      "summary": "Tell us about your operating environment and priorities. We will help clarify the data, validation goals, and practical scope for a first phase.",
       "workshops": [
         {
           "title": "SMB Security Operations Readiness",
