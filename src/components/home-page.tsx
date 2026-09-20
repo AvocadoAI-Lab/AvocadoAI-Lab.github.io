@@ -4,6 +4,7 @@ import type { Locale, SiteContent } from "@/types/content";
 import { localizedHref } from "@/lib/links";
 import { basePath } from "@/lib/site";
 import { ArrowIcon, Icon } from "@/components/icons";
+import { TechnologyCard } from "@/components/technology-card";
 import { Container, CtaLink, Eyebrow, SectionHeader, Tag } from "@/components/ui";
 
 function HeroVisual({ content }: { content: SiteContent["hero"] }) {
@@ -50,6 +51,10 @@ function HeroVisual({ content }: { content: SiteContent["hero"] }) {
 }
 
 export function HomePage({ locale, content }: { locale: Locale; content: SiteContent }) {
+  const featuredTechnology = content.technology.featuredIds
+    .map((id) => content.technologyPage.items.find((item) => item.id === id))
+    .filter((item): item is SiteContent["technologyPage"]["items"][number] => Boolean(item));
+
   return (
     <>
       <section className="hero-glow surface-grid overflow-hidden border-b border-white/10 py-20 text-warm-white sm:py-28 lg:py-32">
@@ -108,6 +113,18 @@ export function HomePage({ locale, content }: { locale: Locale; content: SiteCon
           <div className="mt-10 grid gap-6 rounded-[2rem] border border-avocado/25 bg-forest/35 p-7 sm:p-9 lg:grid-cols-[1fr_auto] lg:items-center">
             <p className="max-w-3xl text-lg leading-8 text-white/78">{content.platform.highlight}</p>
             <CtaLink cta={content.platform.cta} locale={locale} />
+          </div>
+        </Container>
+      </section>
+
+      <section className="soft-grid border-b border-black/8 py-24 sm:py-32" id="technology">
+        <Container>
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+            <SectionHeader description={content.technology.description} eyebrow={content.technology.eyebrow} title={content.technology.title} />
+            <CtaLink cta={content.technology.cta} locale={locale} variant="secondary" />
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {featuredTechnology.map((item) => <TechnologyCard item={item} key={item.id} locale={locale} />)}
           </div>
         </Container>
       </section>
@@ -191,12 +208,16 @@ export function HomePage({ locale, content }: { locale: Locale; content: SiteCon
             <SectionHeader description={content.resources.description} eyebrow={content.resources.eyebrow} title={content.resources.title} />
             <CtaLink cta={content.resources.cta} locale={locale} variant="secondary" />
           </div>
-          <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {content.resources.items.map((item) => (
-              <article className="rounded-[2rem] border border-black/10 bg-warm-white p-7" key={item.title}>
-                <p className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-forest">{item.type}</p>
+              <article className="group rounded-[2rem] border border-black/10 bg-warm-white p-7" key={item.title}>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <p className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-forest">{item.type}</p>
+                  {item.status ? <Tag>{item.status}</Tag> : null}
+                </div>
                 <h3 className="mt-6 text-2xl font-semibold tracking-[-0.03em]">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-evidence">{item.summary}</p>
+                {item.href && item.linkLabel ? <a aria-label={`${item.linkLabel}: ${item.title} (${locale === "zh-Hant" ? "於新視窗開啟" : "opens in a new window"})`} className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest group-hover:text-graphite" href={item.href} rel="noreferrer" target="_blank">{item.linkLabel}<ArrowIcon /></a> : null}
               </article>
             ))}
           </div>

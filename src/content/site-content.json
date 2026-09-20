@@ -1,8 +1,8 @@
 {
   "zh-Hant": {
     "meta": {
-      "title": "Avocado.ai｜AI 原生資安營運與驗證平台",
-      "description": "SenseL 將 EDR、NDR、WAF、OT、CTI 與營運資料轉化為可調查事件、可追溯證據、控制驗證與持續改善。"
+      "title": "SenseL｜可驗證安全營運平台｜Avocado.ai",
+      "description": "將 IT、OT 與 Edge 安全訊號轉成可追溯 Episode、驗證證據與可重測的改善閉環。"
     },
     "navigation": {
       "menuLabel": "開啟選單",
@@ -13,12 +13,12 @@
           "href": "/platform"
         },
         {
-          "label": "解決方案",
-          "href": "#solutions"
+          "label": "核心技術",
+          "href": "/technology"
         },
         {
-          "label": "客戶實證",
-          "href": "#field-proof"
+          "label": "解決方案",
+          "href": "#solutions"
         },
         {
           "label": "資源",
@@ -38,20 +38,20 @@
         "href": "/contact"
       },
       "primaryCta": {
-        "label": "預約工作坊",
+        "label": "預約 30 分鐘技術適配",
         "href": "/contact"
       }
     },
     "hero": {
-      "eyebrow": "AI-Native Security Operations & Validation Platform",
-      "title": "把分散訊號，變成可驗證的防禦韌性。",
-      "description": "SenseL 連接企業既有的 EDR、NDR、WAF、OT、CTI 與營運資料，透過 AI 關聯事件、保全證據、驗證控制並持續追蹤改善。從 SMB 代管資安，到醫療與半導體高合規場域，共用同一個 AI-native Control Plane。",
+      "eyebrow": "VERIFIABLE SECURITY OPERATIONS",
+      "title": "不只發現風險，更能證明防禦有效。",
+      "description": "SenseL 將既有 IT、OT 與 Edge 訊號整理成有證據的安全 Episode，協助團隊驗證控制、重測改善，並為高風險動作保留人工核准。",
       "primaryCta": {
-        "label": "探索解決方案",
-        "href": "#solutions"
+        "label": "了解 SenseL 證據閉環",
+        "href": "/platform"
       },
       "secondaryCta": {
-        "label": "預約場域工作坊",
+        "label": "討論小範圍 Pilot",
         "href": "/contact"
       },
       "visualInputLabel": "Security & Operations Signals",
@@ -64,19 +64,19 @@
       ]
     },
     "proof": {
-      "label": "ONE PLATFORM · MULTIPLE HIGH-TRUST OUTCOMES",
+      "label": "ONE CONTROL PLANE · EVIDENCE FROM EDGE TO OUTCOME",
       "items": [
-        "跨 EDR / NDR / WAF / OT",
-        "Episode Evidence",
-        "Threat-Informed Validation",
-        "On-Premise Ready",
-        "Healthcare · Fab · SMB"
+        "Edge-to-Control-Plane",
+        "Evidence-Bound Episodes",
+        "Human-Governed AI",
+        "Reproducible Validation",
+        "受控部署路徑"
       ]
     },
     "problem": {
-      "eyebrow": "THE OPERATIONS GAP",
-      "title": "企業不是沒有資安工具，而是沒有形成可持續改善的防禦閉環。",
-      "description": "工具持續產生告警，但真正的營運問題是脈絡、證據、驗證與改善無法連成一條線。",
+      "eyebrow": "THE TRUST GAP",
+      "title": "下一個資安瓶頸，不是偵測，而是信任。",
+      "description": "AI 讓研判更快，也讓黑箱結論更容易產生。安全團隊需要的不只是答案，而是每個判斷的來源、核准脈絡與可重現的重測證據。",
       "items": [
         {
           "title": "告警過量",
@@ -102,8 +102,8 @@
     },
     "platform": {
       "eyebrow": "SENSEL CLOSED LOOP",
-      "title": "AI 不只分析事件，更要留下證據並證明改善有效。",
-      "description": "SenseL 將資料、脈絡、推論、驗證、證據與改善設計成同一個營運閉環。",
+      "title": "從訊號到證據，再到可驗證成果；一個受治理的營運閉環。",
+      "description": "SenseL 將 Edge Telemetry、Episode Evidence、AI 推論、安全驗證與改善追蹤設計成同一個 Control Plane。",
       "steps": [
         {
           "number": "01",
@@ -142,17 +142,32 @@
         "href": "/platform"
       }
     },
+    "technology": {
+      "eyebrow": "BUILT DIFFERENT",
+      "title": "我們的 moat 不是更大的模型，而是更可信的證據系統。",
+      "description": "從 OT Edge 感測、版本化 Evidence Contract 研究，到可重現的安全評測與本地端醫療 AI，SenseL 把信任做進架構，而不是寫在簡報裡。",
+      "featuredIds": [
+        "relayguard",
+        "trustepisode",
+        "avlbench",
+        "edgemed"
+      ],
+      "cta": {
+        "label": "查看技術與研究",
+        "href": "/technology"
+      }
+    },
     "solutionsSection": {
-      "eyebrow": "THREE MARKET ENTRIES",
-      "title": "一個 SenseL 核心，回應三種高信任場域。",
-      "description": "依 SMB、半導體與醫療場域的不同需求，導入一致的資料脈絡、證據與持續驗證能力。"
+      "eyebrow": "WHERE WE START",
+      "title": "從最需要被證明的營運問題開始。",
+      "description": "精實安全團隊、關鍵 OT／Fab 與醫療場域的起點不同，但都需要一致的脈絡、證據與安全驗證能力。"
     },
     "solutions": [
       {
         "slug": "managed-security",
-        "kicker": "SMB AI MSSP",
-        "title": "沒有專職 SOC，也能擁有持續運作的資安團隊。",
-        "homeSummary": "整合端點、網路與網站事件，由 AI 協助調查、由專業人員確認，持續交付風險通知、管理報告與改善追蹤。",
+        "kicker": "LEAN SECURITY TEAMS",
+        "title": "用現有工具，建立持續運作的安全節奏。",
+        "homeSummary": "將端點、網路與網站事件整理成可研判的 Episode，由 AI 輔助、人工確認，持續追蹤修正與重測。",
         "pageSummary": "SenseL Managed Security 將平台、預設 EDR/NDR、跨來源分析與代管服務組合為可負擔、可續約的安全營運方案。",
         "audiences": [
           "中小企業經營者",
@@ -195,9 +210,9 @@
       },
       {
         "slug": "fab-intelligence",
-        "kicker": "SEMICONDUCTOR ENMS + OT",
-        "title": "把上千顆 CT 的資料，轉成可稽核的能源績效與 OT 韌性。",
-        "homeSummary": "建立 Fab 的 CT、Gateway、設備祖譜與 OT 資料底座，支援 ISO 50001 EnMS、M&V、異常分析與後續 OT Security。",
+        "kicker": "CRITICAL OT & FAB",
+        "title": "先看清 Edge 與 OT，再安全地驗證控制。",
+        "homeSummary": "從被動遙測、資產與資料血緣開始，在不干擾營運的邊界下，逐步建立協定感知事件與受控驗證。",
         "pageSummary": "SenseL Fab Intelligence 以能源與資料價值切入，建立可追溯的 Fab Data Foundation，再延伸到 OT 資產、異常與安全驗證。",
         "audiences": [
           "Fab 廠長與營運主管",
@@ -241,9 +256,9 @@
       },
       {
         "slug": "healthcare-resilience",
-        "kicker": "THREAT-INFORMED HEALTHCARE",
-        "title": "從威脅情報到修正重測，讓醫療防禦能力真正被證明。",
-        "homeSummary": "整合醫院既有防護資料，以 CTI 驅動隔離式驗證、保存 Episode Evidence，並將結果回饋到日常資安營運。",
+        "kicker": "HEALTHCARE RESILIENCE",
+        "title": "不打擾臨床營運，也能持續驗證韌性。",
+        "homeSummary": "串接既有防護訊號，將威脅假設帶入隔離或低干擾流程，保存每次核准、測試與重測證據。",
         "pageSummary": "SenseL Healthcare Resilience 將日常 AI XDR、醫療 Web / API 評估、IoMT / OT 可視性與受治理的 Validation Lab 串成年度韌性服務。",
         "audiences": [
           "醫院 CIO / CISO",
@@ -287,9 +302,9 @@
       }
     ],
     "fieldProof": {
-      "eyebrow": "FIELD PROOF",
-      "title": "讓每一次安全改善，都留下可追溯、可重複驗證的證據。",
-      "description": "探索醫療、半導體與 SMB 場域如何透過脈絡、證據與驗證，將安全投資轉化為可持續改善的營運能力。",
+      "eyebrow": "EVIDENCE & VALIDATION",
+      "title": "從設計模式與驗證方法，看 SenseL 如何進入真實場域。",
+      "description": "以下內容是匿名導入模式、PoC 證據模型與服務藍圖，用來說明脈絡、證據與驗證如何連成可持續改善的營運方法。",
       "items": [
         {
           "sector": "大型醫療場域（匿名）",
@@ -417,51 +432,71 @@
       }
     },
     "resources": {
-      "eyebrow": "INTELLIGENCE & FIELD NOTES",
-      "title": "用威脅、場域與產品證據，持續說明我們如何做判斷。",
-      "description": "從威脅情資、AI-native 安全營運、Fab EnMS / OT 與公開活動紀錄，分享可應用於真實場域的洞察。",
+      "eyebrow": "EVIDENCE HUB",
+      "title": "不只告訴你我們正在打造什麼，也提供可以檢視的技術證據。",
+      "description": "查看公開程式庫、研究 artifact、可重現評測與安全驗證方法；每一項內容都標示目前階段。",
       "items": [
         {
-          "type": "Threat Brief",
-          "title": "從威脅情資到可回歸驗證的防禦情境",
-          "summary": "說明如何把 IOC、TTP、CVE 與資產脈絡轉成受治理的驗證假設。"
+          "type": "Open Engineering",
+          "status": "Engineering Preview",
+          "title": "SenseL RelayGuard",
+          "summary": "以 EdgeX、被動鏡像流量與協定感知事件，探索 OT Edge 到 SenseL Control Plane 的證據路徑。",
+          "href": "https://github.com/AvocadoAI-Lab/sensel-ot-edge-sensor",
+          "linkLabel": "查看公開程式庫"
         },
         {
-          "type": "Field Note",
-          "title": "為什麼連續資料與單點快照回答不同問題",
-          "summary": "從 EnB、EnPI、M&V 與資料血緣理解 Fab 連續資料的營運價值。"
+          "type": "Research Artifact",
+          "status": "Pre-submission",
+          "title": "TrustEpisode",
+          "summary": "探索 AI 輔助 EDR／NDR 調查中，可重播、可稽核、保留缺漏狀態的 Evidence Contract。",
+          "href": "https://github.com/AvocadoAI-Lab/TRUSTEPISODE-aisec2026",
+          "linkLabel": "查看研究 artifact"
         },
         {
-          "type": "Event Record",
-          "title": "Avocado SenseL at CES 2025",
-          "summary": "以展位展示與現場交流，向國際訪客介紹 SenseL 的 AI 輔助資安分析與跨場域營運方法。"
+          "type": "Evaluation Artifact",
+          "status": "R0/R1",
+          "title": "AVLBench",
+          "summary": "用 checksum、凍結 fixture 與條件分離，讓 AI 輔助安全驗證的限定結果可以被重新計算。",
+          "href": "https://github.com/AvocadoAI-Lab/avlbench",
+          "linkLabel": "查看可重現評測"
+        },
+        {
+          "type": "OT Validation Research",
+          "status": "Pre-submission",
+          "title": "EviGrid",
+          "summary": "把 IEC 61850 威脅與 CVE 轉成 evidence-grounded、fail-closed 的受控驗證規劃。",
+          "href": "https://github.com/AvocadoAI-Lab/EVIGRID-ICSS2026",
+          "linkLabel": "查看研究 package"
         }
       ],
       "cta": {
-        "label": "瀏覽所有資源",
+        "label": "瀏覽 Evidence Hub",
         "href": "/resources"
       }
     },
     "finalCta": {
-      "eyebrow": "START WITH A REAL OPERATING QUESTION",
-      "title": "您的資安工具已經很多。下一步是證明它們真正有效。",
-      "description": "從一場聚焦場域、資料與驗證目標的工作坊開始，定義可交付、可量測、可回歸的第一階段。",
+      "eyebrow": "DEFINE A MEASURABLE FIRST PHASE",
+      "title": "不要從更大的平台開始。從一個能被證明的問題開始。",
+      "description": "用 30 分鐘確認場域、現有訊號、技術邊界與驗收方式，再定義一個可交付、可量測、可重測的 Pilot。",
       "primaryCta": {
-        "label": "預約 45 分鐘 Readiness Workshop",
+        "label": "預約 30 分鐘技術適配",
         "href": "/contact"
       },
       "secondaryCta": {
-        "label": "先了解 SenseL 平台",
-        "href": "/platform"
+        "label": "查看技術證據",
+        "href": "/technology"
       }
     },
     "footer": {
-      "tagline": "AI-native Security Operations & Validation Platform",
-      "note": "所有客戶名稱、案例數字、認證、SLA 與合作關係，以正式核准公開內容為準。",
+      "tagline": "AI-native 防禦的證據與驗證層。",
       "links": [
         {
           "label": "平台",
           "href": "/platform"
+        },
+        {
+          "label": "核心技術",
+          "href": "/technology"
         },
         {
           "label": "創辦團隊",
@@ -479,8 +514,8 @@
     },
     "platformPage": {
       "eyebrow": "SENSEL PLATFORM",
-      "title": "把 Security Telemetry 轉成可調查、可驗證、可持續改善的營運成果。",
-      "summary": "SenseL 是 Avocado.ai 的 AI-native Control & Validation Platform。它不與每一個 EDR、NDR 或 WAF 正面替代，而是建立跨來源的 Context、Episode Evidence、Validation 與治理工作流。",
+      "title": "AI-native 防禦的證據與驗證層。",
+      "summary": "SenseL 位在企業既有控制之上，把 IT、OT 與 Edge 訊號整理成可追溯 Episode，再以受治理推論、控制驗證與重測形成可持續改善的閉環。",
       "principlesTitle": "平台設計原則",
       "principles": [
         {
@@ -500,30 +535,161 @@
           "description": "高風險操作保留權限、核准、時段、範圍與 Audit Trail。"
         }
       ],
-      "capabilitiesTitle": "從事件資料建立可執行的安全脈絡",
-      "capabilitiesDescription": "SenseL 將 AI Agent、XDR、端點與網路可視性及營運報告能力，整合進同一個可追溯工作流。",
+      "capabilitiesTitle": "讓每一個安全判斷，都帶著證據進入下一步",
+      "capabilitiesDescription": "SenseL 連接 Edge 與既有控制，保留 Episode 的來源與缺漏，讓 AI 推論、人工核准與安全重測共用同一條證據鏈。",
       "capabilities": [
         {
-          "title": "SenseL AI Agent",
-          "description": "以 LLM 輔助整理跨來源事件，形成攻擊脈絡、根因假設、證據與處置建議，並保留人工確認。"
+          "title": "Edge-to-Control-Plane Visibility",
+          "description": "從端點、網路、WAF 到 OT Edge 收集事件與健康訊號，保留現場邊界與資料最小化。"
         },
         {
-          "title": "跨場域 XDR Context",
-          "description": "連接 EDR、NDR、WAF、OT、CTI 與日誌資料，在共同資產與業務脈絡下關聯事件。"
+          "title": "Evidence-Bound Episodes",
+          "description": "把跨來源訊號綁定到版本化 Episode，明確記錄來源、缺漏、人工確認與改善狀態。"
         },
         {
-          "title": "端點與網路可視性",
-          "description": "整合既有端點、網路與工控遙測，讓調查可以跨越 IT、AIoT 與 OT 的資料邊界。"
+          "title": "Governed AI Reasoning",
+          "description": "讓 AI 加速摘要、脈絡整理與調查假設，但不讓生成內容覆寫 detector 事實或越過核准權限。"
         },
         {
-          "title": "戰情與報告工作流",
-          "description": "將安全狀態、Episode Evidence、分析結論與改善建議整理為管理與技術團隊可共同使用的報告。"
+          "title": "Reproducible Validation",
+          "description": "以隔離情境、固定 manifest、人工核准與重測紀錄，驗證控制及改善是否在既定範圍內有效。"
         }
       ],
-      "architectureTitle": "五層控制與驗證架構",
-      "architectureDescription": "Data Plane、Context Plane、AI Reasoning、Validation Plane 與 Trust & Governance 共同形成可稽核閉環。",
+      "architectureTitle": "五層 Evidence & Validation 架構",
+      "architectureDescription": "Edge & Data、Evidence Fabric、Governed AI、Validation 與 Improvement & Assurance 共同形成可稽核閉環。",
       "cta": {
         "label": "討論您的資料與控制驗證需求",
+        "href": "/contact"
+      }
+    },
+    "technologyPage": {
+      "eyebrow": "TECHNOLOGY & RESEARCH",
+      "title": "不是再包一層 AI，而是一套從 Edge 到驗證證據的系統。",
+      "summary": "SenseL 路線圖結合邊緣感測、版本化證據、受約束的 AI 推論、可重現評測與受控驗證；每一項能力都清楚標示成熟度與目前邊界。",
+      "thesisTitle": "安全 AI 的價值，不在答案說得多快，而在答案能否被查證。",
+      "thesisDescription": "模型會變、資料會缺、場域會失聯。SenseL 的技術策略是先保住來源、版本、缺漏與權限，再讓 AI 在可追溯邊界內加速調查，最後用安全情境與重測證明改善是否有效。",
+      "architectureTitle": "從現場訊號到可驗證成果",
+      "architectureDescription": "每一層都保留明確 owner、版本與失效狀態；AI 不能替 detector 造數字，也不能把缺少的證據補成事實。",
+      "architectureSteps": [
+        {
+          "number": "01",
+          "title": "Observe",
+          "description": "Edge、EDR、NDR、OT 與 CTI 訊號"
+        },
+        {
+          "number": "02",
+          "title": "Bind",
+          "description": "來源、版本、缺漏與 Evidence ID"
+        },
+        {
+          "number": "03",
+          "title": "Reason",
+          "description": "受約束的 AI 摘要與調查假設"
+        },
+        {
+          "number": "04",
+          "title": "Evaluate",
+          "description": "固定資料、manifest 與可重現評測"
+        },
+        {
+          "number": "05",
+          "title": "Validate",
+          "description": "隔離情境、人工核准與安全護欄"
+        },
+        {
+          "number": "06",
+          "title": "Improve",
+          "description": "修正、重測與版本化改善紀錄"
+        }
+      ],
+      "portfolioTitle": "正在打造的技術資產",
+      "portfolioDescription": "以下計畫共同推進 SenseL 路線圖，但不是所有項目都已成為正式產品功能；實際可用性依成熟度、部署方案與技術審查而異。",
+      "items": [
+        {
+          "id": "relayguard",
+          "category": "EDGE + OT INTELLIGENCE",
+          "maturity": "open-source-mvp",
+          "status": "Engineering Preview · Public Repo",
+          "title": "SenseL RelayGuard",
+          "description": "在邊緣結合 EdgeX 主動遙測與 SPAN/TAP 被動流量感測，只向上傳送特徵摘要、安全事件與證據參考。",
+          "proof": "公開 MVP：OT 規則、IEC 61850、MQTT、Suricata／Snort bridge；SenseL OT Dashboard 整合仍在路線圖。",
+          "href": "https://github.com/AvocadoAI-Lab/sensel-ot-edge-sensor",
+          "linkLabel": "查看公開程式庫"
+        },
+        {
+          "id": "trustepisode",
+          "category": "EVIDENCE CONTRACT",
+          "maturity": "research-preview",
+          "status": "Research Preview · Pre-submission",
+          "title": "TrustEpisode",
+          "description": "研究如何把 EDR／NDR 調查封裝成版本化、可重播、可稽核的 Evidence Contract，讓缺漏保持缺漏，而不是由 AI 補寫。",
+          "proof": "公開研究 artifact；不代表論文已接受，也不代表所有契約已整合進正式 SenseL 產品。",
+          "href": "https://github.com/AvocadoAI-Lab/TRUSTEPISODE-aisec2026",
+          "linkLabel": "查看研究 artifact"
+        },
+        {
+          "id": "avlbench",
+          "category": "REPRODUCIBLE EVALUATION",
+          "maturity": "public-research-artifact",
+          "status": "Evaluation Artifact · R0/R1",
+          "title": "AVLBench",
+          "description": "以凍結 manifest、fixture、checksum 與 Safe／Attack-enabled 分離條件，評估 AI 輔助安全驗證是否可以被第三方重算。",
+          "proof": "R0 artifact verification 與 R1 fixture recomputation 可公開執行；R2 實機路徑仍需授權 Lab。",
+          "href": "https://github.com/AvocadoAI-Lab/avlbench",
+          "linkLabel": "查看可重現評測"
+        },
+        {
+          "id": "evigrid",
+          "category": "SAFE OT VALIDATION",
+          "maturity": "research-preview",
+          "status": "Research Preview · Pre-submission",
+          "title": "EviGrid",
+          "description": "研究如何把 IEC 61850 威脅與 CVE 轉成受控驗證假設，並以 MMS／GOOSE 基線與 fail-closed planning 保留安全邊界。",
+          "proof": "目前為 pre-submission 研究；事件數不代表 exploit 成功或實體 relay 動作。",
+          "href": "https://github.com/AvocadoAI-Lab/EVIGRID-ICSS2026",
+          "linkLabel": "查看研究 package"
+        },
+        {
+          "id": "edgemed",
+          "category": "HEALTHCARE EDGE AI",
+          "maturity": "research-preview",
+          "status": "Research Preview · Private Lab",
+          "title": "EdgeMed",
+          "description": "醫療 AIoT／OT 的 local-first 被動偵測研究：detector 擁有事實，受約束的小型語言模型只整理 evidence，失效時回到 deterministic fallback。",
+          "proof": "Advisory-only；尚未完成臨床用途、正式醫院場域或醫療器材法規驗證。"
+        },
+        {
+          "id": "validation-lab",
+          "category": "VALIDATION LAB",
+          "maturity": "lab-baseline",
+          "status": "Lab Capability · ARM-ready Baseline",
+          "title": "AI Blue Team Validation Lab",
+          "description": "以 Wazuh、CALDERA、安全模擬器與本機 AI 證據分析，建立隔離、可重置、可教學也可驗證的藍隊環境。",
+          "proof": "ARM-ready Lab baseline；x86 OVA、30 台實體端點容量與斷線復原仍是後續驗證門檻。"
+        }
+      ],
+      "maturityTitle": "我們把 shipping code、Lab 能力與研究清楚分開。",
+      "maturityDescription": "透明的成熟度不是免責聲明，而是技術信任的一部分。每項能力在進入正式方案前，都應有可重現證據、明確邊界與升級門檻。",
+      "maturityLevels": [
+        {
+          "title": "Engineering Preview",
+          "description": "已有可執行工程基線或公開 MVP，但介面、整合或場域適配仍可能改變。"
+        },
+        {
+          "title": "Evaluation Artifact",
+          "description": "公開資料與工具可驗證特定評測主張，不等同正式產品或客戶部署。"
+        },
+        {
+          "title": "Research Preview",
+          "description": "用於驗證方法與假設；論文投稿、Lab 結果或原型不被描述為已商用能力。"
+        },
+        {
+          "title": "Lab Capability",
+          "description": "可在隔離環境執行情境與擷取證據；場域規模與正式營運仍需另外驗收。"
+        }
+      ],
+      "cta": {
+        "label": "與創辦團隊討論技術適配",
         "href": "/contact"
       }
     },
@@ -584,15 +750,15 @@
       }
     },
     "resourcesPage": {
-      "eyebrow": "RESOURCES",
-      "title": "Threat Intelligence、Field Proof 與活動紀錄。",
-      "summary": "從威脅情資、場域實證與活動紀錄，掌握 SenseL 如何把安全訊號轉化為可驗證的決策依據。",
+      "eyebrow": "EVIDENCE HUB",
+      "title": "看見技術主張背後的程式、artifact 與公開紀錄。",
+      "summary": "從公開工程、研究方法、可重現評測到活動紀錄，了解 SenseL 如何把安全訊號轉化為可查證的決策依據。",
       "topics": [
-        "Threat-Informed Resilience",
-        "AI-Native Security Operations",
-        "Healthcare Validation",
-        "Fab EnMS & OT",
-        "Secure AI Governance",
+        "Open Engineering",
+        "Evidence Contracts",
+        "Reproducible Evaluation",
+        "OT Validation Research",
+        "Research Maturity",
         "Event Records"
       ],
       "eventGallery": {
@@ -649,7 +815,7 @@
         ]
       },
       "cta": {
-        "label": "訂閱與媒體合作洽詢",
+        "label": "申請技術與證據導覽",
         "href": "/contact"
       }
     },
@@ -685,8 +851,8 @@
   },
   "en": {
     "meta": {
-      "title": "Avocado.ai | AI-Native Security Operations & Validation",
-      "description": "SenseL turns EDR, NDR, WAF, OT, CTI, and operational data into investigations, traceable evidence, control validation, and continuous improvement."
+      "title": "SenseL | Verifiable Security Operations | Avocado.ai",
+      "description": "Turn IT, OT, and edge security signals into traceable episodes, validation evidence, and repeatable improvement."
     },
     "navigation": {
       "menuLabel": "Open menu",
@@ -697,12 +863,12 @@
           "href": "/platform"
         },
         {
-          "label": "Solutions",
-          "href": "#solutions"
+          "label": "Technology",
+          "href": "/technology"
         },
         {
-          "label": "Field Proof",
-          "href": "#field-proof"
+          "label": "Solutions",
+          "href": "#solutions"
         },
         {
           "label": "Resources",
@@ -722,20 +888,20 @@
         "href": "/contact"
       },
       "primaryCta": {
-        "label": "Book a Workshop",
+        "label": "Book a 30-Minute Technical Fit",
         "href": "/contact"
       }
     },
     "hero": {
-      "eyebrow": "AI-Native Security Operations & Validation Platform",
-      "title": "Turn fragmented signals into verifiable cyber resilience.",
-      "description": "SenseL connects existing EDR, NDR, WAF, OT, CTI, and operational data to correlate incidents, preserve evidence, validate controls, and track improvement. One AI-native control plane supports managed security for SMBs and high-trust healthcare and semiconductor environments.",
+      "eyebrow": "VERIFIABLE SECURITY OPERATIONS",
+      "title": "Don't just detect risk. Prove your defenses work.",
+      "description": "SenseL turns signals from your existing IT, OT, and edge stack into evidence-backed security episodes, then helps teams validate controls and retest improvements—with human approval for high-risk actions.",
       "primaryCta": {
-        "label": "Explore Solutions",
-        "href": "#solutions"
+        "label": "See the SenseL Evidence Loop",
+        "href": "/platform"
       },
       "secondaryCta": {
-        "label": "Book a Field Workshop",
+        "label": "Discuss a Scoped Pilot",
         "href": "/contact"
       },
       "visualInputLabel": "Security & Operations Signals",
@@ -748,19 +914,19 @@
       ]
     },
     "proof": {
-      "label": "ONE PLATFORM · MULTIPLE HIGH-TRUST OUTCOMES",
+      "label": "ONE CONTROL PLANE · EVIDENCE FROM EDGE TO OUTCOME",
       "items": [
-        "Cross EDR / NDR / WAF / OT",
-        "Episode Evidence",
-        "Threat-Informed Validation",
-        "On-Premise Ready",
-        "Healthcare · Fab · SMB"
+        "Edge-to-Control-Plane",
+        "Evidence-Bound Episodes",
+        "Human-Governed AI",
+        "Reproducible Validation",
+        "Controlled Deployment Paths"
       ]
     },
     "problem": {
-      "eyebrow": "THE OPERATIONS GAP",
-      "title": "Enterprises do not lack security tools. They lack a closed loop for continuous improvement.",
-      "description": "Tools keep producing alerts, while context, evidence, validation, and improvement remain disconnected.",
+      "eyebrow": "THE TRUST GAP",
+      "title": "The next security bottleneck is not detection. It is trust.",
+      "description": "AI makes analysis faster—and black-box conclusions easier to produce. Security teams need more than an answer: they need provenance, approval context, and repeatable retest evidence.",
       "items": [
         {
           "title": "Alert overload",
@@ -786,8 +952,8 @@
     },
     "platform": {
       "eyebrow": "SENSEL CLOSED LOOP",
-      "title": "AI should not only analyze incidents. It should preserve evidence and prove that improvement worked.",
-      "description": "SenseL designs data, context, reasoning, validation, evidence, and improvement as one operating loop.",
+      "title": "From signal to evidence to validated outcome—one governed operating loop.",
+      "description": "SenseL brings edge telemetry, episode evidence, AI reasoning, safe validation, and improvement tracking into one control plane.",
       "steps": [
         {
           "number": "01",
@@ -826,17 +992,32 @@
         "href": "/platform"
       }
     },
+    "technology": {
+      "eyebrow": "BUILT DIFFERENT",
+      "title": "Our moat is not a bigger model. It is a more trustworthy evidence system.",
+      "description": "From OT edge sensing and versioned evidence-contract research to reproducible security evaluation and local healthcare AI, SenseL builds trust into the architecture—not the slide deck.",
+      "featuredIds": [
+        "relayguard",
+        "trustepisode",
+        "avlbench",
+        "edgemed"
+      ],
+      "cta": {
+        "label": "Explore Technology & Research",
+        "href": "/technology"
+      }
+    },
     "solutionsSection": {
-      "eyebrow": "THREE MARKET ENTRIES",
-      "title": "One SenseL core for three high-trust operating environments.",
-      "description": "Bring consistent context, evidence, and continuous validation to the distinct needs of SMB, semiconductor, and healthcare environments."
+      "eyebrow": "WHERE WE START",
+      "title": "Start where proof matters most.",
+      "description": "Lean security teams, critical OT and fabs, and healthcare environments start from different constraints—but all need consistent context, evidence, and safe validation."
     },
     "solutions": [
       {
         "slug": "managed-security",
-        "kicker": "SMB AI MSSP",
-        "title": "Operate a continuous security function without building a full SOC.",
-        "homeSummary": "Bring endpoint, network, and web events together. AI assists investigation, specialists confirm decisions, and the service delivers risk notifications, management reporting, and improvement tracking.",
+        "kicker": "LEAN SECURITY TEAMS",
+        "title": "Build a durable security rhythm with the tools you already have.",
+        "homeSummary": "Turn endpoint, network, and web signals into reviewable episodes, with AI assistance, human confirmation, remediation tracking, and retest.",
         "pageSummary": "SenseL Managed Security combines the platform, default or existing EDR/NDR, cross-source analysis, and managed operations into an affordable recurring service.",
         "audiences": [
           "SMB executives",
@@ -879,9 +1060,9 @@
       },
       {
         "slug": "fab-intelligence",
-        "kicker": "SEMICONDUCTOR ENMS + OT",
-        "title": "Turn thousands of CT data points into auditable energy performance and OT resilience.",
-        "homeSummary": "Build a shared foundation for CT, gateways, equipment hierarchy, and OT data to support ISO 50001 EnMS, M&V, anomaly analysis, and an OT security expansion path.",
+        "kicker": "CRITICAL OT & FAB",
+        "title": "See the edge and OT environment before validating controls.",
+        "homeSummary": "Start with passive telemetry, assets, and data lineage, then add protocol-aware events and controlled validation within the operating boundary.",
         "pageSummary": "SenseL Fab Intelligence enters through measurable energy and data value, creates a traceable Fab Data Foundation, and expands toward OT assets, anomalies, and security validation.",
         "audiences": [
           "Fab and operations leaders",
@@ -925,9 +1106,9 @@
       },
       {
         "slug": "healthcare-resilience",
-        "kicker": "THREAT-INFORMED HEALTHCARE",
-        "title": "From threat intelligence to remediation re-test, prove healthcare defenses work.",
-        "homeSummary": "Connect existing hospital security data, use CTI to drive controlled validation, preserve episode evidence, and feed results back into daily operations.",
+        "kicker": "HEALTHCARE RESILIENCE",
+        "title": "Validate resilience without disrupting clinical operations.",
+        "homeSummary": "Connect existing defense signals, move threat hypotheses into isolated or low-disruption workflows, and preserve approval, test, and retest evidence.",
         "pageSummary": "SenseL Healthcare Resilience combines daily AI XDR, healthcare web and API assessment, IoMT and OT visibility, and a governed validation lab as an annual resilience service.",
         "audiences": [
           "Hospital CIOs and CISOs",
@@ -971,9 +1152,9 @@
       }
     ],
     "fieldProof": {
-      "eyebrow": "FIELD PROOF",
-      "title": "Make every security improvement traceable and repeatably verifiable.",
-      "description": "Explore how healthcare, semiconductor, and SMB environments can turn security investment into continuous improvement through context, evidence, and validation.",
+      "eyebrow": "EVIDENCE & VALIDATION",
+      "title": "See how SenseL approaches real operating environments through patterns and validation methods.",
+      "description": "These anonymous operating patterns, PoC evidence models, and service blueprints show how context, evidence, and validation can become a repeatable improvement method.",
       "items": [
         {
           "sector": "Large healthcare environment — anonymous",
@@ -1101,51 +1282,71 @@
       }
     },
     "resources": {
-      "eyebrow": "INTELLIGENCE & FIELD NOTES",
-      "title": "Explain decisions with threat, field, and product evidence.",
-      "description": "Explore practical insight from threat intelligence, AI-native security operations, Fab EnMS and OT, and public event records.",
+      "eyebrow": "EVIDENCE HUB",
+      "title": "We do not only tell you what we are building. We publish evidence you can inspect.",
+      "description": "Review public repositories, research artifacts, reproducible evaluations, and safe validation methods—each with an explicit stage.",
       "items": [
         {
-          "type": "Threat Brief",
-          "title": "From threat intelligence to repeatable validation scenarios",
-          "summary": "How IOC, TTP, CVE, and asset context become governed validation hypotheses."
+          "type": "Open Engineering",
+          "status": "Engineering Preview",
+          "title": "SenseL RelayGuard",
+          "summary": "Explore the evidence path from OT edge to the SenseL control plane through EdgeX, passive mirrored traffic, and protocol-aware events.",
+          "href": "https://github.com/AvocadoAI-Lab/sensel-ot-edge-sensor",
+          "linkLabel": "View public repository"
         },
         {
-          "type": "Field Note",
-          "title": "Why continuous data and point-in-time snapshots answer different questions",
-          "summary": "Understanding the operating value of continuous Fab data through EnB, EnPI, M&V, and lineage."
+          "type": "Research Artifact",
+          "status": "Pre-submission",
+          "title": "TrustEpisode",
+          "summary": "Research into replayable, auditable evidence contracts that preserve missing-data state in AI-assisted EDR/NDR investigation.",
+          "href": "https://github.com/AvocadoAI-Lab/TRUSTEPISODE-aisec2026",
+          "linkLabel": "View research artifact"
         },
         {
-          "type": "Event Record",
-          "title": "Avocado SenseL at CES 2025",
-          "summary": "Presenting SenseL's AI-assisted security analysis and cross-domain operating approach through booth demonstrations and live conversations."
+          "type": "Evaluation Artifact",
+          "status": "R0/R1",
+          "title": "AVLBench",
+          "summary": "Use checksums, frozen fixtures, and separated conditions to recompute scoped AI-assisted security validation results.",
+          "href": "https://github.com/AvocadoAI-Lab/avlbench",
+          "linkLabel": "View reproducible evaluation"
+        },
+        {
+          "type": "OT Validation Research",
+          "status": "Pre-submission",
+          "title": "EviGrid",
+          "summary": "Turn IEC 61850 threats and CVEs into evidence-grounded, fail-closed controlled validation plans.",
+          "href": "https://github.com/AvocadoAI-Lab/EVIGRID-ICSS2026",
+          "linkLabel": "View research package"
         }
       ],
       "cta": {
-        "label": "Browse All Resources",
+        "label": "Browse the Evidence Hub",
         "href": "/resources"
       }
     },
     "finalCta": {
-      "eyebrow": "START WITH A REAL OPERATING QUESTION",
-      "title": "You already own many security tools. The next step is proving they work.",
-      "description": "Begin with a workshop focused on operating context, data, and validation goals, then define a measurable and repeatable first phase.",
+      "eyebrow": "DEFINE A MEASURABLE FIRST PHASE",
+      "title": "Do not start with a bigger platform. Start with one problem you can prove.",
+      "description": "Use 30 minutes to align on environment, existing signals, technical boundaries, and acceptance—then define a scoped pilot that is deliverable, measurable, and retestable.",
       "primaryCta": {
-        "label": "Book a 45-Minute Readiness Workshop",
+        "label": "Book a 30-Minute Technical Fit",
         "href": "/contact"
       },
       "secondaryCta": {
-        "label": "Explore the SenseL Platform",
-        "href": "/platform"
+        "label": "Review the Technical Evidence",
+        "href": "/technology"
       }
     },
     "footer": {
-      "tagline": "AI-native Security Operations & Validation Platform",
-      "note": "Customer names, case metrics, certifications, SLAs, and partnerships are subject to formal publication approval.",
+      "tagline": "The evidence and validation layer for AI-native defense.",
       "links": [
         {
           "label": "Platform",
           "href": "/platform"
+        },
+        {
+          "label": "Technology",
+          "href": "/technology"
         },
         {
           "label": "Founders",
@@ -1163,8 +1364,8 @@
     },
     "platformPage": {
       "eyebrow": "SENSEL PLATFORM",
-      "title": "Turn security telemetry into investigations, verifiable evidence, and continuous improvement.",
-      "summary": "SenseL is Avocado.ai's AI-native Control & Validation Platform. It complements rather than replaces every EDR, NDR, or WAF by creating cross-source context, episode evidence, validation, and governance workflows.",
+      "title": "The evidence and validation layer for AI-native defense.",
+      "summary": "SenseL sits above existing controls, turning IT, OT, and edge signals into traceable episodes, then connecting governed reasoning, control validation, and retesting into a continuous improvement loop.",
       "principlesTitle": "Platform principles",
       "principles": [
         {
@@ -1184,30 +1385,161 @@
           "description": "High-risk operations retain authority, approval, time, scope, and audit boundaries."
         }
       ],
-      "capabilitiesTitle": "Build actionable security context from event data",
-      "capabilitiesDescription": "SenseL brings AI agent, XDR, endpoint and network visibility, and operating-report capabilities into one traceable workflow.",
+      "capabilitiesTitle": "Move every security decision forward with evidence attached",
+      "capabilitiesDescription": "SenseL connects edge and existing controls, preserves episode provenance and gaps, and gives AI reasoning, human approval, and safe retesting one shared evidence chain.",
       "capabilities": [
         {
-          "title": "SenseL AI Agent",
-          "description": "Use LLM-assisted analysis to organize cross-source events into attack context, root-cause hypotheses, evidence, and response recommendations with human confirmation."
+          "title": "Edge-to-Control-Plane Visibility",
+          "description": "Collect events and health signals from endpoints, networks, WAF, and the OT edge while preserving site boundaries and data minimization."
         },
         {
-          "title": "Cross-domain XDR context",
-          "description": "Connect EDR, NDR, WAF, OT, CTI, and log data under shared asset and business context for correlated investigation."
+          "title": "Evidence-Bound Episodes",
+          "description": "Bind cross-source signals into versioned episodes with explicit provenance, gaps, human confirmation, and improvement state."
         },
         {
-          "title": "Endpoint and network visibility",
-          "description": "Combine existing endpoint, network, and industrial telemetry so investigations can cross IT, AIoT, and OT data boundaries."
+          "title": "Governed AI Reasoning",
+          "description": "Use AI to accelerate summarization, context, and investigation hypotheses without letting generated content overwrite detector facts or approval authority."
         },
         {
-          "title": "Operations and reporting workflow",
-          "description": "Organize security posture, episode evidence, analysis, and improvement recommendations into reports shared by management and technical teams."
+          "title": "Reproducible Validation",
+          "description": "Use isolated scenarios, frozen manifests, human approval, and retest records to evaluate controls and improvements inside a defined scope."
         }
       ],
-      "architectureTitle": "Five-layer control and validation architecture",
-      "architectureDescription": "Data Plane, Context Plane, AI Reasoning, Validation Plane, and Trust & Governance create an auditable operating loop.",
+      "architectureTitle": "Five-layer evidence and validation architecture",
+      "architectureDescription": "Edge & Data, Evidence Fabric, Governed AI, Validation, and Improvement & Assurance create an auditable operating loop.",
       "cta": {
         "label": "Discuss Your Data and Validation Needs",
+        "href": "/contact"
+      }
+    },
+    "technologyPage": {
+      "eyebrow": "TECHNOLOGY & RESEARCH",
+      "title": "Built as an evidence system, not another AI wrapper.",
+      "summary": "The SenseL roadmap combines edge sensing, versioned evidence, constrained AI reasoning, reproducible evaluation, and controlled validation. Every capability carries an explicit maturity label and a clear current boundary.",
+      "thesisTitle": "The value of security AI is not how fast it answers. It is whether the answer can be verified.",
+      "thesisDescription": "Models change, data goes missing, and sites go offline. Our technical strategy is to preserve provenance, versions, gaps, and authority first; accelerate investigation inside those boundaries; then use safe scenarios and retesting to prove whether an improvement worked.",
+      "architectureTitle": "From field signal to verifiable outcome",
+      "architectureDescription": "Every layer retains a clear owner, version, and failure state. AI cannot manufacture detector values or turn missing evidence into fact.",
+      "architectureSteps": [
+        {
+          "number": "01",
+          "title": "Observe",
+          "description": "Edge, EDR, NDR, OT, and CTI signals"
+        },
+        {
+          "number": "02",
+          "title": "Bind",
+          "description": "Provenance, versions, gaps, and evidence IDs"
+        },
+        {
+          "number": "03",
+          "title": "Reason",
+          "description": "Constrained AI summaries and investigation hypotheses"
+        },
+        {
+          "number": "04",
+          "title": "Evaluate",
+          "description": "Frozen data, manifests, and reproducible evaluation"
+        },
+        {
+          "number": "05",
+          "title": "Validate",
+          "description": "Isolated scenarios, human approval, and guardrails"
+        },
+        {
+          "number": "06",
+          "title": "Improve",
+          "description": "Remediation, retest, and versioned improvement records"
+        }
+      ],
+      "portfolioTitle": "Technical assets we are building",
+      "portfolioDescription": "These programs advance the SenseL roadmap, but not every item is a generally available product feature. Availability varies by maturity, deployment path, and technical review.",
+      "items": [
+        {
+          "id": "relayguard",
+          "category": "EDGE + OT INTELLIGENCE",
+          "maturity": "open-source-mvp",
+          "status": "Engineering Preview · Public Repo",
+          "title": "SenseL RelayGuard",
+          "description": "Combines active EdgeX telemetry with passive SPAN/TAP sensing at the edge, sending only feature summaries, security events, and evidence references northbound.",
+          "proof": "Public MVP: OT rules, IEC 61850, MQTT, and Suricata/Snort bridges. SenseL OT Dashboard integration remains on the roadmap.",
+          "href": "https://github.com/AvocadoAI-Lab/sensel-ot-edge-sensor",
+          "linkLabel": "View public repository"
+        },
+        {
+          "id": "trustepisode",
+          "category": "EVIDENCE CONTRACT",
+          "maturity": "research-preview",
+          "status": "Research Preview · Pre-submission",
+          "title": "TrustEpisode",
+          "description": "Research into packaging EDR/NDR investigations as versioned, replayable, auditable evidence contracts that keep missing evidence missing instead of letting AI fill the gap.",
+          "proof": "Public research artifact. It does not imply paper acceptance or full integration of every contract into the production SenseL platform.",
+          "href": "https://github.com/AvocadoAI-Lab/TRUSTEPISODE-aisec2026",
+          "linkLabel": "View research artifact"
+        },
+        {
+          "id": "avlbench",
+          "category": "REPRODUCIBLE EVALUATION",
+          "maturity": "public-research-artifact",
+          "status": "Evaluation Artifact · R0/R1",
+          "title": "AVLBench",
+          "description": "Uses frozen manifests, fixtures, checksums, and separated Safe and Attack-enabled conditions to test whether AI-assisted security validation can be independently recomputed.",
+          "proof": "Public R0 artifact verification and R1 fixture recomputation are available. R2 live execution remains behind an authorized lab gate.",
+          "href": "https://github.com/AvocadoAI-Lab/avlbench",
+          "linkLabel": "View reproducible evaluation"
+        },
+        {
+          "id": "evigrid",
+          "category": "SAFE OT VALIDATION",
+          "maturity": "research-preview",
+          "status": "Research Preview · Pre-submission",
+          "title": "EviGrid",
+          "description": "Research on turning IEC 61850 threats and CVEs into controlled validation hypotheses while preserving MMS/GOOSE baselines and fail-closed safety boundaries.",
+          "proof": "Currently pre-submission research. Event counts do not establish exploit success or physical relay operation.",
+          "href": "https://github.com/AvocadoAI-Lab/EVIGRID-ICSS2026",
+          "linkLabel": "View research package"
+        },
+        {
+          "id": "edgemed",
+          "category": "HEALTHCARE EDGE AI",
+          "maturity": "research-preview",
+          "status": "Research Preview · Private Lab",
+          "title": "EdgeMed",
+          "description": "Local-first passive IoMT/OT security research: detectors own the facts, a constrained small language model formats evidence, and deterministic fallback takes over when generation fails.",
+          "proof": "Advisory only. It has not completed clinical-use, production hospital, or medical-device regulatory validation."
+        },
+        {
+          "id": "validation-lab",
+          "category": "VALIDATION LAB",
+          "maturity": "lab-baseline",
+          "status": "Lab Capability · ARM-ready Baseline",
+          "title": "AI Blue Team Validation Lab",
+          "description": "An isolated, resettable defender environment combining Wazuh, CALDERA, safe simulation, and local AI-assisted evidence review for training and validation.",
+          "proof": "ARM-ready lab baseline. x86 OVA, 30 physical endpoint capacity, and disconnect recovery remain future validation gates."
+        }
+      ],
+      "maturityTitle": "We separate shipping code, lab capability, and research—and show the line.",
+      "maturityDescription": "Transparent maturity is not a disclaimer; it is part of technical trust. Before a capability becomes part of an offering, it should have reproducible evidence, explicit boundaries, and a defined promotion gate.",
+      "maturityLevels": [
+        {
+          "title": "Engineering Preview",
+          "description": "An executable engineering baseline or public MVP exists, while interfaces, integration, or field adaptation may still change."
+        },
+        {
+          "title": "Evaluation Artifact",
+          "description": "Public data and tooling can verify a scoped evaluation claim; this is not the same as a product release or customer deployment."
+        },
+        {
+          "title": "Research Preview",
+          "description": "Used to test a method or hypothesis. A submission, lab result, or prototype is not presented as a commercial capability."
+        },
+        {
+          "title": "Lab Capability",
+          "description": "Scenarios and evidence capture work in an isolated environment; field scale and production operations require separate acceptance."
+        }
+      ],
+      "cta": {
+        "label": "Discuss Technical Fit with the Founders",
         "href": "/contact"
       }
     },
@@ -1268,15 +1600,15 @@
       }
     },
     "resourcesPage": {
-      "eyebrow": "RESOURCES",
-      "title": "Threat intelligence, field proof, and event records.",
-      "summary": "Use threat intelligence, field evidence, and event records to see how SenseL turns security signals into verifiable decisions.",
+      "eyebrow": "EVIDENCE HUB",
+      "title": "Inspect the code, artifacts, and public record behind the technical claims.",
+      "summary": "From open engineering and research methods to reproducible evaluation and event records, see how SenseL turns security signals into verifiable decision evidence.",
       "topics": [
-        "Threat-Informed Resilience",
-        "AI-Native Security Operations",
-        "Healthcare Validation",
-        "Fab EnMS & OT",
-        "Secure AI Governance",
+        "Open Engineering",
+        "Evidence Contracts",
+        "Reproducible Evaluation",
+        "OT Validation Research",
+        "Research Maturity",
         "Event Records"
       ],
       "eventGallery": {
@@ -1333,7 +1665,7 @@
         ]
       },
       "cta": {
-        "label": "Discuss Subscriptions and Media Collaboration",
+        "label": "Request a Technical Artifact Walkthrough",
         "href": "/contact"
       }
     },

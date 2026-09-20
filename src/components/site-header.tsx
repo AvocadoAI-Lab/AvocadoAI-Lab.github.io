@@ -16,24 +16,24 @@ export function SiteHeader({ locale, content, currentPath = "" }: { locale: Loca
       <Container className="flex min-h-18 items-center justify-between gap-4">
         <Logo locale={locale} />
 
-        <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
+        <nav aria-label={locale === "zh-Hant" ? "主要導覽" : "Primary navigation"} className="hidden items-center gap-5 xl:flex">
           {content.navigation.items.map((item) => (
             <Link className="text-sm font-semibold text-evidence transition hover:text-graphite" href={localizedHref(locale, item.href)} key={item.label}>{item.label}</Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <Link aria-label={`${content.navigation.localeLabel}: ${alternate}`} className="rounded-full px-3 py-2 text-xs font-bold uppercase tracking-[0.12em] text-evidence hover:bg-black/5 hover:text-graphite" href={alternatePath}>{alternate === "en" ? "EN" : "繁中"}</Link>
           <Link className="rounded-full px-4 py-2.5 text-sm font-bold text-forest hover:bg-black/5" href={loginHref}>{content.navigation.customerLogin.label}</Link>
           <CtaLink cta={content.navigation.primaryCta} locale={locale} />
         </div>
 
-        <details className="relative lg:hidden">
+        <details className="relative xl:hidden">
           <summary aria-label={content.navigation.menuLabel} className="grid h-11 w-11 cursor-pointer place-items-center rounded-full border border-black/10 bg-white">
             <MenuIcon />
           </summary>
           <div className="absolute right-0 top-14 w-[min(88vw,22rem)] rounded-3xl border border-black/10 bg-warm-white p-5 shadow-2xl">
-            <nav aria-label="Mobile" className="flex flex-col">
+            <nav aria-label={locale === "zh-Hant" ? "行動版導覽" : "Mobile navigation"} className="flex flex-col">
               {content.navigation.items.map((item) => (
                 <Link className="border-b border-black/8 py-3 text-base font-semibold text-graphite" href={localizedHref(locale, item.href)} key={item.label}>{item.label}</Link>
               ))}

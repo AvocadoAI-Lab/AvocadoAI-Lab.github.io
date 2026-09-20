@@ -13,13 +13,12 @@ export function SiteFooter({ locale, content }: { locale: Locale; content: SiteC
             <Logo inverse locale={locale} />
             <p className="mt-5 max-w-md text-sm leading-7 text-white/60">{content.footer.tagline}</p>
           </div>
-          <nav aria-label="Footer" className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm md:justify-self-end">
+          <nav aria-label={locale === "zh-Hant" ? "頁尾導覽" : "Footer navigation"} className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm md:justify-self-end">
             {content.footer.links.map((item) => <Link className="text-white/65 hover:text-avocado" href={localizedHref(locale, item.href)} key={item.label}>{item.label}</Link>)}
           </nav>
         </div>
-        <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs leading-5 text-white/45 md:flex-row md:items-center md:justify-between">
+        <div className="mt-10 border-t border-white/10 pt-6 text-xs leading-5 text-white/45">
           <p>© {new Date().getFullYear()} Avocado.ai</p>
-          <p className="max-w-2xl">{content.footer.note}</p>
         </div>
       </Container>
     </footer>

@@ -64,8 +64,23 @@ export type Founder = {
 
 export type ResourceItem = {
   type: string;
+  status?: string;
   title: string;
   summary: string;
+  href?: string;
+  linkLabel?: string;
+};
+
+export type TechnologyItem = {
+  id: string;
+  category: string;
+  maturity: "open-source-mvp" | "public-research-artifact" | "research-preview" | "lab-baseline";
+  status: string;
+  title: string;
+  description: string;
+  proof: string;
+  href?: string;
+  linkLabel?: string;
 };
 
 export type MediaItem = {
@@ -127,6 +142,13 @@ export type SiteContent = {
     highlight: string;
     cta: Cta;
   };
+  technology: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    featuredIds: string[];
+    cta: Cta;
+  };
   solutionsSection: { eyebrow: string; title: string; description: string };
   solutions: Solution[];
   fieldProof: { eyebrow: string; title: string; description: string; items: FieldProofItem[] };
@@ -160,7 +182,7 @@ export type SiteContent = {
     primaryCta: Cta;
     secondaryCta: Cta;
   };
-  footer: { tagline: string; note: string; links: NavItem[] };
+  footer: { tagline: string; links: NavItem[] };
   platformPage: {
     eyebrow: string;
     title: string;
@@ -172,6 +194,23 @@ export type SiteContent = {
     capabilities: Principle[];
     architectureTitle: string;
     architectureDescription: string;
+    cta: Cta;
+  };
+  technologyPage: {
+    eyebrow: string;
+    title: string;
+    summary: string;
+    thesisTitle: string;
+    thesisDescription: string;
+    architectureTitle: string;
+    architectureDescription: string;
+    architectureSteps: PlatformStep[];
+    portfolioTitle: string;
+    portfolioDescription: string;
+    items: TechnologyItem[];
+    maturityTitle: string;
+    maturityDescription: string;
+    maturityLevels: Principle[];
     cta: Cta;
   };
   foundersPage: {
