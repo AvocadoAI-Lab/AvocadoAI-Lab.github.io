@@ -3,7 +3,7 @@ import path from "node:path";
 
 const content = JSON.parse(fs.readFileSync(path.resolve("src/content/site-content.json"), "utf8"));
 const errors = [];
-const allowedStatic = new Set(["/platform", "/technology", "/resources", "/trust", "/company/founders", "/contact"]);
+const allowedStatic = new Set(["/agent-assurance", "/platform", "/case-studies", "/technology", "/resources", "/trust", "/company/founders", "/contact"]);
 const allowedSolutions = new Set(["/solutions/managed-security", "/solutions/fab-intelligence", "/solutions/healthcare-resilience"]);
 
 function walk(value, locale, trail = []) {

@@ -43,12 +43,28 @@ export type Solution = {
   cta: Cta;
 };
 
-export type FieldProofItem = {
-  sector: string;
+export type AgentModule = {
+  id: "assess" | "validate" | "gate" | "lens";
+  category: string;
+  maturity: "available-service" | "design-partner" | "closed-beta-roadmap" | "research-option";
   status: string;
   title: string;
   description: string;
+  deliverables: string[];
+};
+
+export type CaseStudy = {
+  id: "regional-hospital-edr" | "semiconductor-ot-energy" | "smb-supply-chain";
+  evidenceStatus: "delivery-pattern" | "poc-evidence-model" | "service-blueprint";
+  claimIds: string[];
+  sector: string;
+  status: string;
+  title: string;
+  summary: string;
   highlights: string[];
+  challenge: string;
+  approach: string[];
+  outcomes: string[];
 };
 
 export type Founder = {
@@ -128,6 +144,7 @@ export type SiteContent = {
     primaryCta: Cta;
     secondaryCta: Cta;
     visualInputLabel: string;
+    visualInputs: string[];
     visualCoreLabel: string;
     visualCoreCaption: string;
     visualOutputs: string[];
@@ -142,6 +159,13 @@ export type SiteContent = {
     highlight: string;
     cta: Cta;
   };
+  agentAssurance: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    modules: AgentModule[];
+    cta: Cta;
+  };
   technology: {
     eyebrow: string;
     title: string;
@@ -151,7 +175,7 @@ export type SiteContent = {
   };
   solutionsSection: { eyebrow: string; title: string; description: string };
   solutions: Solution[];
-  fieldProof: { eyebrow: string; title: string; description: string; items: FieldProofItem[] };
+  caseStudies: { eyebrow: string; title: string; description: string; items: CaseStudy[]; cta: Cta };
   foundersSection: {
     eyebrow: string;
     title: string;
@@ -194,6 +218,33 @@ export type SiteContent = {
     capabilities: Principle[];
     architectureTitle: string;
     architectureDescription: string;
+    cta: Cta;
+  };
+  agentAssurancePage: {
+    eyebrow: string;
+    title: string;
+    summary: string;
+    problemTitle: string;
+    problemDescription: string;
+    problems: CardItem[];
+    journeyTitle: string;
+    journeyDescription: string;
+    architectureTitle: string;
+    architectureDescription: string;
+    architectureSteps: PlatformStep[];
+    audienceTitle: string;
+    audiences: string[];
+    boundaryTitle: string;
+    boundaries: string[];
+    cta: Cta;
+  };
+  caseStudiesPage: {
+    eyebrow: string;
+    title: string;
+    summary: string;
+    challengeLabel: string;
+    approachLabel: string;
+    outcomesLabel: string;
     cta: Cta;
   };
   technologyPage: {

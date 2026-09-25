@@ -8,12 +8,11 @@ import { TechnologyCard } from "@/components/technology-card";
 import { Container, CtaLink, Eyebrow, SectionHeader, Tag } from "@/components/ui";
 
 function HeroVisual({ content }: { content: SiteContent["hero"] }) {
-  const inputs = ["EDR", "NDR", "WAF", "OT", "CTI"];
   return (
     <div aria-hidden="true" className="surface-grid relative min-h-[31rem] overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.035] p-5 shadow-2xl shadow-black/25 sm:p-7">
       <p className="font-mono text-[0.65rem] font-bold uppercase tracking-[0.16em] text-white/45">{content.visualInputLabel}</p>
-      <div className="mt-5 grid grid-cols-3 gap-2 sm:grid-cols-5">
-        {inputs.map((input) => <div className="rounded-xl border border-white/10 bg-black/20 px-2 py-2 text-center font-mono text-xs font-bold text-white/65" key={input}>{input}</div>)}
+      <div className="mt-5 grid grid-cols-3 gap-2 sm:grid-cols-6">
+        {content.visualInputs.map((input) => <div className="rounded-xl border border-white/10 bg-black/20 px-2 py-2 text-center font-mono text-xs font-bold text-white/65" key={input}>{input}</div>)}
       </div>
 
       <div className="mx-auto my-7 h-12 w-px bg-gradient-to-b from-avocado/20 to-avocado" />
@@ -98,6 +97,31 @@ export function HomePage({ locale, content }: { locale: Locale; content: SiteCon
         </Container>
       </section>
 
+      <section className="border-y border-black/8 bg-white/55 py-24 sm:py-32" id="agent-assurance">
+        <Container>
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+            <SectionHeader description={content.agentAssurance.description} eyebrow={content.agentAssurance.eyebrow} title={content.agentAssurance.title} />
+            <CtaLink cta={content.agentAssurance.cta} locale={locale} variant="secondary" />
+          </div>
+          <ol className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {content.agentAssurance.modules.map((module, index) => (
+              <li className="flex min-h-[25rem] flex-col rounded-[2rem] border border-black/10 bg-warm-white p-7" key={module.id}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="font-mono text-xs font-bold text-forest">0{index + 1}</p>
+                  <Tag>{module.status}</Tag>
+                </div>
+                <p className="mt-8 font-mono text-[0.65rem] font-bold uppercase tracking-[0.14em] text-forest">{module.category}</p>
+                <h3 className="mt-4 text-2xl font-semibold tracking-[-0.03em]">{module.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-evidence">{module.description}</p>
+                <div className="mt-auto flex flex-wrap gap-2 pt-8">
+                  {module.deliverables.slice(0, 3).map((deliverable) => <Tag key={deliverable}>{deliverable}</Tag>)}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Container>
+      </section>
+
       <section className="surface-grid bg-graphite py-24 text-warm-white sm:py-32">
         <Container>
           <SectionHeader description={content.platform.description} eyebrow={content.platform.eyebrow} inverse title={content.platform.title} />
@@ -151,17 +175,21 @@ export function HomePage({ locale, content }: { locale: Locale; content: SiteCon
         </Container>
       </section>
 
-      <section className="border-y border-black/8 bg-[#edf0e8] py-24 sm:py-32" id="field-proof">
+      <section className="border-y border-black/8 bg-[#edf0e8] py-24 sm:py-32" id="case-studies">
         <Container>
-          <SectionHeader description={content.fieldProof.description} eyebrow={content.fieldProof.eyebrow} title={content.fieldProof.title} />
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+            <SectionHeader description={content.caseStudies.description} eyebrow={content.caseStudies.eyebrow} title={content.caseStudies.title} />
+            <CtaLink cta={content.caseStudies.cta} locale={locale} variant="secondary" />
+          </div>
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
-            {content.fieldProof.items.map((item) => (
+            {content.caseStudies.items.map((item) => (
               <article className="rounded-[2rem] border border-black/10 bg-warm-white p-7" key={item.title}>
                 <p className="font-mono text-[0.65rem] font-bold uppercase tracking-[0.13em] text-forest">{item.sector}</p>
                 <p className="mt-4 text-xs font-semibold text-evidence">{item.status}</p>
                 <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em]">{item.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-evidence">{item.description}</p>
+                <p className="mt-4 text-sm leading-7 text-evidence">{item.summary}</p>
                 <div className="mt-7 flex flex-wrap gap-2">{item.highlights.map((highlight) => <Tag key={highlight}>{highlight}</Tag>)}</div>
+                <Link className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest hover:text-graphite" href={localizedHref(locale, `/case-studies#${item.id}`)}>{locale === "zh-Hant" ? "查看案例方法" : "Review case method"}<ArrowIcon /></Link>
               </article>
             ))}
           </div>

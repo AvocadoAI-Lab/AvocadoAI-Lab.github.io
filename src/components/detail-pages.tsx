@@ -1,9 +1,9 @@
 import type { Locale, SiteContent, Solution } from "@/types/content";
 import { bookingUrl, contactEmail, contactName } from "@/lib/site";
 import { EventGallery } from "@/components/event-gallery";
-import { ArrowIcon } from "@/components/icons";
+import { ArrowIcon, Icon } from "@/components/icons";
 import { TechnologyCard } from "@/components/technology-card";
-import { Container, CtaLink, Eyebrow, PageHero, SectionHeader, Tag } from "@/components/ui";
+import { CheckList, Container, CtaLink, Eyebrow, PageHero, SectionHeader, Tag } from "@/components/ui";
 
 function CtaPanel({ locale, eyebrow, title, description, cta }: { locale: Locale; eyebrow: string; title: string; description: string; cta: { label: string; href: string } }) {
   return (
@@ -105,16 +105,16 @@ export function SolutionDetail({ locale, solution }: { locale: Locale; solution:
 export function PlatformDetail({ locale, content }: { locale: Locale; content: SiteContent }) {
   const page = content.platformPage;
   const layers = locale === "zh-Hant" ? [
-    ["Edge & Data", "EDR、NDR、WAF、OT Edge、CTI 與營運資料的接入、健康狀態與最小化"],
-    ["Evidence Fabric", "把來源、資產、版本、缺漏與 Evidence ID 綁定到 Episode revision"],
-    ["Governed AI", "在 detector 事實與權限邊界內進行摘要、脈絡整理與調查假設"],
-    ["Validation", "以隔離情境、人工核准、固定範圍與安全護欄執行控制驗證"],
+    ["Edge, Agent & Data", "EDR、WAF、OT Edge、CTI、Agent、Tool、MCP 與營運資料的接入、健康狀態與最小化"],
+    ["Evidence Fabric", "把來源、資產、模型、Prompt、Policy、權限、缺漏與 Evidence ID 綁定到 Episode revision"],
+    ["Governed AI", "在 detector 事實、action outcome 與權限邊界內進行摘要、脈絡整理與調查假設"],
+    ["Validation", "以隔離情境、Replay、人工核准、固定範圍與安全護欄執行控制驗證"],
     ["Improvement & Assurance", "保留修正、重測、artifact、Audit 與改善狀態"],
   ] : [
-    ["Edge & Data", "Ingest EDR, NDR, WAF, OT edge, CTI, and operating data with health state and minimization"],
-    ["Evidence Fabric", "Bind provenance, assets, versions, gaps, and evidence IDs to each episode revision"],
-    ["Governed AI", "Summarize, contextualize, and form hypotheses inside detector-fact and authority boundaries"],
-    ["Validation", "Evaluate controls with isolated scenarios, human approval, fixed scope, and safety guardrails"],
+    ["Edge, Agent & Data", "Ingest EDR, WAF, OT edge, CTI, Agent, Tool, MCP, and operating data with health state and minimization"],
+    ["Evidence Fabric", "Bind provenance, assets, models, prompts, policies, authority, gaps, and evidence IDs to each episode revision"],
+    ["Governed AI", "Summarize, contextualize, and form hypotheses inside detector-fact, action-outcome, and authority boundaries"],
+    ["Validation", "Evaluate controls through isolated scenarios, replay, human approval, fixed scope, and safety guardrails"],
     ["Improvement & Assurance", "Preserve remediation, retest, artifacts, audit history, and improvement state"],
   ];
 
@@ -164,6 +164,120 @@ export function PlatformDetail({ locale, content }: { locale: Locale; content: S
         </Container>
       </section>
       <CtaPanel cta={page.cta} description={page.summary} eyebrow="SENSEL" locale={locale} title={page.title} />
+    </>
+  );
+}
+
+export function AgentAssuranceDetail({ locale, content }: { locale: Locale; content: SiteContent }) {
+  const page = content.agentAssurancePage;
+  const product = content.agentAssurance;
+
+  return (
+    <>
+      <PageHero eyebrow={page.eyebrow} summary={page.summary} title={page.title} />
+
+      <section className="soft-grid py-20 sm:py-28">
+        <Container>
+          <SectionHeader description={page.problemDescription} eyebrow="WHY NOW" title={page.problemTitle} />
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {page.problems.map((problem) => (
+              <article className="rounded-[2rem] border border-black/10 bg-white p-7" key={problem.title}>
+                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-forest text-avocado"><Icon name={problem.icon} /></div>
+                <h3 className="mt-6 text-xl font-semibold tracking-[-0.025em]">{problem.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-evidence">{problem.description}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="surface-grid bg-graphite py-20 text-warm-white sm:py-28">
+        <Container>
+          <SectionHeader description={page.journeyDescription} eyebrow="ASSESS → VALIDATE → GATE" inverse title={page.journeyTitle} />
+          <ol className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {product.modules.map((module, index) => (
+              <li className="flex min-h-[29rem] flex-col rounded-[2rem] border border-white/10 bg-white/[0.035] p-7" key={module.id}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="font-mono text-xs font-bold text-avocado">0{index + 1}</p>
+                  <Tag inverse>{module.status}</Tag>
+                </div>
+                <p className="mt-8 font-mono text-[0.65rem] font-bold uppercase tracking-[0.14em] text-avocado">{module.category}</p>
+                <h3 className="mt-4 text-2xl font-semibold tracking-[-0.03em]">{module.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-white/60">{module.description}</p>
+                <div className="mt-auto pt-8"><CheckList inverse items={module.deliverables} /></div>
+              </li>
+            ))}
+          </ol>
+        </Container>
+      </section>
+
+      <section className="py-20 sm:py-28">
+        <Container>
+          <SectionHeader description={page.architectureDescription} eyebrow="ACTION-LEVEL EVIDENCE" title={page.architectureTitle} />
+          <ol className="mt-12 grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+            {page.architectureSteps.map((step) => (
+              <li className="rounded-3xl border border-black/10 bg-white p-6" key={step.number}>
+                <p className="font-mono text-xs font-bold text-forest">{step.number}</p>
+                <h3 className="mt-5 text-lg font-bold">{step.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-evidence">{step.description}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-12 grid gap-5 lg:grid-cols-2">
+            <ListCard items={page.audiences} title={page.audienceTitle} />
+            <ListCard items={page.boundaries} title={page.boundaryTitle} />
+          </div>
+        </Container>
+      </section>
+
+      <CtaPanel cta={page.cta} description={page.summary} eyebrow="FOUNDER-LED SECURITY SCOPING" locale={locale} title={page.title} />
+    </>
+  );
+}
+
+export function CaseStudiesDetail({ locale, content }: { locale: Locale; content: SiteContent }) {
+  const page = content.caseStudiesPage;
+
+  return (
+    <>
+      <PageHero eyebrow={page.eyebrow} summary={page.summary} title={page.title} />
+      <section className="soft-grid py-20 sm:py-28">
+        <Container className="space-y-8">
+          {content.caseStudies.items.map((item, index) => (
+            <article className="scroll-mt-28 rounded-[2.2rem] border border-black/10 bg-white p-7 sm:p-10" id={item.id} key={item.id}>
+              <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:gap-12">
+                <div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="font-mono text-xs font-bold text-forest">0{index + 1}</span>
+                    <Tag>{item.status}</Tag>
+                  </div>
+                  <p className="mt-7 font-mono text-[0.65rem] font-bold uppercase tracking-[0.14em] text-forest">{item.sector}</p>
+                  <h2 className="mt-4 text-balance text-3xl font-semibold tracking-[-0.04em] sm:text-4xl">{item.title}</h2>
+                  <p className="mt-5 text-base leading-8 text-evidence">{item.summary}</p>
+                  <div className="mt-7 flex flex-wrap gap-2">{item.highlights.map((highlight) => <Tag key={highlight}>{highlight}</Tag>)}</div>
+                </div>
+                <div className="grid gap-5">
+                  <div className="rounded-3xl border border-black/8 bg-warm-white p-6">
+                    <h3 className="text-lg font-semibold">{page.challengeLabel}</h3>
+                    <p className="mt-3 text-sm leading-7 text-evidence sm:text-base">{item.challenge}</p>
+                  </div>
+                  <div className="grid gap-5 sm:grid-cols-2">
+                    <div className="rounded-3xl border border-black/8 bg-warm-white p-6">
+                      <h3 className="text-lg font-semibold">{page.approachLabel}</h3>
+                      <div className="mt-5"><CheckList items={item.approach} /></div>
+                    </div>
+                    <div className="rounded-3xl border border-black/8 bg-[#edf0e8] p-6">
+                      <h3 className="text-lg font-semibold">{page.outcomesLabel}</h3>
+                      <div className="mt-5"><CheckList items={item.outcomes} /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </Container>
+      </section>
+      <CtaPanel cta={page.cta} description={page.summary} eyebrow="DISCUSS A COMPARABLE ENVIRONMENT" locale={locale} title={page.title} />
     </>
   );
 }

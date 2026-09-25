@@ -1,32 +1,32 @@
 {
   "zh-Hant": {
     "meta": {
-      "title": "SenseL｜可驗證安全營運平台｜Avocado.ai",
-      "description": "將 IT、OT 與 Edge 安全訊號轉成可追溯 Episode、驗證證據與可重測的改善閉環。"
+      "title": "SenseL｜AI Agent、IT 與 OT 的安全驗證平台｜Avocado.ai",
+      "description": "從企業安全訊號到 AI Agent 工具動作，SenseL 以可重播證據、人工核准與持續重測，讓高風險決策可驗證、可約束、可稽核。"
     },
     "navigation": {
       "menuLabel": "開啟選單",
       "localeLabel": "語言",
       "items": [
         {
-          "label": "平台",
-          "href": "/platform"
+          "label": "Agent 安全",
+          "href": "/agent-assurance"
         },
         {
-          "label": "核心技術",
-          "href": "/technology"
+          "label": "SenseL 平台",
+          "href": "/platform"
         },
         {
           "label": "解決方案",
           "href": "#solutions"
         },
         {
-          "label": "資源",
-          "href": "/resources"
+          "label": "場域案例",
+          "href": "/case-studies"
         },
         {
-          "label": "信任中心",
-          "href": "/trust"
+          "label": "資源",
+          "href": "/resources"
         },
         {
           "label": "公司",
@@ -38,82 +38,90 @@
         "href": "/contact"
       },
       "primaryCta": {
-        "label": "預約 30 分鐘技術適配",
+        "label": "預約安全範圍評估",
         "href": "/contact"
       }
     },
     "hero": {
-      "eyebrow": "VERIFIABLE SECURITY OPERATIONS",
-      "title": "不只發現風險，更能證明防禦有效。",
-      "description": "SenseL 將既有 IT、OT 與 Edge 訊號整理成有證據的安全 Episode，協助團隊驗證控制、重測改善，並為高風險動作保留人工核准。",
+      "eyebrow": "ACTION-LEVEL SECURITY · EVIDENCE BEFORE ENFORCEMENT",
+      "title": "讓每個 AI 與關鍵系統動作，在執行前可驗證。",
+      "description": "SenseL 將 Agent、Tool、MCP 與既有 IT／OT 安全訊號轉成可重播證據；比較版本、驗證控制，並讓高風險動作保留政策與人工核准。",
       "primaryCta": {
-        "label": "了解 SenseL 證據閉環",
-        "href": "/platform"
+        "label": "探索 SenseL Agent Assurance",
+        "href": "/agent-assurance"
       },
       "secondaryCta": {
-        "label": "討論小範圍 Pilot",
-        "href": "/contact"
+        "label": "查看場域案例",
+        "href": "/case-studies"
       },
-      "visualInputLabel": "Security & Operations Signals",
+      "visualInputLabel": "Enterprise & Agent Signals",
+      "visualInputs": [
+        "EDR",
+        "OT",
+        "CTI",
+        "Agent",
+        "MCP",
+        "Tools"
+      ],
       "visualCoreLabel": "SenseL",
-      "visualCoreCaption": "Context · AI Reasoning · Validation",
+      "visualCoreCaption": "Evidence · Replay · Policy",
       "visualOutputs": [
-        "Episode",
         "Evidence",
-        "Improvement"
+        "Replay",
+        "Decision"
       ]
     },
     "proof": {
-      "label": "ONE CONTROL PLANE · EVIDENCE FROM EDGE TO OUTCOME",
+      "label": "ONE SENSEL PLATFORM · SECURITY OPERATIONS + AGENT ASSURANCE",
       "items": [
-        "Edge-to-Control-Plane",
-        "Evidence-Bound Episodes",
-        "Human-Governed AI",
-        "Reproducible Validation",
-        "受控部署路徑"
+        "Action-Level Evidence",
+        "Replayable Validation",
+        "Human Approval",
+        "On-Premise Path",
+        "IT · OT · AI Agents"
       ]
     },
     "problem": {
-      "eyebrow": "THE TRUST GAP",
-      "title": "下一個資安瓶頸，不是偵測，而是信任。",
-      "description": "AI 讓研判更快，也讓黑箱結論更容易產生。安全團隊需要的不只是答案，而是每個判斷的來源、核准脈絡與可重現的重測證據。",
+      "eyebrow": "THE ACTION GAP",
+      "title": "風險不只在模型說了什麼，而在系統真的做了什麼。",
+      "description": "當 AI Agent 可以寄信、查詢資料、修改系統或呼叫 MCP 工具，安全工作必須從文字過濾延伸到多步軌跡、權限、實際 action outcome 與版本重測。",
       "items": [
         {
-          "title": "告警過量",
-          "description": "EDR、NDR、WAF 與 Firewall 不斷產生事件，但真正需要優先處理的風險不易辨識。",
+          "title": "危險動作先於答案",
+          "description": "Agent 可能在產生看似正常的最終文字前，就已提出外傳、寄送、刪除或執行動作。",
           "icon": "signal"
         },
         {
-          "title": "資料孤島",
-          "description": "Endpoint、Network、Web、Identity、OT 與 CTI 各自為政，缺乏共同資產與業務脈絡。",
+          "title": "版本漂移讓結論失效",
+          "description": "模型、Prompt、Tool Schema、MCP 或權限一更新，一次性測試結果就可能不再成立。",
           "icon": "layers"
         },
         {
-          "title": "防禦未被驗證",
-          "description": "已採購的控制措施缺乏持續演練、回歸測試與改善前後比較。",
-          "icon": "validation"
+          "title": "Trace 與營運證據分散",
+          "description": "AI、AppSec、SOC 與稽核團隊缺少共同的 action trace、決策理由與重測證據。",
+          "icon": "evidence"
         },
         {
-          "title": "證據難以追溯",
-          "description": "AI 判斷、事件處置、改善結果與稽核文件仍依賴人工整理。",
-          "icon": "evidence"
+          "title": "直接阻擋可能影響營運",
+          "description": "未經驗證的自動阻擋可能誤傷正常流程，因此需要 observe-first、人工核准與漸進 enforcement。",
+          "icon": "approval"
         }
       ]
     },
     "platform": {
       "eyebrow": "SENSEL CLOSED LOOP",
-      "title": "從訊號到證據，再到可驗證成果；一個受治理的營運閉環。",
-      "description": "SenseL 將 Edge Telemetry、Episode Evidence、AI 推論、安全驗證與改善追蹤設計成同一個 Control Plane。",
+      "title": "同一套 SenseL，把安全營運與 Agent 行動驗證連成閉環。",
+      "description": "SenseL 將 IT、OT、Edge 與 Agent／MCP 軌跡，連同 Episode Evidence、AI 推論、安全驗證與改善追蹤，設計成同一個 Control & Validation Plane。",
       "steps": [
         {
           "number": "01",
           "title": "Collect",
-          "description": "EDR、NDR、WAF、OT、CTI 與能源遙測"
+          "description": "EDR、OT、CTI、Agent、Tool、MCP 與能源遙測"
         },
         {
           "number": "02",
           "title": "Contextualize",
-          "description": "資產、身分、網路、漏洞與業務脈絡"
+          "description": "資產、身分、權限、網路、資料流與業務脈絡"
         },
         {
           "number": "03",
@@ -123,12 +131,12 @@
         {
           "number": "04",
           "title": "Validate",
-          "description": "情境、BAS、Purple Team 與回歸測試"
+          "description": "情境、Replay、Purple Team 與版本回歸測試"
         },
         {
           "number": "05",
           "title": "Preserve",
-          "description": "Episode Evidence、人工確認與稽核"
+          "description": "Episode、Policy Decision、人工確認與稽核"
         },
         {
           "number": "06",
@@ -136,16 +144,79 @@
           "description": "修正、工單、重測與基線更新"
         }
       ],
-      "highlight": "多數產品止於 Detection 與 Alert。SenseL 將 Alert 轉化為 Episode，再透過 Validation 證明防禦與改善是否真正有效。",
+      "highlight": "多數工具止於 Detection、Alert 或 Prompt 分類。SenseL 把訊號與 Agent action 轉化為可重播 Episode，再透過 Validation 證明控制與改善是否在指定版本及範圍內有效。",
       "cta": {
         "label": "了解 SenseL 平台",
         "href": "/platform"
       }
     },
+    "agentAssurance": {
+      "eyebrow": "SENSEL AGENT ASSURANCE",
+      "title": "從一次付費評估，走向每次版本都能重跑的安全 release gate。",
+      "description": "Agent Assurance 共用 SenseL 的證據、驗證、On-Premise 與人工核准能力：Assess 找出 action-level 風險，Validate 將發現產品化，Gate 再以 observe-first 路徑進入執行前政策決策。",
+      "modules": [
+        {
+          "id": "assess",
+          "category": "PAID SECURITY ASSESSMENT",
+          "maturity": "available-service",
+          "status": "可提供 · 固定範圍",
+          "title": "SenseL Agent Assess",
+          "description": "針對 Agent、Tool、MCP、權限、資料流與 Guardrail 進行有授權的攻擊面盤點、測試、修補建議與重測。",
+          "deliverables": [
+            "Threat model",
+            "Replayable trace",
+            "Remediation + retest"
+          ]
+        },
+        {
+          "id": "validate",
+          "category": "CORE RECURRING PRODUCT",
+          "maturity": "design-partner",
+          "status": "Design Partner",
+          "title": "SenseL Agent Replay / Validate",
+          "description": "把已驗證的失敗固化為客戶專屬 regression pack，比較模型、Prompt、Tool Schema、Policy 與權限版本。",
+          "deliverables": [
+            "Version comparison",
+            "Regression pack",
+            "CI release gate"
+          ]
+        },
+        {
+          "id": "gate",
+          "category": "PRE-ACTION POLICY",
+          "maturity": "closed-beta-roadmap",
+          "status": "Roadmap · Observe-first",
+          "title": "SenseL Agent Gate",
+          "description": "在工具執行前整合 Schema、Allowlist、身分權限、DLP 與軌跡風險；先觀察與校準，再依核准範圍逐步 enforcement。",
+          "deliverables": [
+            "Schema + allowlist",
+            "Identity + DLP",
+            "Human approval"
+          ]
+        },
+        {
+          "id": "lens",
+          "category": "OPEN-WEIGHT RESEARCH",
+          "maturity": "research-option",
+          "status": "Research Option",
+          "title": "SenseL Agent Lens",
+          "description": "針對可取得權重與 activation 的 self-hosted 模型，研究執行前 internal signal；不作為閉源 API 或核心 SLA 的前提。",
+          "deliverables": [
+            "Pre-action signal",
+            "Per-checkpoint calibration",
+            "Matched-baseline gate"
+          ]
+        }
+      ],
+      "cta": {
+        "label": "了解 Agent Assurance",
+        "href": "/agent-assurance"
+      }
+    },
     "technology": {
       "eyebrow": "BUILT DIFFERENT",
       "title": "我們的 moat 不是更大的模型，而是更可信的證據系統。",
-      "description": "從 OT Edge 感測、版本化 Evidence Contract 研究，到可重現的安全評測與本地端醫療 AI，SenseL 把信任做進架構，而不是寫在簡報裡。",
+      "description": "從 Agent action trace、版本化 Evidence Contract、可重現評測，到 OT Edge 感測與本地端醫療 AI，SenseL 把信任做進架構，而不是寫在簡報裡。",
       "featuredIds": [
         "relayguard",
         "trustepisode",
@@ -160,51 +231,52 @@
     "solutionsSection": {
       "eyebrow": "WHERE WE START",
       "title": "從最需要被證明的營運問題開始。",
-      "description": "精實安全團隊、關鍵 OT／Fab 與醫療場域的起點不同，但都需要一致的脈絡、證據與安全驗證能力。"
+      "description": "中小企業供應鏈、關鍵 OT／Fab 與醫療場域的起點不同，但都需要一致的脈絡、證據與安全驗證能力。"
     },
     "solutions": [
       {
         "slug": "managed-security",
-        "kicker": "LEAN SECURITY TEAMS",
-        "title": "用現有工具，建立持續運作的安全節奏。",
-        "homeSummary": "將端點、網路與網站事件整理成可研判的 Episode，由 AI 輔助、人工確認，持續追蹤修正與重測。",
-        "pageSummary": "SenseL Managed Security 將平台、預設 EDR/NDR、跨來源分析與代管服務組合為可負擔、可續約的安全營運方案。",
+        "kicker": "SMB SUPPLY-CHAIN SECURITY",
+        "title": "快速建立可營運、可提出證據的供應鏈資安基線。",
+        "homeSummary": "從關鍵資產、帳號與客戶要求開始，串接既有或預設防護訊號，建立人工確認的事件節奏、改善清單與證據包。",
+        "pageSummary": "SenseL Managed Security 將平台、既有或預設 EDR／NDR、跨來源分析與服務流程，組合為中小企業可分階段採用的供應鏈資安營運方案。",
         "audiences": [
           "中小企業經營者",
           "IT / 資安主管",
           "一人資訊部門",
-          "SI / MSP / ERP 生態夥伴"
+          "面對客戶或供應鏈稽核的企業"
         ],
         "challenges": [
           "缺乏專職資安人力",
           "告警分散且缺少研判",
-          "管理層看不到風險趨勢",
-          "缺乏持續改善與合規證據"
+          "客戶問卷、控制要求與改善證據彼此分離",
+          "缺乏持續改善與可交付治理證據"
         ],
         "capabilities": [
           "AI SOC / AI XDR",
           "預設或既有 EDR / NDR 串接",
           "WAF 與 Firewall 事件整合",
           "Episode Evidence",
+          "供應鏈控制與證據映射",
           "月報、季報與風險摘要",
           "事件通報與改善追蹤",
-          "選配 Validation Service"
+          "選配 Validation 與重測服務"
         ],
         "outcomes": [
-          "更快辨識真正需要處理的事件",
+          "建立資產、控制與證據的共同基線",
           "將既有工具轉成可讀、可交付的營運成果",
-          "建立固定管理報告與改善節奏",
-          "以年約服務降低自建 SOC 門檻"
+          "以優先改善清單支援客戶問卷與供應鏈要求",
+          "用分階段服務降低一次到位自建 SOC 的門檻"
         ],
         "process": [
-          "現況與工具盤點",
-          "資料接入與基線",
+          "供應鏈要求、資產與工具盤點",
+          "資料接入與健康基線",
           "代管分析與事件分級",
-          "月報與改善追蹤",
+          "證據包與改善追蹤",
           "季度驗證與擴充"
         ],
         "cta": {
-          "label": "評估 SMB 資安營運成熟度",
+          "label": "規劃 SMB 供應鏈資安快速導入",
           "href": "/contact"
         }
       },
@@ -301,45 +373,106 @@
         }
       }
     ],
-    "fieldProof": {
-      "eyebrow": "EVIDENCE & VALIDATION",
-      "title": "從設計模式與驗證方法，看 SenseL 如何進入真實場域。",
-      "description": "以下內容是匿名導入模式、PoC 證據模型與服務藍圖，用來說明脈絡、證據與驗證如何連成可持續改善的營運方法。",
+    "caseStudies": {
+      "eyebrow": "FIELD EVIDENCE & DELIVERY PATTERNS",
+      "title": "把場域限制，轉成可交付、可重測的安全方法。",
+      "description": "以下依目前可公開證據，分別標示為匿名導入模式、PoC 證據模型或服務藍圖；不以未核准的客戶身分、部署數字或量化成效作為行銷主張。",
       "items": [
         {
-          "sector": "大型醫療場域（匿名）",
-          "status": "Security Operations + Validation Pattern",
-          "title": "從端點可視性走向醫療資安營運與隔離式驗證",
-          "description": "以既有端點與事件資料建立共同營運視角，再延伸至 IoMT / OT 被動可視性、情境演練、Evidence Package 與重測。",
+          "id": "regional-hospital-edr",
+          "evidenceStatus": "delivery-pattern",
+          "claimIds": [
+            "C-006",
+            "C-007",
+            "C-008"
+          ],
+          "sector": "地區型中型醫院（匿名）",
+          "status": "導入模式 · 端點規模待公開核准",
+          "title": "把分散的 EDR 告警，轉成不中斷臨床的可追溯處置節奏",
+          "summary": "SenseL 以院方既有 EDR 為起點，串連資產、身分、網路與網站脈絡，將分散訊號整理為經人工確認的 Episode、改善紀錄與隔離式重測證據。",
           "highlights": [
-            "低干擾營運",
-            "跨來源 Episode",
-            "隔離 Validation Lab"
+            "既有 EDR 串接",
+            "人工確認 Episode",
+            "隔離式重測"
+          ],
+          "challenge": "中型院所必須維持臨床服務連續性，但精實的 IT／資安團隊仍需研判大量端點告警。既有訊號缺少共同資產與身分脈絡，修正、通報與重測證據也散落於不同工具。",
+          "approach": [
+            "先接入既有 EDR，不以全面汰換為前提",
+            "把事件正規化為版本化 Episode，補上資產、身分與核准脈絡",
+            "AI 協助摘要與排序，事件定性及高風險動作仍由人員確認",
+            "驗證與重測限定於隔離或院方核准的低干擾環境"
+          ],
+          "outcomes": [
+            "建立 EDR 接入與資料健康基線",
+            "形成跨來源 Episode 與事件升級流程",
+            "保留改善追蹤與重測證據包",
+            "讓管理報告與治理證據採用一致格式"
           ]
         },
         {
-          "sector": "半導體 Fab（匿名）",
-          "status": "EnMS + OT PoC Evidence Model",
-          "title": "從 CT 資料底座走向可稽核的能源與 OT 決策",
-          "description": "整合 CT、Gateway、祖譜與長期資料，建立 EnB、EnPI、M&V 與管理報告，再保留 OT Security 擴充路徑。",
+          "id": "semiconductor-ot-energy",
+          "evidenceStatus": "poc-evidence-model",
+          "claimIds": [
+            "C-003",
+            "C-004",
+            "C-005",
+            "C-009"
+          ],
+          "sector": "國際半導體製造場域（匿名）",
+          "status": "EnMS + OT PoC 證據模型",
+          "title": "以能源 CT 遙測，建立 AI 輔助的 OT 情境與改善證據",
+          "summary": "SenseL 整合 CT、Gateway、設備階層與資料品質脈絡，建立可追溯的 EnB、EnPI 與 M&V 工作流，再將能源偏差帶入 OT 資產與網路情境，由 AI 協助排序、工程人員確認。",
           "highlights": [
-            "連續資料",
-            "ISO 50001 閉環",
-            "On-Premise 路徑"
+            "CT / Gateway 資料血緣",
+            "EnMS + OT 脈絡",
+            "On-Premise · Observe-first"
+          ],
+          "challenge": "能源 CT 與 Gateway 資料可能停留在快照、試算表或分離系統，設備階層與感測器映射也不完整。能源與 OT 資安團隊因此缺少共同脈絡，而正式產線不能承受未經核准的主動測試或自動控制。",
+          "approach": [
+            "以被動接入與 On-Premise 路徑為優先",
+            "為 CT／MQTT／Gateway 資料建立版本、品質狀態、設備階層與血緣",
+            "形成 EnB、EnPI、M&V 與管理審查素材",
+            "AI 用於關聯與排序，不直接控制設備；OT 驗證採 observe-first"
+          ],
+          "outcomes": [
+            "建立 CT 與設備資料映射及品質報告",
+            "由一次性快照走向連續基線與異常檢視",
+            "形成可追溯的 M&V 與管理審查素材",
+            "保留 OT Security 與受控 Validation 擴充路徑"
           ]
         },
         {
-          "sector": "醫療 Web / API",
-          "status": "Security Assessment Service Blueprint",
-          "title": "AI 輔助、人工驗證與滾動回報的醫療測試方法",
-          "description": "將攻擊面盤點、自動化初篩、人工業務邏輯測試、高風險即時通報、教育訓練與複測整合為可治理服務。",
+          "id": "smb-supply-chain",
+          "evidenceStatus": "service-blueprint",
+          "claimIds": [],
+          "sector": "中小企業供應鏈資安",
+          "status": "快速導入服務藍圖 · 非客戶成效",
+          "title": "把供應鏈資安要求，轉成可執行、可提出證據的營運基線",
+          "summary": "SenseL 從關鍵資產、帳號、資料流與客戶要求開始，串接既有或預設的 EDR、NDR、WAF 與身分訊號，建立人工確認的事件節奏、優先改善清單與可交付證據包。",
           "highlights": [
-            "低干擾測試",
-            "人工邏輯驗證",
-            "Remediation + Re-test"
+            "範圍化快速導入",
+            "控制對證據映射",
+            "持續改善節奏"
+          ],
+          "challenge": "中小企業經常以精實 IT 團隊承接大型客戶或供應鏈資安要求，卻缺少自建 SOC 的人力與流程。問卷、控制要求、工具告警與改善證據彼此分離。",
+          "approach": [
+            "界定關鍵流程、對外連線、資產、帳號與必要控制證據",
+            "串接既有或預設 EDR／NDR／WAF／Identity 並建立資料健康基線",
+            "以 AI 輔助且人工確認的方式進行事件分級與改善排序",
+            "將供應鏈要求映射到實際控制、證據與重測節奏"
+          ],
+          "outcomes": [
+            "形成現況成熟度基線與資產控制地圖",
+            "建立優先改善清單及事件升級手冊",
+            "產出管理與客戶可使用的證據包",
+            "以分階段路線降低一次到位自建 SOC 的門檻"
           ]
         }
-      ]
+      ],
+      "cta": {
+        "label": "查看場域案例與方法",
+        "href": "/case-studies"
+      }
     },
     "foundersSection": {
       "eyebrow": "FOUNDERS & LEADERSHIP",
@@ -386,7 +519,7 @@
     "integrations": {
       "eyebrow": "INTEGRATE, DON'T REPLACE",
       "title": "保留既有投資，補上脈絡、證據與驗證層。",
-      "description": "SenseL 不要求客戶一次替換既有安全堆疊，而是透過標準化資料與工作流提高跨工具營運價值。",
+      "description": "SenseL 不要求客戶一次替換既有安全與 AI 堆疊，而是透過標準化資料、Trace 與工作流，提高跨工具營運價值。",
       "items": [
         "EDR",
         "NDR",
@@ -396,14 +529,17 @@
         "Identity",
         "OT Gateway",
         "CT / MQTT",
-        "CTI"
+        "CTI",
+        "Agent Trace",
+        "MCP / Tools",
+        "CI / CD"
       ],
       "statement": "Keep your stack. Add the intelligence, evidence and validation layer."
     },
     "trust": {
       "eyebrow": "TRUST BY DESIGN",
       "title": "高信任場域需要的不只是 AI，而是清楚的資料、權限與證據邊界。",
-      "description": "從資料隔離、最小權限、人工核准到稽核軌跡，讓 AI 輔助營運仍然可治理、可追溯。",
+      "description": "從資料隔離、最小權限、人工核准到稽核軌跡，讓 AI 輔助營運與 Agent 工具動作仍然可治理、可追溯。",
       "items": [
         {
           "title": "Deployment Choice",
@@ -476,23 +612,31 @@
     },
     "finalCta": {
       "eyebrow": "DEFINE A MEASURABLE FIRST PHASE",
-      "title": "不要從更大的平台開始。從一個能被證明的問題開始。",
-      "description": "用 30 分鐘確認場域、現有訊號、技術邊界與驗收方式，再定義一個可交付、可量測、可重測的 Pilot。",
+      "title": "不要從全面阻擋開始。先從一個能被重播、修正與重測的風險開始。",
+      "description": "先確認 Agent 或場域範圍、現有訊號、權限與驗收方式，再定義可交付、可量測、可重測的付費評估或 Pilot。",
       "primaryCta": {
-        "label": "預約 30 分鐘技術適配",
+        "label": "預約安全範圍評估",
         "href": "/contact"
       },
       "secondaryCta": {
-        "label": "查看技術證據",
-        "href": "/technology"
+        "label": "查看 Agent Assurance",
+        "href": "/agent-assurance"
       }
     },
     "footer": {
-      "tagline": "AI-native 防禦的證據與驗證層。",
+      "tagline": "企業安全營運與 AI Agent 行動的證據與驗證層。",
       "links": [
+        {
+          "label": "Agent Assurance",
+          "href": "/agent-assurance"
+        },
         {
           "label": "平台",
           "href": "/platform"
+        },
+        {
+          "label": "場域案例",
+          "href": "/case-studies"
         },
         {
           "label": "核心技術",
@@ -514,8 +658,8 @@
     },
     "platformPage": {
       "eyebrow": "SENSEL PLATFORM",
-      "title": "AI-native 防禦的證據與驗證層。",
-      "summary": "SenseL 位在企業既有控制之上，把 IT、OT 與 Edge 訊號整理成可追溯 Episode，再以受治理推論、控制驗證與重測形成可持續改善的閉環。",
+      "title": "從 IT、OT 到 AI Agent 的共同證據與驗證層。",
+      "summary": "SenseL 位在企業既有控制與 AI 應用之上，把 IT、OT、Edge 訊號及 Agent／Tool／MCP 軌跡整理成可追溯 Episode，再以受治理推論、控制驗證與重測形成持續改善閉環。",
       "principlesTitle": "平台設計原則",
       "principles": [
         {
@@ -536,11 +680,11 @@
         }
       ],
       "capabilitiesTitle": "讓每一個安全判斷，都帶著證據進入下一步",
-      "capabilitiesDescription": "SenseL 連接 Edge 與既有控制，保留 Episode 的來源與缺漏，讓 AI 推論、人工核准與安全重測共用同一條證據鏈。",
+      "capabilitiesDescription": "SenseL 連接 Edge、既有控制與 Agent action trace，保留 Episode 的來源、版本與缺漏，讓 AI 推論、人工核准與安全重測共用同一條證據鏈。",
       "capabilities": [
         {
           "title": "Edge-to-Control-Plane Visibility",
-          "description": "從端點、網路、WAF 到 OT Edge 收集事件與健康訊號，保留現場邊界與資料最小化。"
+          "description": "從端點、網路、WAF、OT Edge 到 Agent／Tool／MCP 收集事件、軌跡與健康訊號，保留現場邊界與資料最小化。"
         },
         {
           "title": "Evidence-Bound Episodes",
@@ -562,19 +706,114 @@
         "href": "/contact"
       }
     },
+    "agentAssurancePage": {
+      "eyebrow": "SENSEL AGENT ASSURANCE",
+      "title": "保護真正會發生的動作，而不只檢查提示詞。",
+      "summary": "SenseL Agent Assurance 將 Agent、Tool、MCP、Identity、Permission 與 execution trace 納入既有 Validation Plane：先以可重播證據找出風險，再把修補轉成每次版本都能執行的 regression gate。",
+      "problemTitle": "當 Agent 能改變系統狀態，文字分類已不足以證明安全。",
+      "problemDescription": "真正的 ground truth 是危險工具是否被提出、放行與執行，以及修補後在相同版本邊界下能否重現驗證。",
+      "problems": [
+        {
+          "title": "Action 早於最終回答",
+          "description": "資料外洩、寄信、付款、刪除或程式執行，可能在最終文字出現前就已被提出。",
+          "icon": "signal"
+        },
+        {
+          "title": "每次更新都可能漂移",
+          "description": "模型、Prompt、RAG、Tool Schema、MCP Server 或權限變更，都可能使舊結論失效。",
+          "icon": "layers"
+        },
+        {
+          "title": "分類不等於實際阻擋",
+          "description": "Guard 判為 unsafe，不代表危險 action 沒有 fail-open；必須檢查實際 outcome。",
+          "icon": "validation"
+        },
+        {
+          "title": "敏感 Trace 不能任意外傳",
+          "description": "軌跡可能包含個資、Credential、原始碼與企業流程，需要最小留存與受控部署。",
+          "icon": "shield"
+        }
+      ],
+      "journeyTitle": "用服務取得真實證據，再把證據沉澱成 recurring product。",
+      "journeyDescription": "Assess 是固定範圍的商業入口；Replay／Validate 是第一個核心年約產品；Gate 只有在誤報、延遲與受控 Pilot 達標後才逐步 enforce；Lens 維持 open-weight 研究選項。",
+      "architectureTitle": "從受控測試到執行前政策決策",
+      "architectureDescription": "每個步驟都綁定模型、Prompt、Tool、Policy 與權限版本；不把缺失證據補成事實，也不提供無邊界安全保證。",
+      "architectureSteps": [
+        {
+          "number": "01",
+          "title": "Scope",
+          "description": "界定 Agent、工具、資料、權限與授權測試邊界"
+        },
+        {
+          "number": "02",
+          "title": "Ingest",
+          "description": "正規化 Tool、MCP、Identity 與 execution trace"
+        },
+        {
+          "number": "03",
+          "title": "Replay",
+          "description": "在 Sandbox 以 mock action 與 synthetic secret 重播"
+        },
+        {
+          "number": "04",
+          "title": "Decide",
+          "description": "比較 Schema、Allowlist、DLP 與軌跡風險"
+        },
+        {
+          "number": "05",
+          "title": "Approve",
+          "description": "高風險 action 保留政策與人工核准"
+        },
+        {
+          "number": "06",
+          "title": "Retest",
+          "description": "把發現固化成版本化 regression pack"
+        }
+      ],
+      "audienceTitle": "適合開始對話的團隊",
+      "audiences": [
+        "預計在 3–9 個月內上線、會讀寫資料或改變狀態的企業 Agent",
+        "需要 On-Premise、資料留置、稽核或人工核准的受監管組織",
+        "共同負責上線決策的 CISO、AppSec、AI Platform 與 AI Governance 團隊",
+        "願意提供受控 Sandbox、Mock Tools 與 conversion decision 的 Design Partner"
+      ],
+      "boundaryTitle": "公開承諾與產品邊界",
+      "boundaries": [
+        "Assess 僅在客戶授權、Sandbox 或指定測試環境執行",
+        "Replay／Validate 承諾結果可重跑、可追溯、可比較，不宣稱阻擋所有攻擊",
+        "Gate 採 observe-first；Enforce 能力依已核准 Pilot、版本與 Policy 範圍而定",
+        "Lens 僅適用可取得 weights／activations 的 open-weight 模型，目前為研究選項"
+      ],
+      "cta": {
+        "label": "預約 Agent Security Scope Assessment",
+        "href": "/contact"
+      }
+    },
+    "caseStudiesPage": {
+      "eyebrow": "FIELD EVIDENCE & DELIVERY PATTERNS",
+      "title": "三個場域，三種導入路徑，一個可驗證的 SenseL 方法。",
+      "summary": "從醫療 EDR、半導體能源 CT 與 OT，到中小企業供應鏈資安，SenseL 以既有工具為起點，建立脈絡、人工核准與可重測證據；每個案例均依目前可公開的證據狀態標示。",
+      "challengeLabel": "場域挑戰",
+      "approachLabel": "SenseL 導入方法",
+      "outcomesLabel": "可驗證交付",
+      "cta": {
+        "label": "討論相似場域",
+        "href": "/contact"
+      }
+    },
     "technologyPage": {
       "eyebrow": "TECHNOLOGY & RESEARCH",
-      "title": "不是再包一層 AI，而是一套從 Edge 到驗證證據的系統。",
-      "summary": "SenseL 路線圖結合邊緣感測、版本化證據、受約束的 AI 推論、可重現評測與受控驗證；每一項能力都清楚標示成熟度與目前邊界。",
+      "title": "不是再包一層 AI，而是一套從 Agent 與 Edge 到驗證證據的系統。",
+      "summary": "SenseL 路線圖結合 Agent action trace、邊緣感測、版本化證據、受約束的 AI 推論、可重現評測與受控驗證；每一項能力都清楚標示成熟度與目前邊界。",
       "thesisTitle": "安全 AI 的價值，不在答案說得多快，而在答案能否被查證。",
       "thesisDescription": "模型會變、資料會缺、場域會失聯。SenseL 的技術策略是先保住來源、版本、缺漏與權限，再讓 AI 在可追溯邊界內加速調查，最後用安全情境與重測證明改善是否有效。",
-      "architectureTitle": "從現場訊號到可驗證成果",
+      "architectureTitle": "從 Agent Action 與現場訊號到可驗證成果",
       "architectureDescription": "每一層都保留明確 owner、版本與失效狀態；AI 不能替 detector 造數字，也不能把缺少的證據補成事實。",
       "architectureSteps": [
         {
           "number": "01",
           "title": "Observe",
-          "description": "Edge、EDR、NDR、OT 與 CTI 訊號"
+          "description": "Agent、Tool、MCP、Edge、EDR、OT 與 CTI 訊號"
         },
         {
           "number": "02",
@@ -821,9 +1060,13 @@
     },
     "contactPage": {
       "eyebrow": "BOOK A WORKSHOP",
-      "title": "先定義真實營運問題，再決定技術與範圍。",
-      "summary": "告訴我們您關注的場域與營運挑戰，我們將協助釐清資料、驗證目標與可行的導入範圍。",
+      "title": "先定義真實風險與可重播範圍，再決定產品與導入方式。",
+      "summary": "告訴我們您的 Agent、工具或營運場域；我們將協助釐清資料、權限、測試邊界、驗收證據與可行的第一階段。",
       "workshops": [
+        {
+          "title": "Agent Security Scope Assessment",
+          "description": "盤點 Agent、Tool、MCP、Identity、Permission、敏感資料與 production decision，定義固定範圍的付費評估。"
+        },
         {
           "title": "SMB Security Operations Readiness",
           "description": "盤點現有工具、告警、人力、月報與代管服務需求。"
@@ -835,10 +1078,6 @@
         {
           "title": "Healthcare Resilience Program",
           "description": "盤點 EDR / NDR / WAF / Identity / IoMT、威脅情境、Lab 邊界與重測目標。"
-        },
-        {
-          "title": "Partner & Investor Briefing",
-          "description": "討論通路、共同方案、產品策略、案例證據與合作模式。"
         }
       ],
       "privacyNote": "請勿透過公開聯絡管道提供病患資料、正式環境帳密、網路拓樸、未公開漏洞、事件證據或其他敏感資訊。",
@@ -851,32 +1090,32 @@
   },
   "en": {
     "meta": {
-      "title": "SenseL | Verifiable Security Operations | Avocado.ai",
-      "description": "Turn IT, OT, and edge security signals into traceable episodes, validation evidence, and repeatable improvement."
+      "title": "SenseL | Security Validation for AI Agents, IT & OT | Avocado.ai",
+      "description": "From enterprise signals to AI-agent tool actions, SenseL makes high-risk decisions verifiable, governable, and auditable through replayable evidence and human approval."
     },
     "navigation": {
       "menuLabel": "Open menu",
       "localeLabel": "Language",
       "items": [
         {
-          "label": "Platform",
-          "href": "/platform"
+          "label": "Agent Assurance",
+          "href": "/agent-assurance"
         },
         {
-          "label": "Technology",
-          "href": "/technology"
+          "label": "SenseL Platform",
+          "href": "/platform"
         },
         {
           "label": "Solutions",
           "href": "#solutions"
         },
         {
-          "label": "Resources",
-          "href": "/resources"
+          "label": "Field Cases",
+          "href": "/case-studies"
         },
         {
-          "label": "Trust Center",
-          "href": "/trust"
+          "label": "Resources",
+          "href": "/resources"
         },
         {
           "label": "Company",
@@ -888,82 +1127,90 @@
         "href": "/contact"
       },
       "primaryCta": {
-        "label": "Book a 30-Minute Technical Fit",
+        "label": "Book a Security Scope Review",
         "href": "/contact"
       }
     },
     "hero": {
-      "eyebrow": "VERIFIABLE SECURITY OPERATIONS",
-      "title": "Don't just detect risk. Prove your defenses work.",
-      "description": "SenseL turns signals from your existing IT, OT, and edge stack into evidence-backed security episodes, then helps teams validate controls and retest improvements—with human approval for high-risk actions.",
+      "eyebrow": "ACTION-LEVEL SECURITY · EVIDENCE BEFORE ENFORCEMENT",
+      "title": "Make every AI and critical-system action verifiable before execution.",
+      "description": "SenseL turns Agent, Tool, MCP, and existing IT/OT security signals into replayable evidence—so teams can compare versions, validate controls, and retain policy and human approval for high-risk actions.",
       "primaryCta": {
-        "label": "See the SenseL Evidence Loop",
-        "href": "/platform"
+        "label": "Explore SenseL Agent Assurance",
+        "href": "/agent-assurance"
       },
       "secondaryCta": {
-        "label": "Discuss a Scoped Pilot",
-        "href": "/contact"
+        "label": "Review Field Cases",
+        "href": "/case-studies"
       },
-      "visualInputLabel": "Security & Operations Signals",
+      "visualInputLabel": "Enterprise & Agent Signals",
+      "visualInputs": [
+        "EDR",
+        "OT",
+        "CTI",
+        "Agent",
+        "MCP",
+        "Tools"
+      ],
       "visualCoreLabel": "SenseL",
-      "visualCoreCaption": "Context · AI Reasoning · Validation",
+      "visualCoreCaption": "Evidence · Replay · Policy",
       "visualOutputs": [
-        "Episode",
         "Evidence",
-        "Improvement"
+        "Replay",
+        "Decision"
       ]
     },
     "proof": {
-      "label": "ONE CONTROL PLANE · EVIDENCE FROM EDGE TO OUTCOME",
+      "label": "ONE SENSEL PLATFORM · SECURITY OPERATIONS + AGENT ASSURANCE",
       "items": [
-        "Edge-to-Control-Plane",
-        "Evidence-Bound Episodes",
-        "Human-Governed AI",
-        "Reproducible Validation",
-        "Controlled Deployment Paths"
+        "Action-Level Evidence",
+        "Replayable Validation",
+        "Human Approval",
+        "On-Premise Path",
+        "IT · OT · AI Agents"
       ]
     },
     "problem": {
-      "eyebrow": "THE TRUST GAP",
-      "title": "The next security bottleneck is not detection. It is trust.",
-      "description": "AI makes analysis faster—and black-box conclusions easier to produce. Security teams need more than an answer: they need provenance, approval context, and repeatable retest evidence.",
+      "eyebrow": "THE ACTION GAP",
+      "title": "Risk is not only what the model says. It is what the system actually does.",
+      "description": "When AI agents can send mail, query data, change systems, or call MCP tools, security must extend beyond text filtering to multi-step trajectories, authority, actual action outcome, and versioned retest.",
       "items": [
         {
-          "title": "Alert overload",
-          "description": "EDR, NDR, WAF, and firewalls generate events continuously, but the risks that truly deserve attention remain hard to identify.",
+          "title": "Dangerous actions precede answers",
+          "description": "An agent may propose exfiltration, messaging, deletion, payment, or execution before producing a normal-looking final response.",
           "icon": "signal"
         },
         {
-          "title": "Data silos",
-          "description": "Endpoint, network, web, identity, OT, and CTI data lack a shared asset and business context.",
+          "title": "Version drift breaks conclusions",
+          "description": "A model, prompt, tool schema, MCP server, or permission update can invalidate a one-time security result.",
           "icon": "layers"
         },
         {
-          "title": "Controls remain unproven",
-          "description": "Deployed controls often lack continuous exercises, regression tests, and before-and-after comparison.",
-          "icon": "validation"
+          "title": "Trace and operating evidence is fragmented",
+          "description": "AI, AppSec, SOC, and audit teams lack a shared action trace, decision rationale, and retest record.",
+          "icon": "evidence"
         },
         {
-          "title": "Evidence is hard to trace",
-          "description": "AI reasoning, incident actions, improvement results, and audit material still require manual assembly.",
-          "icon": "evidence"
+          "title": "Immediate blocking can harm operations",
+          "description": "Untested enforcement can interrupt legitimate workflows, making observe-first calibration and human approval essential.",
+          "icon": "approval"
         }
       ]
     },
     "platform": {
       "eyebrow": "SENSEL CLOSED LOOP",
-      "title": "From signal to evidence to validated outcome—one governed operating loop.",
-      "description": "SenseL brings edge telemetry, episode evidence, AI reasoning, safe validation, and improvement tracking into one control plane.",
+      "title": "One SenseL loop for security operations and agent-action validation.",
+      "description": "SenseL brings IT, OT, edge, and Agent/MCP trajectories together with episode evidence, AI reasoning, safe validation, and improvement tracking in one control and validation plane.",
       "steps": [
         {
           "number": "01",
           "title": "Collect",
-          "description": "EDR, NDR, WAF, OT, CTI, and energy telemetry"
+          "description": "EDR, OT, CTI, Agent, Tool, MCP, and energy telemetry"
         },
         {
           "number": "02",
           "title": "Contextualize",
-          "description": "Assets, identities, networks, vulnerabilities, and business context"
+          "description": "Assets, identities, permissions, networks, data flows, and business context"
         },
         {
           "number": "03",
@@ -973,12 +1220,12 @@
         {
           "number": "04",
           "title": "Validate",
-          "description": "Scenarios, BAS, purple team, and regression testing"
+          "description": "Scenarios, replay, purple team, and version regression testing"
         },
         {
           "number": "05",
           "title": "Preserve",
-          "description": "Episode evidence, human confirmation, and audit history"
+          "description": "Episodes, policy decisions, human confirmation, and audit history"
         },
         {
           "number": "06",
@@ -986,16 +1233,79 @@
           "description": "Remediation, work items, re-test, and baseline updates"
         }
       ],
-      "highlight": "Most products stop at detection and alerts. SenseL turns alerts into episodes, then uses validation to prove whether defenses and improvements actually work.",
+      "highlight": "Most tools stop at detection, alerts, or prompt classification. SenseL turns signals and agent actions into replayable episodes, then validates whether controls and improvements work within a defined version and scope.",
       "cta": {
         "label": "Explore the SenseL Platform",
         "href": "/platform"
       }
     },
+    "agentAssurance": {
+      "eyebrow": "SENSEL AGENT ASSURANCE",
+      "title": "Move from a paid assessment to a security release gate that reruns on every version.",
+      "description": "Agent Assurance reuses SenseL evidence, validation, on-premise, and human-approval capabilities: Assess finds action-level risk, Validate productizes the evidence, and Gate moves toward pre-action policy through an observe-first path.",
+      "modules": [
+        {
+          "id": "assess",
+          "category": "PAID SECURITY ASSESSMENT",
+          "maturity": "available-service",
+          "status": "Available · Scoped",
+          "title": "SenseL Agent Assess",
+          "description": "Authorized attack-surface review, testing, remediation guidance, and retest across agents, tools, MCP, permissions, data flows, and guardrails.",
+          "deliverables": [
+            "Threat model",
+            "Replayable trace",
+            "Remediation + retest"
+          ]
+        },
+        {
+          "id": "validate",
+          "category": "CORE RECURRING PRODUCT",
+          "maturity": "design-partner",
+          "status": "Design Partner",
+          "title": "SenseL Agent Replay / Validate",
+          "description": "Turn validated failures into customer-specific regression packs that compare model, prompt, tool-schema, policy, and permission versions.",
+          "deliverables": [
+            "Version comparison",
+            "Regression pack",
+            "CI release gate"
+          ]
+        },
+        {
+          "id": "gate",
+          "category": "PRE-ACTION POLICY",
+          "maturity": "closed-beta-roadmap",
+          "status": "Roadmap · Observe-first",
+          "title": "SenseL Agent Gate",
+          "description": "Combine schema, allowlists, identity and permissions, DLP, and trajectory risk before tool execution—observe and calibrate before scoped enforcement.",
+          "deliverables": [
+            "Schema + allowlist",
+            "Identity + DLP",
+            "Human approval"
+          ]
+        },
+        {
+          "id": "lens",
+          "category": "OPEN-WEIGHT RESEARCH",
+          "maturity": "research-option",
+          "status": "Research Option",
+          "title": "SenseL Agent Lens",
+          "description": "Explore pre-action internal signals for self-hosted models where weights and activations are accessible; not a prerequisite for closed APIs or the core SLA.",
+          "deliverables": [
+            "Pre-action signal",
+            "Per-checkpoint calibration",
+            "Matched-baseline gate"
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Explore Agent Assurance",
+        "href": "/agent-assurance"
+      }
+    },
     "technology": {
       "eyebrow": "BUILT DIFFERENT",
       "title": "Our moat is not a bigger model. It is a more trustworthy evidence system.",
-      "description": "From OT edge sensing and versioned evidence-contract research to reproducible security evaluation and local healthcare AI, SenseL builds trust into the architecture—not the slide deck.",
+      "description": "From agent action traces and versioned evidence-contract research to reproducible evaluation, OT edge sensing, and local healthcare AI, SenseL builds trust into the architecture—not the slide deck.",
       "featuredIds": [
         "relayguard",
         "trustepisode",
@@ -1010,51 +1320,52 @@
     "solutionsSection": {
       "eyebrow": "WHERE WE START",
       "title": "Start where proof matters most.",
-      "description": "Lean security teams, critical OT and fabs, and healthcare environments start from different constraints—but all need consistent context, evidence, and safe validation."
+      "description": "SMB supply chains, critical OT and fabs, and healthcare environments start from different constraints—but all need consistent context, evidence, and safe validation."
     },
     "solutions": [
       {
         "slug": "managed-security",
-        "kicker": "LEAN SECURITY TEAMS",
-        "title": "Build a durable security rhythm with the tools you already have.",
-        "homeSummary": "Turn endpoint, network, and web signals into reviewable episodes, with AI assistance, human confirmation, remediation tracking, and retest.",
-        "pageSummary": "SenseL Managed Security combines the platform, default or existing EDR/NDR, cross-source analysis, and managed operations into an affordable recurring service.",
+        "kicker": "SMB SUPPLY-CHAIN SECURITY",
+        "title": "Build an operational, evidence-ready supply-chain security baseline—fast.",
+        "homeSummary": "Start with critical assets, accounts, and customer requirements; connect existing or default security signals; and create human-reviewed incident rhythm, remediation backlog, and evidence packages.",
+        "pageSummary": "SenseL Managed Security combines the platform, existing or default EDR/NDR, cross-source analysis, and service workflows into a phased supply-chain security operating model for SMBs.",
         "audiences": [
           "SMB executives",
           "IT and security leaders",
           "Lean internal IT teams",
-          "SI, MSP, and ERP ecosystem partners"
+          "Companies facing customer or supply-chain reviews"
         ],
         "challenges": [
           "No dedicated security staff",
           "Fragmented alerts without investigation",
-          "Limited management visibility",
-          "No continuous improvement or audit evidence"
+          "Customer questionnaires, control requirements, and evidence remain disconnected",
+          "No continuous improvement or deliverable governance evidence"
         ],
         "capabilities": [
           "AI SOC / AI XDR",
           "Default or existing EDR / NDR integration",
           "WAF and firewall event integration",
           "Episode Evidence",
+          "Supply-chain control-to-evidence mapping",
           "Monthly and quarterly risk reporting",
           "Incident notification and improvement tracking",
-          "Optional Validation Service"
+          "Optional validation and retest service"
         ],
         "outcomes": [
-          "Identify the incidents that truly need attention sooner",
-          "Turn existing tools into readable operating outcomes",
-          "Establish a recurring reporting and improvement cadence",
-          "Reduce the barrier to a managed security function"
+          "Create a shared baseline for assets, controls, and evidence",
+          "Turn existing tools into readable, deliverable operating outcomes",
+          "Use prioritized remediation to support customer questionnaires and supply-chain requirements",
+          "Reduce the barrier to a managed security function through phased delivery"
         ],
         "process": [
-          "Current-state and tooling assessment",
-          "Data onboarding and baseline",
+          "Supply-chain requirements, asset, and tooling assessment",
+          "Data onboarding and health baseline",
           "Managed analysis and incident triage",
-          "Reporting and improvement tracking",
+          "Evidence package and improvement tracking",
           "Quarterly validation and expansion"
         ],
         "cta": {
-          "label": "Assess SMB Security Operations Readiness",
+          "label": "Plan Rapid SMB Supply-Chain Security Onboarding",
           "href": "/contact"
         }
       },
@@ -1151,45 +1462,106 @@
         }
       }
     ],
-    "fieldProof": {
-      "eyebrow": "EVIDENCE & VALIDATION",
-      "title": "See how SenseL approaches real operating environments through patterns and validation methods.",
-      "description": "These anonymous operating patterns, PoC evidence models, and service blueprints show how context, evidence, and validation can become a repeatable improvement method.",
+    "caseStudies": {
+      "eyebrow": "FIELD EVIDENCE & DELIVERY PATTERNS",
+      "title": "Turn operating constraints into deliverable, retestable security methods.",
+      "description": "Each example is labeled according to the evidence currently cleared for publication—as an anonymous delivery pattern, PoC evidence model, or service blueprint—without using unapproved customer identity, deployment scale, or quantified results.",
       "items": [
         {
-          "sector": "Large healthcare environment — anonymous",
-          "status": "Security Operations + Validation Pattern",
-          "title": "From endpoint visibility to healthcare operations and isolated validation",
-          "description": "Build a shared operating view from existing endpoint and event data, then extend toward passive IoMT/OT visibility, controlled scenarios, evidence packages, and re-test.",
+          "id": "regional-hospital-edr",
+          "evidenceStatus": "delivery-pattern",
+          "claimIds": [
+            "C-006",
+            "C-007",
+            "C-008"
+          ],
+          "sector": "Regional mid-sized hospital — anonymous",
+          "status": "Delivery pattern · endpoint scope pending approval",
+          "title": "Turn fragmented EDR alerts into traceable operations without disrupting clinical care",
+          "summary": "SenseL starts with the hospital's existing EDR, connects asset, identity, network, and web context, and turns fragmented signals into human-reviewed Episodes, remediation records, and isolated retest evidence.",
           "highlights": [
-            "Low-disruption operations",
-            "Cross-source episodes",
-            "Isolated validation lab"
+            "Existing EDR integration",
+            "Human-reviewed Episodes",
+            "Isolated retest"
+          ],
+          "challenge": "A mid-sized hospital must preserve clinical continuity while a lean IT and security team reviews alerts across a large endpoint environment. Existing signals lack shared asset and identity context, while remediation, escalation, and retest evidence remains fragmented across tools.",
+          "approach": [
+            "Connect the existing EDR before any replacement decision",
+            "Normalize events into versioned Episodes with asset, identity, and approval context",
+            "Use AI for summarization and prioritization while analysts retain judgment and approval",
+            "Keep validation and retest inside isolated or hospital-approved low-disruption environments"
+          ],
+          "outcomes": [
+            "Establish EDR onboarding and ingestion-health baselines",
+            "Create cross-source Episode and escalation workflows",
+            "Preserve remediation tracking and retest evidence packages",
+            "Use a consistent format for management and governance evidence"
           ]
         },
         {
-          "sector": "Semiconductor Fab — anonymous",
-          "status": "EnMS + OT PoC Evidence Model",
-          "title": "From CT data foundation to auditable energy and OT decisions",
-          "description": "Bring CT, gateways, equipment hierarchy, and long-running data together for EnB, EnPI, M&V, and management reporting while preserving an OT security path.",
+          "id": "semiconductor-ot-energy",
+          "evidenceStatus": "poc-evidence-model",
+          "claimIds": [
+            "C-003",
+            "C-004",
+            "C-005",
+            "C-009"
+          ],
+          "sector": "International semiconductor manufacturer — anonymous",
+          "status": "EnMS + OT PoC evidence model",
+          "title": "Use energy CT telemetry to build AI-assisted OT context and improvement evidence",
+          "summary": "SenseL connects current-transformer telemetry, gateways, equipment hierarchy, and data-quality context to create traceable EnB, EnPI, and M&V workflows. Energy deviations can then be reviewed alongside OT asset and network context, with AI-assisted prioritization and engineering confirmation.",
           "highlights": [
-            "Continuous data",
-            "ISO 50001 loop",
-            "On-premise path"
+            "CT / gateway lineage",
+            "EnMS + OT context",
+            "On-premise · observe-first"
+          ],
+          "challenge": "Energy CT and gateway data may remain trapped in snapshots, spreadsheets, or disconnected systems, while equipment hierarchy and sensor mapping are incomplete. Energy and OT security teams lack shared context, and production cannot accept unapproved active testing or autonomous control.",
+          "approach": [
+            "Prioritize passive ingestion and an on-premise path",
+            "Add version, quality state, equipment hierarchy, and lineage to CT, MQTT, and gateway data",
+            "Create EnB, EnPI, M&V, and management-review material",
+            "Use AI for correlation and prioritization, not equipment control; expand OT validation observe-first"
+          ],
+          "outcomes": [
+            "Establish CT and equipment mapping with a data-quality report",
+            "Move from one-off snapshots to continuous baseline and anomaly review",
+            "Create traceable M&V and management-review material",
+            "Preserve an OT security and controlled-validation expansion path"
           ]
         },
         {
-          "sector": "Healthcare Web / API",
-          "status": "Security Assessment Service Blueprint",
-          "title": "AI-assisted, human-verified healthcare testing with rolling communication",
-          "description": "Combine attack-surface mapping, automated triage, manual business-logic testing, immediate high-risk communication, training, and re-test in a governed service.",
+          "id": "smb-supply-chain",
+          "evidenceStatus": "service-blueprint",
+          "claimIds": [],
+          "sector": "SMB supply-chain security",
+          "status": "Rapid-onboarding service blueprint · not a deployment claim",
+          "title": "Turn supply-chain security requirements into an actionable, evidence-ready operating baseline",
+          "summary": "SenseL starts with critical assets, accounts, data flows, and customer requirements, then connects existing or default EDR, NDR, WAF, and identity signals to create a human-reviewed incident rhythm, prioritized remediation backlog, and deliverable evidence package.",
           "highlights": [
-            "Low-disruption testing",
-            "Manual logic validation",
-            "Remediation + re-test"
+            "Scoped rapid onboarding",
+            "Control-to-evidence mapping",
+            "Continuous improvement cadence"
+          ],
+          "challenge": "SMBs often face enterprise customer and supply-chain security requirements with a lean IT team and without the people or process to build a SOC. Questionnaires, control requirements, tool alerts, and remediation evidence remain disconnected.",
+          "approach": [
+            "Scope critical processes, external connections, assets, accounts, and required evidence",
+            "Connect existing or default EDR, NDR, WAF, and identity signals with an ingestion-health baseline",
+            "Use AI-assisted, human-reviewed triage and remediation prioritization",
+            "Map supply-chain requirements to operating controls, evidence, and a retest cadence"
+          ],
+          "outcomes": [
+            "Create a current-state maturity baseline and asset-control map",
+            "Establish a prioritized remediation backlog and escalation playbook",
+            "Produce management and customer-facing evidence packages",
+            "Reduce the barrier to a managed security function through phased delivery"
           ]
         }
-      ]
+      ],
+      "cta": {
+        "label": "Review Field Cases & Methods",
+        "href": "/case-studies"
+      }
     },
     "foundersSection": {
       "eyebrow": "FOUNDERS & LEADERSHIP",
@@ -1236,7 +1608,7 @@
     "integrations": {
       "eyebrow": "INTEGRATE, DON'T REPLACE",
       "title": "Keep existing investments. Add context, evidence, and validation.",
-      "description": "SenseL does not require a complete replacement of the security stack. Standardized data and workflows increase cross-tool operating value.",
+      "description": "SenseL does not require a complete replacement of the security or AI stack. Standardized data, traces, and workflows increase cross-tool operating value.",
       "items": [
         "EDR",
         "NDR",
@@ -1246,14 +1618,17 @@
         "Identity",
         "OT Gateway",
         "CT / MQTT",
-        "CTI"
+        "CTI",
+        "Agent Trace",
+        "MCP / Tools",
+        "CI / CD"
       ],
       "statement": "Keep your stack. Add the intelligence, evidence and validation layer."
     },
     "trust": {
       "eyebrow": "TRUST BY DESIGN",
       "title": "High-trust environments need clear data, authority, and evidence boundaries—not AI alone.",
-      "description": "Data isolation, least privilege, human approval, and audit trails keep AI-assisted operations governable and traceable.",
+      "description": "Data isolation, least privilege, human approval, and audit trails keep AI-assisted operations and agent tool actions governable and traceable.",
       "items": [
         {
           "title": "Deployment Choice",
@@ -1326,23 +1701,31 @@
     },
     "finalCta": {
       "eyebrow": "DEFINE A MEASURABLE FIRST PHASE",
-      "title": "Do not start with a bigger platform. Start with one problem you can prove.",
-      "description": "Use 30 minutes to align on environment, existing signals, technical boundaries, and acceptance—then define a scoped pilot that is deliverable, measurable, and retestable.",
+      "title": "Do not begin with blanket enforcement. Start with one risk you can replay, remediate, and retest.",
+      "description": "Align on the agent or operating scope, existing signals, authority, and acceptance evidence—then define a deliverable, measurable assessment or pilot.",
       "primaryCta": {
-        "label": "Book a 30-Minute Technical Fit",
+        "label": "Book a Security Scope Review",
         "href": "/contact"
       },
       "secondaryCta": {
-        "label": "Review the Technical Evidence",
-        "href": "/technology"
+        "label": "Review Agent Assurance",
+        "href": "/agent-assurance"
       }
     },
     "footer": {
-      "tagline": "The evidence and validation layer for AI-native defense.",
+      "tagline": "The evidence and validation layer for enterprise security operations and AI-agent actions.",
       "links": [
+        {
+          "label": "Agent Assurance",
+          "href": "/agent-assurance"
+        },
         {
           "label": "Platform",
           "href": "/platform"
+        },
+        {
+          "label": "Field Cases",
+          "href": "/case-studies"
         },
         {
           "label": "Technology",
@@ -1364,8 +1747,8 @@
     },
     "platformPage": {
       "eyebrow": "SENSEL PLATFORM",
-      "title": "The evidence and validation layer for AI-native defense.",
-      "summary": "SenseL sits above existing controls, turning IT, OT, and edge signals into traceable episodes, then connecting governed reasoning, control validation, and retesting into a continuous improvement loop.",
+      "title": "A shared evidence and validation layer from IT and OT to AI agents.",
+      "summary": "SenseL sits above existing controls and AI applications, turning IT, OT, edge signals, and Agent/Tool/MCP trajectories into traceable episodes, then connecting governed reasoning, validation, and retesting into a continuous improvement loop.",
       "principlesTitle": "Platform principles",
       "principles": [
         {
@@ -1386,11 +1769,11 @@
         }
       ],
       "capabilitiesTitle": "Move every security decision forward with evidence attached",
-      "capabilitiesDescription": "SenseL connects edge and existing controls, preserves episode provenance and gaps, and gives AI reasoning, human approval, and safe retesting one shared evidence chain.",
+      "capabilitiesDescription": "SenseL connects edge, existing controls, and agent action traces, preserves episode provenance, versions, and gaps, and gives AI reasoning, human approval, and safe retesting one shared evidence chain.",
       "capabilities": [
         {
           "title": "Edge-to-Control-Plane Visibility",
-          "description": "Collect events and health signals from endpoints, networks, WAF, and the OT edge while preserving site boundaries and data minimization."
+          "description": "Collect events, trajectories, and health signals from endpoints, networks, WAF, OT edge, Agent, Tool, and MCP while preserving site boundaries and data minimization."
         },
         {
           "title": "Evidence-Bound Episodes",
@@ -1412,19 +1795,114 @@
         "href": "/contact"
       }
     },
+    "agentAssurancePage": {
+      "eyebrow": "SENSEL AGENT ASSURANCE",
+      "title": "Secure the action, not just the prompt.",
+      "summary": "SenseL Agent Assurance extends the existing Validation Plane to Agent, Tool, MCP, Identity, Permission, and execution traces: first prove risk with replayable evidence, then turn remediation into a regression gate that runs on every version.",
+      "problemTitle": "When agents can change system state, text classification cannot prove safety.",
+      "problemDescription": "The meaningful ground truth is whether a dangerous tool action was proposed, allowed, and executed—and whether the remediation survives a retest inside the same version boundary.",
+      "problems": [
+        {
+          "title": "Actions precede final answers",
+          "description": "Exfiltration, messaging, payment, deletion, or code execution can be proposed before final text appears.",
+          "icon": "signal"
+        },
+        {
+          "title": "Every update can create drift",
+          "description": "A change to model, prompt, RAG, tool schema, MCP server, or permission can invalidate an old result.",
+          "icon": "layers"
+        },
+        {
+          "title": "Classification is not enforcement",
+          "description": "A guard labeling content unsafe does not prove the dangerous action did not fail open; actual outcome matters.",
+          "icon": "validation"
+        },
+        {
+          "title": "Sensitive traces cannot move freely",
+          "description": "Trajectories can contain personal data, credentials, source code, and business workflows, requiring minimization and controlled deployment.",
+          "icon": "shield"
+        }
+      ],
+      "journeyTitle": "Use a service to acquire real evidence, then turn that evidence into a recurring product.",
+      "journeyDescription": "Assess is the scoped commercial entry. Replay/Validate is the first core annual product. Gate moves toward enforcement only after false-positive, latency, and controlled-pilot thresholds are met. Lens remains an open-weight research option.",
+      "architectureTitle": "From controlled assessment to pre-action policy",
+      "architectureDescription": "Every step binds model, prompt, tool, policy, and permission versions. Missing evidence remains missing, and no unbounded security guarantee is made.",
+      "architectureSteps": [
+        {
+          "number": "01",
+          "title": "Scope",
+          "description": "Define agent, tool, data, authority, and authorized test boundaries"
+        },
+        {
+          "number": "02",
+          "title": "Ingest",
+          "description": "Normalize Tool, MCP, Identity, and execution traces"
+        },
+        {
+          "number": "03",
+          "title": "Replay",
+          "description": "Use mock actions and synthetic secrets inside a sandbox"
+        },
+        {
+          "number": "04",
+          "title": "Decide",
+          "description": "Evaluate schema, allowlists, DLP, and trajectory risk"
+        },
+        {
+          "number": "05",
+          "title": "Approve",
+          "description": "Retain policy and human approval for high-risk actions"
+        },
+        {
+          "number": "06",
+          "title": "Retest",
+          "description": "Freeze validated findings into versioned regression packs"
+        }
+      ],
+      "audienceTitle": "Teams ready for a scoped discussion",
+      "audiences": [
+        "Organizations with tool-using agents approaching a production decision in the next 3–9 months",
+        "Regulated teams that require on-premise, data residency, audit evidence, or human approval",
+        "CISO, AppSec, AI Platform, and AI Governance owners jointly responsible for launch",
+        "Design partners able to provide a controlled sandbox, mock tools, and a conversion decision"
+      ],
+      "boundaryTitle": "Public commitments and product boundaries",
+      "boundaries": [
+        "Assess runs only in customer-authorized sandboxes or designated test environments",
+        "Replay/Validate promises repeatable, traceable, comparable results—not protection against every attack",
+        "Gate is observe-first; enforcement depends on an approved pilot, version, and policy scope",
+        "Lens applies only to open-weight models with accessible weights and activations and remains a research option"
+      ],
+      "cta": {
+        "label": "Book an Agent Security Scope Assessment",
+        "href": "/contact"
+      }
+    },
+    "caseStudiesPage": {
+      "eyebrow": "FIELD EVIDENCE & DELIVERY PATTERNS",
+      "title": "Three environments. Three delivery paths. One verifiable SenseL method.",
+      "summary": "Across healthcare EDR, semiconductor energy CT and OT, and SMB supply-chain security, SenseL starts with existing tools and builds context, human approval, and retestable evidence. Every example is labeled by its current publication evidence status.",
+      "challengeLabel": "Operating challenge",
+      "approachLabel": "SenseL delivery method",
+      "outcomesLabel": "Verifiable deliverables",
+      "cta": {
+        "label": "Discuss a Comparable Environment",
+        "href": "/contact"
+      }
+    },
     "technologyPage": {
       "eyebrow": "TECHNOLOGY & RESEARCH",
-      "title": "Built as an evidence system, not another AI wrapper.",
-      "summary": "The SenseL roadmap combines edge sensing, versioned evidence, constrained AI reasoning, reproducible evaluation, and controlled validation. Every capability carries an explicit maturity label and a clear current boundary.",
+      "title": "Built as an evidence system from agents and edge—not another AI wrapper.",
+      "summary": "The SenseL roadmap combines agent action traces, edge sensing, versioned evidence, constrained AI reasoning, reproducible evaluation, and controlled validation. Every capability carries an explicit maturity label and a clear current boundary.",
       "thesisTitle": "The value of security AI is not how fast it answers. It is whether the answer can be verified.",
       "thesisDescription": "Models change, data goes missing, and sites go offline. Our technical strategy is to preserve provenance, versions, gaps, and authority first; accelerate investigation inside those boundaries; then use safe scenarios and retesting to prove whether an improvement worked.",
-      "architectureTitle": "From field signal to verifiable outcome",
+      "architectureTitle": "From agent action and field signal to verifiable outcome",
       "architectureDescription": "Every layer retains a clear owner, version, and failure state. AI cannot manufacture detector values or turn missing evidence into fact.",
       "architectureSteps": [
         {
           "number": "01",
           "title": "Observe",
-          "description": "Edge, EDR, NDR, OT, and CTI signals"
+          "description": "Agent, Tool, MCP, edge, EDR, OT, and CTI signals"
         },
         {
           "number": "02",
@@ -1671,9 +2149,13 @@
     },
     "contactPage": {
       "eyebrow": "BOOK A WORKSHOP",
-      "title": "Define the operating problem before selecting technology and scope.",
-      "summary": "Tell us about your operating environment and priorities. We will help clarify the data, validation goals, and practical scope for a first phase.",
+      "title": "Define the real risk and replay boundary before selecting product and delivery scope.",
+      "summary": "Tell us about your agent, tools, or operating environment. We will help clarify data, authority, test boundaries, acceptance evidence, and a practical first phase.",
       "workshops": [
+        {
+          "title": "Agent Security Scope Assessment",
+          "description": "Review Agent, Tool, MCP, Identity, Permission, sensitive data, and production decisions to define a scoped paid assessment."
+        },
         {
           "title": "SMB Security Operations Readiness",
           "description": "Review existing tools, alert handling, staffing, reporting, and managed-service needs."
@@ -1685,10 +2167,6 @@
         {
           "title": "Healthcare Resilience Program",
           "description": "Review EDR, NDR, WAF, identity, IoMT, threat scenarios, lab boundaries, and re-test goals."
-        },
-        {
-          "title": "Partner & Investor Briefing",
-          "description": "Discuss channels, joint solutions, product strategy, field evidence, and collaboration models."
         }
       ],
       "privacyNote": "Do not submit patient data, production credentials, network diagrams, unpublished vulnerabilities, incident evidence, or other sensitive information through public contact channels.",
