@@ -7,6 +7,7 @@ const errors = [];
 const requiredLocales = ["zh-Hant", "en"];
 const requiredSlugs = ["managed-security", "fab-intelligence", "healthcare-resilience"];
 const requiredAgentModuleIds = ["assess", "validate", "gate", "lens"];
+const requiredProductFamilyIds = ["agent-assurance", "security-operations", "validation-evidence"];
 const requiredCaseIds = ["regional-hospital-edr", "semiconductor-ot-energy", "smb-supply-chain"];
 const forbiddenPublicNames = ["童綜合", "光田", "美光", "鼎新", "Micron", "Tungs", "Kuang Tien"];
 const forbiddenUnapprovedClaims = ["1,000", "1000 endpoints", "千台 EDR", "1,700", "10,207", "6.04%", "33 days", "33 天"];
@@ -36,6 +37,17 @@ for (const locale of requiredLocales) {
   if (!site.meta?.title || !site.meta?.description) errors.push(`${locale}: missing metadata`);
   if (!site.hero?.primaryCta?.href) errors.push(`${locale}: missing hero CTA`);
   if (site.hero?.visualInputs?.length !== 6) errors.push(`${locale}: hero must declare six visual inputs`);
+
+  const productFamilyItems = site.productFamily?.items ?? [];
+  const productFamilyIds = productFamilyItems.map((item) => item.id);
+  if (JSON.stringify(productFamilyIds) !== JSON.stringify(requiredProductFamilyIds)) {
+    errors.push(`${locale}: product family must be ordered Agent Assurance, Security Operations, Validation & Evidence`);
+  }
+  for (const item of productFamilyItems) {
+    if (!item.title || !item.description || item.tags?.length < 3 || !item.href || !item.linkLabel) {
+      errors.push(`${locale}: incomplete product-family item ${item.id || "<missing id>"}`);
+    }
+  }
 
   const agentModules = site.agentAssurance?.modules ?? [];
   const agentModuleIds = agentModules.map((agentModule) => agentModule.id);
@@ -102,6 +114,11 @@ if (JSON.stringify(content["zh-Hant"]?.technology?.featuredIds) !== JSON.stringi
 const stableAgentFields = (items) => items.map(({ id, maturity }) => ({ id, maturity }));
 if (JSON.stringify(stableAgentFields(content["zh-Hant"]?.agentAssurance?.modules ?? [])) !== JSON.stringify(stableAgentFields(content.en?.agentAssurance?.modules ?? []))) {
   errors.push("Agent Assurance ids, maturity, and order must match across locales");
+}
+
+const stableProductFamilyFields = (items) => items.map(({ id, href }) => ({ id, href }));
+if (JSON.stringify(stableProductFamilyFields(content["zh-Hant"]?.productFamily?.items ?? [])) !== JSON.stringify(stableProductFamilyFields(content.en?.productFamily?.items ?? []))) {
+  errors.push("Product-family ids, links, and order must match across locales");
 }
 
 const stableCaseFields = (items) => items.map(({ id, evidenceStatus, claimIds }) => ({ id, evidenceStatus, claimIds }));

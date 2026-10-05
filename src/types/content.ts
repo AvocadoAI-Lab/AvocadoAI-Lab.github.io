@@ -29,6 +29,15 @@ export type PlatformStep = {
   description: string;
 };
 
+export type ProductFamilyItem = {
+  id: "agent-assurance" | "security-operations" | "validation-evidence";
+  title: string;
+  description: string;
+  tags: string[];
+  href: string;
+  linkLabel: string;
+};
+
 export type Solution = {
   slug: "managed-security" | "fab-intelligence" | "healthcare-resilience";
   kicker: string;
@@ -150,6 +159,12 @@ export type SiteContent = {
     visualOutputs: string[];
   };
   proof: { label: string; items: string[] };
+  productFamily: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: ProductFamilyItem[];
+  };
   problem: { eyebrow: string; title: string; description: string; items: CardItem[] };
   platform: {
     eyebrow: string;

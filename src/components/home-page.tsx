@@ -4,44 +4,44 @@ import type { Locale, SiteContent } from "@/types/content";
 import { localizedHref } from "@/lib/links";
 import { basePath } from "@/lib/site";
 import { ArrowIcon, Icon } from "@/components/icons";
-import { TechnologyCard } from "@/components/technology-card";
 import { Container, CtaLink, Eyebrow, SectionHeader, Tag } from "@/components/ui";
 
 function HeroVisual({ content }: { content: SiteContent["hero"] }) {
   return (
-    <div aria-hidden="true" className="surface-grid relative min-h-[31rem] overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.035] p-5 shadow-2xl shadow-black/25 sm:p-7">
-      <p className="font-mono text-[0.65rem] font-bold uppercase tracking-[0.16em] text-white/45">{content.visualInputLabel}</p>
-      <div className="mt-5 grid grid-cols-3 gap-2 sm:grid-cols-6">
-        {content.visualInputs.map((input) => <div className="rounded-xl border border-white/10 bg-black/20 px-2 py-2 text-center font-mono text-xs font-bold text-white/65" key={input}>{input}</div>)}
+    <div aria-hidden="true" className="hero-signal relative min-h-[25rem] overflow-hidden rounded-[2rem] bg-graphite p-6 text-warm-white sm:p-8">
+      <div className="absolute -right-16 -top-20 h-64 w-64 rounded-full border border-avocado/20" />
+      <div className="absolute -right-4 -top-8 h-44 w-44 rounded-full border border-avocado/12" />
+
+      <p className="relative font-mono text-xs font-bold uppercase tracking-[0.14em] text-white/65">{content.visualInputLabel}</p>
+      <div className="relative mt-5 flex flex-wrap gap-2">
+        {content.visualInputs.map((input) => (
+          <span className="rounded-full border border-white/12 bg-white/[0.055] px-3 py-1.5 font-mono text-xs font-bold text-white/75" key={input}>{input}</span>
+        ))}
       </div>
 
-      <div className="mx-auto my-7 h-12 w-px bg-gradient-to-b from-avocado/20 to-avocado" />
-
-      <div className="relative mx-auto max-w-sm rounded-[2rem] border border-avocado/35 bg-forest/80 p-7 text-center shadow-[0_0_60px_rgba(155,203,60,0.12)]">
-        <Image
-          alt=""
-          className="mx-auto h-28 w-28 select-none object-contain drop-shadow-[0_10px_22px_rgba(0,0,0,0.35)]"
-          draggable={false}
-          height={384}
-          src={`${basePath}/brand/sensel-neural-brain-avocado-core-v2.png`}
-          unoptimized
-          width={384}
-        />
-        <p className="mt-4 text-2xl font-black tracking-[-0.04em] text-warm-white">{content.visualCoreLabel}</p>
-        <p className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-white/45">{content.visualCoreCaption}</p>
-        <div className="signal-line mt-5 h-px bg-white/8" />
-        <div className="mt-5 grid grid-cols-3 gap-2 text-[0.65rem] font-bold text-white/65">
-          <span>Context</span><span>Reason</span><span>Validate</span>
+      <div className="relative my-8 grid items-center gap-5 sm:grid-cols-[1fr_auto_1fr]">
+        <div className="hidden h-px bg-gradient-to-r from-transparent to-avocado/70 sm:block" />
+        <div className="mx-auto w-48 rounded-[1.7rem] border border-avocado/35 bg-forest p-5 text-center shadow-[0_24px_70px_rgba(0,0,0,0.24)]">
+          <Image
+            alt=""
+            className="mx-auto h-20 w-20 select-none object-contain"
+            draggable={false}
+            height={256}
+            src={`${basePath}/brand/sensel-neural-brain-avocado-core-v2.png`}
+            unoptimized
+            width={256}
+          />
+          <p className="mt-3 text-xl font-black tracking-[-0.04em]">{content.visualCoreLabel}</p>
+          <p className="mt-1 font-mono text-[0.7rem] uppercase tracking-[0.1em] text-white/60">{content.visualCoreCaption}</p>
         </div>
+        <div className="hidden h-px bg-gradient-to-r from-avocado/70 to-transparent sm:block" />
       </div>
 
-      <div className="mx-auto my-7 h-12 w-px bg-gradient-to-b from-avocado to-avocado/20" />
-
-      <div className="grid grid-cols-3 gap-2">
+      <div className="relative grid grid-cols-3 gap-2">
         {content.visualOutputs.map((output, index) => (
-          <div className="rounded-2xl border border-white/12 bg-white/[0.055] p-3 text-center" key={output}>
-            <p className="font-mono text-[0.6rem] font-bold text-avocado">0{index + 1}</p>
-            <p className="mt-1 text-xs font-bold text-white/75 sm:text-sm">{output}</p>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.055] px-2 py-3 text-center" key={output}>
+            <p className="font-mono text-[0.7rem] font-bold text-avocado">0{index + 1}</p>
+            <p className="mt-1 text-xs font-bold text-white/80 sm:text-sm">{output}</p>
           </div>
         ))}
       </div>
@@ -50,215 +50,175 @@ function HeroVisual({ content }: { content: SiteContent["hero"] }) {
 }
 
 export function HomePage({ locale, content }: { locale: Locale; content: SiteContent }) {
-  const featuredTechnology = content.technology.featuredIds
-    .map((id) => content.technologyPage.items.find((item) => item.id === id))
-    .filter((item): item is SiteContent["technologyPage"]["items"][number] => Boolean(item));
+  const platformGroups = [
+    content.platform.steps.slice(0, 2),
+    content.platform.steps.slice(2, 4),
+    content.platform.steps.slice(4, 6),
+  ];
 
   return (
     <>
-      <section className="hero-glow surface-grid overflow-hidden border-b border-white/10 py-20 text-warm-white sm:py-28 lg:py-32">
+      <section className="portal-hero border-b border-black/8 py-8 sm:py-12 lg:py-16">
         <Container>
-          <div className="grid items-center gap-14 lg:grid-cols-[1.12fr_0.88fr]">
-            <div>
-              <Eyebrow inverse>{content.hero.eyebrow}</Eyebrow>
-              <h1 className="text-gradient mt-6 max-w-4xl text-balance text-5xl font-semibold tracking-[-0.055em] sm:text-6xl lg:text-7xl xl:text-[5.2rem]">{content.hero.title}</h1>
-              <p className="mt-7 max-w-2xl text-lg leading-8 text-white/68 sm:text-xl">{content.hero.description}</p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="hero-panel grid gap-10 rounded-[2.5rem] border border-black/8 bg-white p-6 shadow-[0_28px_80px_rgba(16,23,20,0.07)] sm:p-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:p-12">
+            <div className="py-2 lg:py-6">
+              <Eyebrow>{content.hero.eyebrow}</Eyebrow>
+              <h1 className="mt-5 max-w-3xl text-balance text-4xl font-semibold tracking-[-0.055em] text-graphite sm:text-5xl lg:text-6xl">{content.hero.title}</h1>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-evidence sm:text-lg">{content.hero.description}</p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <CtaLink cta={content.hero.primaryCta} locale={locale} />
-                <CtaLink cta={content.hero.secondaryCta} locale={locale} variant="inverse" />
+                <CtaLink cta={content.hero.secondaryCta} locale={locale} variant="secondary" />
               </div>
             </div>
             <HeroVisual content={content.hero} />
           </div>
-        </Container>
-      </section>
 
-      <section aria-label={content.proof.label} className="border-b border-black/8 bg-white/55 py-7">
-        <Container>
-          <p className="text-center font-mono text-[0.65rem] font-bold uppercase tracking-[0.18em] text-evidence">{content.proof.label}</p>
-          <div className="mt-5 flex flex-wrap justify-center gap-x-8 gap-y-3">
-            {content.proof.items.map((item) => <span className="text-sm font-bold text-graphite" key={item}>{item}</span>)}
+          <div aria-label={content.proof.label} className="mt-8 rounded-2xl border border-black/8 bg-white/70 px-5 py-5">
+            <p className="text-center font-mono text-[0.7rem] font-bold uppercase tracking-[0.16em] text-forest">{content.proof.label}</p>
+            <div className="mt-4 flex flex-wrap justify-center gap-x-7 gap-y-2.5">
+              {content.proof.items.map((item) => <span className="text-sm font-semibold text-graphite" key={item}>{item}</span>)}
+            </div>
           </div>
         </Container>
       </section>
 
-      <section className="soft-grid py-24 sm:py-32">
+      <section className="py-20 sm:py-24" id="products">
         <Container>
-          <SectionHeader description={content.problem.description} eyebrow={content.problem.eyebrow} title={content.problem.title} />
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {content.problem.items.map((item) => (
-              <article className="rounded-3xl border border-black/10 bg-warm-white p-6 transition hover:-translate-y-1 hover:bg-white hover:shadow-xl hover:shadow-black/5" key={item.title}>
-                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-forest text-avocado"><Icon name={item.icon} /></div>
-                <h3 className="mt-6 text-xl font-bold tracking-[-0.025em]">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-evidence">{item.description}</p>
+          <SectionHeader description={content.productFamily.description} eyebrow={content.productFamily.eyebrow} title={content.productFamily.title} />
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {content.productFamily.items.map((item, index) => (
+              <article className={`group rounded-[1.6rem] border p-7 transition duration-200 hover:-translate-y-1 ${index === 0 ? "border-forest bg-forest text-warm-white shadow-[0_18px_50px_rgba(24,75,60,0.16)]" : "border-black/10 bg-[#f1f4ee] text-graphite hover:border-forest/30"}`} key={item.id}>
+                <p className={`font-mono text-xs font-bold ${index === 0 ? "text-avocado" : "text-forest"}`}>0{index + 1}</p>
+                <h3 className="mt-5 text-2xl font-semibold tracking-[-0.035em]">{item.title}</h3>
+                <p className={`mt-4 text-sm leading-7 ${index === 0 ? "text-white/70" : "text-evidence"}`}>{item.description}</p>
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {item.tags.map((tag) => <Tag inverse={index === 0} key={tag}>{tag}</Tag>)}
+                </div>
+                <Link className={`mt-8 inline-flex items-center gap-2 text-sm font-bold ${index === 0 ? "text-avocado" : "text-forest"}`} href={localizedHref(locale, item.href)}>{item.linkLabel}<ArrowIcon /></Link>
               </article>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="border-y border-black/8 bg-white/55 py-24 sm:py-32" id="agent-assurance">
-        <Container>
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-            <SectionHeader description={content.agentAssurance.description} eyebrow={content.agentAssurance.eyebrow} title={content.agentAssurance.title} />
-            <CtaLink cta={content.agentAssurance.cta} locale={locale} variant="secondary" />
-          </div>
-          <ol className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {content.agentAssurance.modules.map((module, index) => (
-              <li className="flex min-h-[25rem] flex-col rounded-[2rem] border border-black/10 bg-warm-white p-7" key={module.id}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="font-mono text-xs font-bold text-forest">0{index + 1}</p>
-                  <Tag>{module.status}</Tag>
-                </div>
-                <p className="mt-8 font-mono text-[0.65rem] font-bold uppercase tracking-[0.14em] text-forest">{module.category}</p>
-                <h3 className="mt-4 text-2xl font-semibold tracking-[-0.03em]">{module.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-evidence">{module.description}</p>
-                <div className="mt-auto flex flex-wrap gap-2 pt-8">
-                  {module.deliverables.slice(0, 3).map((deliverable) => <Tag key={deliverable}>{deliverable}</Tag>)}
-                </div>
-              </li>
-            ))}
-          </ol>
-        </Container>
-      </section>
-
-      <section className="surface-grid bg-graphite py-24 text-warm-white sm:py-32">
-        <Container>
-          <SectionHeader description={content.platform.description} eyebrow={content.platform.eyebrow} inverse title={content.platform.title} />
-          <div className="mt-14 grid gap-3 md:grid-cols-3 xl:grid-cols-6">
-            {content.platform.steps.map((step) => (
-              <article className="rounded-3xl border border-white/10 bg-white/[0.035] p-5" key={step.number}>
-                <p className="font-mono text-xs font-bold text-avocado">{step.number}</p>
-                <h3 className="mt-5 text-lg font-bold">{step.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-white/55">{step.description}</p>
-              </article>
-            ))}
-          </div>
-          <div className="mt-10 grid gap-6 rounded-[2rem] border border-avocado/25 bg-forest/35 p-7 sm:p-9 lg:grid-cols-[1fr_auto] lg:items-center">
-            <p className="max-w-3xl text-lg leading-8 text-white/78">{content.platform.highlight}</p>
-            <CtaLink cta={content.platform.cta} locale={locale} />
-          </div>
-        </Container>
-      </section>
-
-      <section className="soft-grid border-b border-black/8 py-24 sm:py-32" id="technology">
-        <Container>
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-            <SectionHeader description={content.technology.description} eyebrow={content.technology.eyebrow} title={content.technology.title} />
-            <CtaLink cta={content.technology.cta} locale={locale} variant="secondary" />
-          </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2">
-            {featuredTechnology.map((item) => <TechnologyCard item={item} key={item.id} locale={locale} />)}
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-24 sm:py-32" id="solutions">
+      <section className="border-y border-black/8 bg-[#f1f4ee] py-20 sm:py-24" id="solutions">
         <Container>
           <SectionHeader description={content.solutionsSection.description} eyebrow={content.solutionsSection.eyebrow} title={content.solutionsSection.title} />
-          <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {content.solutions.map((solution, index) => (
-              <article className="group flex min-h-[31rem] flex-col rounded-[2rem] border border-black/10 bg-white p-7 transition hover:-translate-y-1 hover:border-forest/30 hover:shadow-2xl hover:shadow-black/8 sm:p-8" key={solution.slug}>
+              <article className="group rounded-[1.6rem] border border-black/9 bg-white p-7 transition duration-200 hover:-translate-y-1 hover:border-forest/30" key={solution.slug}>
                 <div className="flex items-center justify-between gap-4">
-                  <p className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-forest">{solution.kicker}</p>
-                  <p className="font-mono text-xs font-bold text-evidence">0{index + 1}</p>
+                  <p className="font-mono text-[0.7rem] font-bold uppercase tracking-[0.12em] text-forest">{solution.kicker}</p>
+                  <span className="font-mono text-xs font-bold text-evidence">0{index + 1}</span>
                 </div>
-                <h3 className="mt-8 text-balance text-2xl font-semibold tracking-[-0.035em] sm:text-3xl">{solution.title}</h3>
-                <p className="mt-5 text-sm leading-7 text-evidence sm:text-base">{solution.homeSummary}</p>
-                <div className="mt-7 flex flex-wrap gap-2">
-                  {solution.capabilities.slice(0, 4).map((capability) => <Tag key={capability}>{capability}</Tag>)}
-                </div>
-                <Link className="mt-auto inline-flex items-center gap-2 pt-10 text-sm font-bold text-forest group-hover:text-graphite" href={localizedHref(locale, `/solutions/${solution.slug}`)}>{locale === "zh-Hant" ? "查看方案" : "Explore solution"}<ArrowIcon /></Link>
+                <h3 className="mt-6 text-2xl font-semibold tracking-[-0.035em]">{solution.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-evidence sm:text-base">{solution.homeSummary}</p>
+                <Link className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest" href={localizedHref(locale, `/solutions/${solution.slug}`)}>{locale === "zh-Hant" ? "查看解決方案" : "Explore solution"}<ArrowIcon /></Link>
               </article>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="border-y border-black/8 bg-[#edf0e8] py-24 sm:py-32" id="case-studies">
+      <section className="py-20 sm:py-24">
         <Container>
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <div className="rounded-[2.5rem] bg-graphite p-7 text-warm-white sm:p-10 lg:p-12">
+            <div className="flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between">
+              <SectionHeader description={content.platform.description} eyebrow={content.platform.eyebrow} inverse title={content.platform.title} />
+              <CtaLink cta={content.platform.cta} locale={locale} variant="inverse" />
+            </div>
+            <ol className="mt-10 grid gap-3 lg:grid-cols-3">
+              {platformGroups.map((steps, index) => (
+                <li className="rounded-2xl border border-white/10 bg-white/[0.04] p-6" key={steps[0]?.number ?? index}>
+                  <p className="font-mono text-xs font-bold text-avocado">0{index + 1}</p>
+                  <div className="mt-5 space-y-5">
+                    {steps.map((step) => (
+                      <div key={step.number}>
+                        <h3 className="text-lg font-semibold">{step.title}</h3>
+                        <p className="mt-2 text-sm leading-6 text-white/60">{step.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-y border-black/8 bg-white py-20 sm:py-24" id="case-studies">
+        <Container>
+          <div className="flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeader description={content.caseStudies.description} eyebrow={content.caseStudies.eyebrow} title={content.caseStudies.title} />
             <CtaLink cta={content.caseStudies.cta} locale={locale} variant="secondary" />
           </div>
-          <div className="mt-12 grid gap-5 lg:grid-cols-3">
-            {content.caseStudies.items.map((item) => (
-              <article className="rounded-[2rem] border border-black/10 bg-warm-white p-7" key={item.title}>
-                <p className="font-mono text-[0.65rem] font-bold uppercase tracking-[0.13em] text-forest">{item.sector}</p>
-                <p className="mt-4 text-xs font-semibold text-evidence">{item.status}</p>
-                <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em]">{item.title}</h3>
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {content.caseStudies.items.map((item, index) => (
+              <article className="group rounded-[1.6rem] border border-black/10 bg-[#f6f7f2] p-7" key={item.title}>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <p className="font-mono text-[0.7rem] font-bold uppercase tracking-[0.12em] text-forest">{item.sector}</p>
+                  <span className="font-mono text-xs font-bold text-evidence">0{index + 1}</span>
+                </div>
+                <div className="mt-5"><Tag>{item.status}</Tag></div>
+                <h3 className="mt-5 text-2xl font-semibold tracking-[-0.035em]">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-evidence">{item.summary}</p>
-                <div className="mt-7 flex flex-wrap gap-2">{item.highlights.map((highlight) => <Tag key={highlight}>{highlight}</Tag>)}</div>
-                <Link className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest hover:text-graphite" href={localizedHref(locale, `/case-studies#${item.id}`)}>{locale === "zh-Hant" ? "查看案例方法" : "Review case method"}<ArrowIcon /></Link>
+                <Link className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest" href={localizedHref(locale, `/case-studies#${item.id}`)}>{locale === "zh-Hant" ? "查看案例" : "View case"}<ArrowIcon /></Link>
               </article>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="bg-forest py-24 text-warm-white sm:py-28">
+      <section className="py-20 sm:py-24">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <SectionHeader description={content.integrations.description} eyebrow={content.integrations.eyebrow} inverse title={content.integrations.title} />
-            <div>
-              <div className="flex flex-wrap gap-3">
-                {content.integrations.items.map((item) => <Tag inverse key={item}>{item}</Tag>)}
-              </div>
-              <p className="mt-8 border-l-2 border-avocado pl-5 text-xl font-semibold leading-8 text-white/82">{content.integrations.statement}</p>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-24 sm:py-32">
-        <Container>
-          <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
-            <div>
+          <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="rounded-[2rem] border border-black/9 bg-white p-7 sm:p-9">
               <SectionHeader description={content.trust.description} eyebrow={content.trust.eyebrow} title={content.trust.title} />
+              <div className="mt-8 grid gap-5 sm:grid-cols-2">
+                {content.trust.items.map((item) => (
+                  <article className="border-t border-black/10 pt-5" key={item.title}>
+                    <div className="grid h-10 w-10 place-items-center rounded-xl bg-forest text-avocado"><Icon className="h-5 w-5" name={item.icon} /></div>
+                    <h3 className="mt-4 text-base font-bold">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-6 text-evidence">{item.description}</p>
+                  </article>
+                ))}
+              </div>
               <div className="mt-8"><CtaLink cta={content.trust.cta} locale={locale} variant="secondary" /></div>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {content.trust.items.map((item) => (
-                <article className="rounded-3xl border border-black/10 bg-white p-6" key={item.title}>
-                  <div className="grid h-11 w-11 place-items-center rounded-2xl bg-graphite text-avocado"><Icon className="h-5 w-5" name={item.icon} /></div>
-                  <h3 className="mt-5 text-lg font-bold">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-evidence">{item.description}</p>
-                </article>
-              ))}
+
+            <div className="rounded-[2rem] bg-[#e7eee2] p-7 sm:p-9">
+              <Eyebrow>{content.resources.eyebrow}</Eyebrow>
+              <h2 className="mt-4 text-balance text-3xl font-semibold tracking-[-0.04em] sm:text-4xl">{content.resources.title}</h2>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-evidence sm:text-base">{content.resources.description}</p>
+              <div className="mt-8 divide-y divide-black/10 border-y border-black/10">
+                {content.resources.items.slice(0, 3).map((item) => (
+                  <article className="py-5" key={item.title}>
+                    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                      <div>
+                        <p className="font-mono text-[0.7rem] font-bold uppercase tracking-[0.12em] text-forest">{item.type}</p>
+                        <h3 className="mt-2 text-lg font-semibold">{item.title}</h3>
+                      </div>
+                      {item.status ? <Tag>{item.status}</Tag> : null}
+                    </div>
+                  </article>
+                ))}
+              </div>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <CtaLink cta={content.resources.cta} locale={locale} variant="secondary" />
+                <CtaLink cta={content.technology.cta} locale={locale} variant="text" />
+              </div>
             </div>
           </div>
         </Container>
       </section>
 
-      <section className="border-y border-black/8 bg-white/55 py-24 sm:py-32" id="resources">
+      <section className="pb-20 pt-4 sm:pb-24">
         <Container>
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-            <SectionHeader description={content.resources.description} eyebrow={content.resources.eyebrow} title={content.resources.title} />
-            <CtaLink cta={content.resources.cta} locale={locale} variant="secondary" />
-          </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {content.resources.items.map((item) => (
-              <article className="group rounded-[2rem] border border-black/10 bg-warm-white p-7" key={item.title}>
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <p className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-forest">{item.type}</p>
-                  {item.status ? <Tag>{item.status}</Tag> : null}
-                </div>
-                <h3 className="mt-6 text-2xl font-semibold tracking-[-0.03em]">{item.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-evidence">{item.summary}</p>
-                {item.href && item.linkLabel ? <a aria-label={`${item.linkLabel}: ${item.title} (${locale === "zh-Hant" ? "於新視窗開啟" : "opens in a new window"})`} className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest group-hover:text-graphite" href={item.href} rel="noreferrer" target="_blank">{item.linkLabel}<ArrowIcon /></a> : null}
-              </article>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="hero-glow surface-grid py-24 text-warm-white sm:py-32">
-        <Container>
-          <div className="rounded-[2.5rem] border border-white/12 bg-white/[0.045] p-8 sm:p-12 lg:p-16">
+          <div className="rounded-[2.5rem] bg-forest p-8 text-warm-white sm:p-12 lg:p-14">
             <Eyebrow inverse>{content.finalCta.eyebrow}</Eyebrow>
-            <h2 className="mt-5 max-w-4xl text-balance text-4xl font-semibold tracking-[-0.045em] sm:text-5xl lg:text-6xl">{content.finalCta.title}</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">{content.finalCta.description}</p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <h2 className="mt-5 max-w-4xl text-balance text-4xl font-semibold tracking-[-0.045em] sm:text-5xl">{content.finalCta.title}</h2>
+            <p className="mt-5 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">{content.finalCta.description}</p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <CtaLink cta={content.finalCta.primaryCta} locale={locale} />
               <CtaLink cta={content.finalCta.secondaryCta} locale={locale} variant="inverse" />
             </div>

@@ -79,16 +79,31 @@ summary::-webkit-details-marker {
 
 .surface-grid {
   background-image:
-    linear-gradient(rgba(155, 203, 60, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(155, 203, 60, 0.08) 1px, transparent 1px);
-  background-size: 36px 36px;
+    linear-gradient(rgba(155, 203, 60, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(155, 203, 60, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
 .soft-grid {
-  background-image:
-    linear-gradient(rgba(16, 23, 20, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 23, 20, 0.035) 1px, transparent 1px);
-  background-size: 44px 44px;
+  background: #f1f4ee;
+}
+
+.portal-hero {
+  background:
+    radial-gradient(circle at 85% 10%, rgba(155, 203, 60, 0.16), transparent 28%),
+    linear-gradient(180deg, #edf3e8 0%, var(--color-warm-white) 78%);
+}
+
+.page-hero {
+  background:
+    radial-gradient(circle at 80% 0%, rgba(155, 203, 60, 0.14), transparent 28%),
+    #eef2e9;
+}
+
+.hero-signal {
+  background:
+    radial-gradient(circle at 78% 18%, rgba(155, 203, 60, 0.14), transparent 32%),
+    var(--color-graphite);
 }
 
 .hero-glow {

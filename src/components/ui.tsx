@@ -9,21 +9,21 @@ export function Container({ children, className = "" }: { children: ReactNode; c
 }
 
 export function Eyebrow({ children, inverse = false }: { children: ReactNode; inverse?: boolean }) {
-  return <p className={`font-mono text-xs font-bold uppercase tracking-[0.18em] ${inverse ? "text-avocado" : "text-forest"}`}>{children}</p>;
+  return <p className={`font-mono text-[0.7rem] font-bold uppercase tracking-[0.16em] ${inverse ? "text-avocado" : "text-forest"}`}>{children}</p>;
 }
 
 export function SectionHeader({ eyebrow, title, description, inverse = false, className = "" }: { eyebrow: string; title: string; description?: string; inverse?: boolean; className?: string }) {
   return (
-    <div className={`max-w-3xl ${className}`}>
+    <div className={`max-w-2xl ${className}`}>
       <Eyebrow inverse={inverse}>{eyebrow}</Eyebrow>
-      <h2 className={`mt-4 text-balance text-3xl font-semibold tracking-[-0.035em] sm:text-4xl lg:text-5xl ${inverse ? "text-warm-white" : "text-graphite"}`}>{title}</h2>
-      {description ? <p className={`mt-5 max-w-2xl text-base leading-8 sm:text-lg ${inverse ? "text-white/65" : "text-evidence"}`}>{description}</p> : null}
+      <h2 className={`mt-4 text-balance text-3xl font-semibold tracking-[-0.035em] sm:text-4xl ${inverse ? "text-warm-white" : "text-graphite"}`}>{title}</h2>
+      {description ? <p className={`mt-4 max-w-2xl text-base leading-7 sm:text-lg ${inverse ? "text-white/65" : "text-evidence"}`}>{description}</p> : null}
     </div>
   );
 }
 
 const variants = {
-  primary: "bg-avocado text-graphite hover:bg-[#b2dc5e] border-avocado",
+  primary: "bg-avocado text-graphite hover:bg-[#b2dc5e] border-avocado shadow-[0_8px_22px_rgba(155,203,60,0.2)]",
   secondary: "bg-transparent text-current hover:bg-black/5 border-black/15",
   inverse: "bg-transparent text-warm-white hover:bg-white/10 border-white/25",
   text: "border-transparent bg-transparent px-0 text-forest hover:text-graphite",
@@ -44,12 +44,12 @@ export function Tag({ children, inverse = false }: { children: ReactNode; invers
 
 export function PageHero({ eyebrow, title, summary }: { eyebrow: string; title: string; summary: string }) {
   return (
-    <section className="hero-glow surface-grid border-b border-white/10 py-24 text-warm-white sm:py-32">
+    <section className="page-hero border-b border-black/8 py-14 sm:py-20">
       <Container>
-        <div className="max-w-4xl">
-          <Eyebrow inverse>{eyebrow}</Eyebrow>
-          <h1 className="mt-6 text-balance text-4xl font-semibold tracking-[-0.045em] sm:text-6xl lg:text-7xl">{title}</h1>
-          <p className="mt-7 max-w-3xl text-lg leading-8 text-white/68 sm:text-xl">{summary}</p>
+        <div className="max-w-4xl rounded-[2rem] border border-black/8 bg-white/75 p-7 shadow-[0_22px_60px_rgba(16,23,20,0.05)] sm:p-10 lg:p-12">
+          <Eyebrow>{eyebrow}</Eyebrow>
+          <h1 className="mt-5 text-balance text-4xl font-semibold tracking-[-0.045em] text-graphite sm:text-5xl lg:text-6xl">{title}</h1>
+          <p className="mt-6 max-w-3xl text-base leading-8 text-evidence sm:text-lg">{summary}</p>
         </div>
       </Container>
     </section>

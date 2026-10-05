@@ -10,14 +10,14 @@ export function Logo({ locale, inverse = false }: { locale: Locale; inverse?: bo
       className={`inline-flex shrink-0 items-center ${inverse ? "rounded-2xl bg-warm-white px-2 py-1 shadow-sm" : ""}`}
       href={`/${locale}`}
     >
-      <span aria-hidden="true" className="relative block h-16 w-[150px] overflow-hidden">
+      <span aria-hidden="true" className="relative block h-14 w-[138px] overflow-hidden">
         <Image
           alt=""
           className="absolute h-auto max-w-none select-none"
           draggable={false}
           height={681}
           src={`${basePath}/brand/avocadoai-logo.png`}
-          style={{ left: "-9.7px", top: "-23.8px", width: "171.6px" }}
+          style={{ left: "-8.8px", top: "-21.4px", width: "158px" }}
           unoptimized
           width={1024}
         />

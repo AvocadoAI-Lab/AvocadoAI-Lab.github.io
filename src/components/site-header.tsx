@@ -12,13 +12,20 @@ export function SiteHeader({ locale, content, currentPath = "" }: { locale: Loca
   const loginHref = customerPortalUrl();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/8 bg-warm-white/92 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-black/8 bg-white/94 shadow-[0_8px_28px_rgba(16,23,20,0.04)] backdrop-blur-xl">
       <Container className="flex min-h-18 items-center justify-between gap-4">
         <Logo locale={locale} />
 
         <nav aria-label={locale === "zh-Hant" ? "主要導覽" : "Primary navigation"} className="hidden items-center gap-5 xl:flex">
           {content.navigation.items.map((item) => (
-            <Link className="text-sm font-semibold text-evidence transition hover:text-graphite" href={localizedHref(locale, item.href)} key={item.label}>{item.label}</Link>
+            <Link
+              aria-current={item.href.startsWith("/") && currentPath.startsWith(item.href) ? "page" : undefined}
+              className="text-sm font-semibold text-evidence transition hover:text-graphite aria-[current=page]:text-forest"
+              href={localizedHref(locale, item.href)}
+              key={item.label}
+            >
+              {item.label}
+            </Link>
           ))}
         </nav>
 

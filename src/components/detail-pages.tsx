@@ -7,12 +7,12 @@ import { CheckList, Container, CtaLink, Eyebrow, PageHero, SectionHeader, Tag } 
 
 function CtaPanel({ locale, eyebrow, title, description, cta }: { locale: Locale; eyebrow: string; title: string; description: string; cta: { label: string; href: string } }) {
   return (
-    <section className="hero-glow surface-grid py-20 text-warm-white sm:py-24">
+    <section className="py-16 sm:py-20">
       <Container>
-        <div className="rounded-[2.2rem] border border-white/12 bg-white/[0.045] p-8 sm:p-12">
+        <div className="rounded-[2.2rem] bg-forest p-8 text-warm-white sm:p-12">
           <Eyebrow inverse>{eyebrow}</Eyebrow>
-          <h2 className="mt-5 max-w-4xl text-balance text-3xl font-semibold tracking-[-0.04em] sm:text-5xl">{title}</h2>
-          <p className="mt-5 max-w-2xl text-base leading-8 text-white/65 sm:text-lg">{description}</p>
+          <h2 className="mt-5 max-w-4xl text-balance text-3xl font-semibold tracking-[-0.04em] sm:text-4xl">{title}</h2>
+          <p className="mt-5 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">{description}</p>
           <div className="mt-8"><CtaLink cta={cta} locale={locale} /></div>
         </div>
       </Container>
@@ -196,7 +196,7 @@ export function AgentAssuranceDetail({ locale, content }: { locale: Locale; cont
           <SectionHeader description={page.journeyDescription} eyebrow="ASSESS → VALIDATE → GATE" inverse title={page.journeyTitle} />
           <ol className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {product.modules.map((module, index) => (
-              <li className="flex min-h-[29rem] flex-col rounded-[2rem] border border-white/10 bg-white/[0.035] p-7" key={module.id}>
+              <li className="flex flex-col rounded-[1.6rem] border border-white/10 bg-white/[0.035] p-6" key={module.id}>
                 <div className="flex items-center justify-between gap-3">
                   <p className="font-mono text-xs font-bold text-avocado">0{index + 1}</p>
                   <Tag inverse>{module.status}</Tag>
@@ -241,32 +241,41 @@ export function CaseStudiesDetail({ locale, content }: { locale: Locale; content
   return (
     <>
       <PageHero eyebrow={page.eyebrow} summary={page.summary} title={page.title} />
-      <section className="soft-grid py-20 sm:py-28">
-        <Container className="space-y-8">
+      <nav aria-label={locale === "zh-Hant" ? "案例快速導覽" : "Case study shortcuts"} className="border-b border-black/8 bg-white py-5">
+        <Container className="flex flex-wrap gap-2">
           {content.caseStudies.items.map((item, index) => (
-            <article className="scroll-mt-28 rounded-[2.2rem] border border-black/10 bg-white p-7 sm:p-10" id={item.id} key={item.id}>
-              <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:gap-12">
+            <a className="rounded-full border border-black/10 bg-warm-white px-4 py-2 text-sm font-semibold text-forest transition hover:border-forest/30 hover:bg-forest/5" href={`#${item.id}`} key={item.id}>
+              0{index + 1} · {item.sector}
+            </a>
+          ))}
+        </Container>
+      </nav>
+      <section className="py-16 sm:py-20">
+        <Container className="space-y-6">
+          {content.caseStudies.items.map((item, index) => (
+            <article className={`scroll-mt-28 rounded-[2rem] border border-black/10 p-7 sm:p-9 ${index % 2 === 0 ? "bg-white" : "bg-[#eef2e9]"}`} id={item.id} key={item.id}>
+              <div className="grid gap-9 lg:grid-cols-[0.72fr_1.28fr] lg:gap-12">
                 <div>
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="font-mono text-xs font-bold text-forest">0{index + 1}</span>
                     <Tag>{item.status}</Tag>
                   </div>
-                  <p className="mt-7 font-mono text-[0.65rem] font-bold uppercase tracking-[0.14em] text-forest">{item.sector}</p>
-                  <h2 className="mt-4 text-balance text-3xl font-semibold tracking-[-0.04em] sm:text-4xl">{item.title}</h2>
-                  <p className="mt-5 text-base leading-8 text-evidence">{item.summary}</p>
+                  <p className="mt-6 font-mono text-[0.7rem] font-bold uppercase tracking-[0.14em] text-forest">{item.sector}</p>
+                  <h2 className="mt-4 text-balance text-3xl font-semibold tracking-[-0.04em]">{item.title}</h2>
+                  <p className="mt-5 text-sm leading-7 text-evidence sm:text-base">{item.summary}</p>
                   <div className="mt-7 flex flex-wrap gap-2">{item.highlights.map((highlight) => <Tag key={highlight}>{highlight}</Tag>)}</div>
                 </div>
-                <div className="grid gap-5">
-                  <div className="rounded-3xl border border-black/8 bg-warm-white p-6">
+                <div>
+                  <div className="border-b border-black/10 pb-7">
                     <h3 className="text-lg font-semibold">{page.challengeLabel}</h3>
                     <p className="mt-3 text-sm leading-7 text-evidence sm:text-base">{item.challenge}</p>
                   </div>
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    <div className="rounded-3xl border border-black/8 bg-warm-white p-6">
+                  <div className="grid gap-8 pt-7 sm:grid-cols-2">
+                    <div>
                       <h3 className="text-lg font-semibold">{page.approachLabel}</h3>
                       <div className="mt-5"><CheckList items={item.approach} /></div>
                     </div>
-                    <div className="rounded-3xl border border-black/8 bg-[#edf0e8] p-6">
+                    <div>
                       <h3 className="text-lg font-semibold">{page.outcomesLabel}</h3>
                       <div className="mt-5"><CheckList items={item.outcomes} /></div>
                     </div>
@@ -277,7 +286,7 @@ export function CaseStudiesDetail({ locale, content }: { locale: Locale; content
           ))}
         </Container>
       </section>
-      <CtaPanel cta={page.cta} description={page.summary} eyebrow="DISCUSS A COMPARABLE ENVIRONMENT" locale={locale} title={page.title} />
+      <CtaPanel cta={page.cta} description={content.finalCta.description} eyebrow={content.finalCta.eyebrow} locale={locale} title={content.finalCta.title} />
     </>
   );
 }

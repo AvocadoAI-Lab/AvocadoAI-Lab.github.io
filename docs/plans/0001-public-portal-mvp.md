@@ -14,6 +14,7 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 
 ## Progress
 
+- [x] 2026-10-05: Simplified the portal into a seven-section, product-led enterprise experience using the user-supplied Genie Networks site only as a hierarchy and spacing reference; preserved Avocado.ai branding, bilingual parity, claims governance, and all SenseL detail routes.
 - [x] 2026-08-31: Added the 新漢 AIoT 新創加速器 2025 成果發表 record and two supplied photographs, then replaced the single-event photo grid with an accessible event and image switcher.
 - [x] 2026-08-31: Migrated the complete portal source to `AvocadoAI-Lab/AvocadoAI-Lab.github.io`, configured root-path static export, and prepared the repository for GitHub Actions Pages at `https://avocadoai-lab.github.io/`.
 - [x] 2026-08-31: Published and browser-verified the public GitHub Pages preview from `AvocadoAI-Lab/AvocadoAIPortal` at `https://avocadoai-lab.github.io/AvocadoAIPortal/`.
@@ -38,6 +39,10 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 
 ## Surprises & Discoveries
 
+- The reference site's perceived simplicity comes primarily from grouped product families, contained panels, short value statements, generous whitespace, and one clear contact action—not from its rotating hero. The redesign deliberately keeps a stable Avocado.ai hero and does not copy the carousel, imagery, blue brand system, floating buttons, or form treatment.
+- The prior homepage rendered twelve major sections with several repeated four-card grids and tall minimum heights. Consolidating the same public information into seven sections made the product family, market solutions, platform method, cases, and evidence paths visible without removing their detailed routes.
+- Browser checks at 320, 375, 768, 1024, and 1440 pixels found no horizontal overflow. Traditional Chinese and English retained one H1, equivalent product/case structure, working mobile navigation, and empty browser console error logs.
+- The temporary validation clone reused dependencies through a symlink, which Turbopack correctly rejected as outside the project filesystem root. Repository checks and both standard and GitHub Pages builds passed with the webpack builder; the normal clean-checkout build remains covered by GitHub CI after push.
 - The target `AvocadoAI-Lab` organization is on GitHub Free, the `AvocadoAIPortal` name is available, and the active operator has organization administrator access. GitHub Pages therefore requires this preview repository to be public.
 - The initial Next.js configuration uses `output: "standalone"` and response headers, while GitHub Pages requires a static export and cannot apply the configured server response headers.
 - Next.js 16 requires metadata routes to declare build-time static behavior under `output: "export"`; `manifest.webmanifest`, `robots.txt`, and `sitemap.xml` now declare `dynamic = "force-static"` and generate successfully.
@@ -54,6 +59,8 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 
 ## Decision Log
 
+- Decision: borrow the reference site's clarity principles rather than its branding or exact composition. Rationale: a contained hero, fewer homepage sections, shorter product cards, generous whitespace, and one CTA per section improve scanability while keeping Avocado.ai visually distinct.
+- Decision: make the homepage a concise decision path—positioning, product lines, SenseL method, market solutions, field cases, trust/resources, and conversion—while keeping detailed maturity, architecture, and evidence content on existing inner pages. Rationale: first-time visitors need orientation before technical depth, and no approved content is lost.
 - Decision: publish the requested GitHub Pages deployment as a public preview, not as the final recommended production host. Rationale: it satisfies the requested review workflow while keeping the production hosting decision open for a platform that can enforce the portal's required response headers and support future server-side integrations.
 - Decision: use the GitHub Actions Pages artifact workflow rather than committing generated `out/` files. Rationale: source, verification, build, and deployment remain reproducible from `main`, and rollback is a repository commit rollback.
 - Decision: use a single public-site application rather than an early monorepo. Rationale: reduce build complexity while the content and brand system are stabilizing; the authenticated portal will be a separate application for security reasons.
@@ -95,6 +102,10 @@ Copy the four approved CES 2025 photographs from the legacy public site into `pu
 
 Model event records as a bilingual list rather than a single gallery. Add the owner-supplied 新漢 AIoT 新創加速器 2025 成果發表 photographs with provenance, descriptive alternatives, and approved event wording. Render a manually controlled event switcher with keyboard-operable tabs, previous and next image controls, and a horizontally scrollable thumbnail strip. Do not autoplay. At the end, CES 2025 and the AIoT event must switch without navigation, preserve image aspect ratios, and work without horizontal page overflow on desktop and mobile.
 
+### Milestone 8 — Product-led clarity redesign
+
+Reduce homepage cognitive load without removing the underlying product, solution, field-case, trust, technology, or resource pages. Replace the full-bleed technical hero with a contained light hero and a compact SenseL signal-to-evidence visual. Consolidate Agent Assurance and the three market solutions into a scannable product directory, compress the six-step platform story into three paired stages, shorten homepage case copy, and surface trust plus evidence links in one compact section. Update shared page heroes and card treatments so supporting pages use the same calm enterprise visual language. Preserve semantic headings, keyboard navigation, responsive behavior, claims-safe status labels, and Traditional Chinese/English parity.
+
 ## Validation and acceptance
 
 Run:
@@ -133,3 +144,5 @@ The legacy-content milestone added a four-card SenseL capability section to the 
 The organization-site migration retained the target repository's initial commit, removed its placeholder `index.html`, and copied the complete reviewed portal source into `AvocadoAI-Lab/AvocadoAI-Lab.github.io`. The Pages build now exports for the domain root rather than the former `/AvocadoAIPortal` project path. Content verification, route verification, strict TypeScript, ESLint, the standard build, and the root-path Pages build all passed in the target repository before publication.
 
 The multi-event resource milestone added a bilingual 新漢 AIoT 新創加速器 2025 成果發表 record and two owner-supplied photographs with provenance notes. The former static CES photo grid is now a manual event and image switcher with ARIA tabs, arrow-key event navigation, previous and next controls, and scrollable thumbnails. Desktop and mobile browser tests confirmed both event and image switching, preserved natural image dimensions, hidden component scrollbars, no page overflow, and no console errors. All repository checks and both production build modes passed afterward.
+
+The product-led clarity redesign replaced the full-bleed dark homepage with a contained, light enterprise hero and a compact signal-to-evidence visual. The homepage now presents three SenseL core capabilities, three market solutions, a three-stage paired platform method, three claims-safe field cases, trust controls, selected evidence resources, and one final conversion panel. Shared page heroes and the case-studies layout now use the same lighter visual language, with case shortcuts and flatter Challenge / Method / Deliverables sections. Content verification, route verification, strict TypeScript, ESLint, webpack production build, GitHub Pages static export, bilingual browser checks, responsive breakpoints, mobile navigation, and console review all passed locally.

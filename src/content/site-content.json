@@ -9,11 +9,7 @@
       "localeLabel": "語言",
       "items": [
         {
-          "label": "Agent 安全",
-          "href": "/agent-assurance"
-        },
-        {
-          "label": "SenseL 平台",
+          "label": "SenseL 產品",
           "href": "/platform"
         },
         {
@@ -43,12 +39,12 @@
       }
     },
     "hero": {
-      "eyebrow": "ACTION-LEVEL SECURITY · EVIDENCE BEFORE ENFORCEMENT",
-      "title": "讓每個 AI 與關鍵系統動作，在執行前可驗證。",
-      "description": "SenseL 將 Agent、Tool、MCP 與既有 IT／OT 安全訊號轉成可重播證據；比較版本、驗證控制，並讓高風險動作保留政策與人工核准。",
+      "eyebrow": "SENSEL · AI、IT 與 OT 安全平台",
+      "title": "把關鍵動作，變成可驗證的安全證據。",
+      "description": "SenseL 串接 AI Agent、EDR、OT 與營運訊號，建立可追溯事件、可重播驗證與人工核准流程。",
       "primaryCta": {
-        "label": "探索 SenseL Agent Assurance",
-        "href": "/agent-assurance"
+        "label": "探索 SenseL 平台",
+        "href": "/platform"
       },
       "secondaryCta": {
         "label": "查看場域案例",
@@ -72,13 +68,44 @@
       ]
     },
     "proof": {
-      "label": "ONE SENSEL PLATFORM · SECURITY OPERATIONS + AGENT ASSURANCE",
+      "label": "ONE SENSEL PLATFORM",
       "items": [
-        "Action-Level Evidence",
-        "Replayable Validation",
-        "Human Approval",
-        "On-Premise Path",
-        "IT · OT · AI Agents"
+        "AI Agent 安全",
+        "資安營運",
+        "OT 與 Edge",
+        "人工核准",
+        "彈性部署"
+      ]
+    },
+    "productFamily": {
+      "eyebrow": "SENSEL PRODUCT FAMILY",
+      "title": "三項核心能力，一套可追溯的證據底座。",
+      "description": "依場景選擇起點；共用事件脈絡、驗證流程與人工核准，不必重建整套安全工具。",
+      "items": [
+        {
+          "id": "agent-assurance",
+          "title": "SenseL Agent Assurance",
+          "description": "驗證 Agent 的工具呼叫、權限與版本風險，讓安全測試能隨每次更新重跑。",
+          "tags": ["Assess", "Replay", "Gate"],
+          "href": "/agent-assurance",
+          "linkLabel": "了解 Agent 安全"
+        },
+        {
+          "id": "security-operations",
+          "title": "SenseL Security Operations",
+          "description": "整合 EDR、NDR、WAF 與 CTI，將分散告警整理為可追溯、可處置的事件脈絡。",
+          "tags": ["Context", "AI Triage", "Evidence"],
+          "href": "/solutions/managed-security",
+          "linkLabel": "了解資安營運"
+        },
+        {
+          "id": "validation-evidence",
+          "title": "SenseL Validation & Evidence",
+          "description": "把測試、核准、修正與重測留在同一條證據鏈，支援 IT、OT 與高信任場域。",
+          "tags": ["Validate", "Evidence", "Improve"],
+          "href": "/platform",
+          "linkLabel": "了解驗證與證據"
+        }
       ]
     },
     "problem": {
@@ -229,16 +256,16 @@
       }
     },
     "solutionsSection": {
-      "eyebrow": "WHERE WE START",
-      "title": "從最需要被證明的營運問題開始。",
-      "description": "中小企業供應鏈、關鍵 OT／Fab 與醫療場域的起點不同，但都需要一致的脈絡、證據與安全驗證能力。"
+      "eyebrow": "SOLUTIONS BY ENVIRONMENT",
+      "title": "依照你的場域，從最重要的風險開始。",
+      "description": "三種導入路徑，共用 SenseL 的事件脈絡、驗證與證據能力。"
     },
     "solutions": [
       {
         "slug": "managed-security",
         "kicker": "SMB SUPPLY-CHAIN SECURITY",
-        "title": "快速建立可營運、可提出證據的供應鏈資安基線。",
-        "homeSummary": "從關鍵資產、帳號與客戶要求開始，串接既有或預設防護訊號，建立人工確認的事件節奏、改善清單與證據包。",
+        "title": "中小企業供應鏈資安",
+        "homeSummary": "用分階段代管服務，快速建立資產、事件與稽核證據基線。",
         "pageSummary": "SenseL Managed Security 將平台、既有或預設 EDR／NDR、跨來源分析與服務流程，組合為中小企業可分階段採用的供應鏈資安營運方案。",
         "audiences": [
           "中小企業經營者",
@@ -283,8 +310,8 @@
       {
         "slug": "fab-intelligence",
         "kicker": "CRITICAL OT & FAB",
-        "title": "先看清 Edge 與 OT，再安全地驗證控制。",
-        "homeSummary": "從被動遙測、資產與資料血緣開始，在不干擾營運的邊界下，逐步建立協定感知事件與受控驗證。",
+        "title": "半導體 OT 與能源安全",
+        "homeSummary": "把 CT、Gateway 與設備脈絡整合為可追溯的能源與 OT 證據。",
         "pageSummary": "SenseL Fab Intelligence 以能源與資料價值切入，建立可追溯的 Fab Data Foundation，再延伸到 OT 資產、異常與安全驗證。",
         "audiences": [
           "Fab 廠長與營運主管",
@@ -329,8 +356,8 @@
       {
         "slug": "healthcare-resilience",
         "kicker": "HEALTHCARE RESILIENCE",
-        "title": "不打擾臨床營運，也能持續驗證韌性。",
-        "homeSummary": "串接既有防護訊號，將威脅假設帶入隔離或低干擾流程，保存每次核准、測試與重測證據。",
+        "title": "醫療資安韌性",
+        "homeSummary": "整合既有 EDR 與醫療系統訊號，在低干擾環境中驗證控制。",
         "pageSummary": "SenseL Healthcare Resilience 將日常 AI XDR、醫療 Web / API 評估、IoMT / OT 可視性與受治理的 Validation Lab 串成年度韌性服務。",
         "audiences": [
           "醫院 CIO / CISO",
@@ -374,9 +401,9 @@
       }
     ],
     "caseStudies": {
-      "eyebrow": "FIELD EVIDENCE & DELIVERY PATTERNS",
-      "title": "把場域限制，轉成可交付、可重測的安全方法。",
-      "description": "以下依目前可公開證據，分別標示為匿名導入模式、PoC 證據模型或服務藍圖；不以未核准的客戶身分、部署數字或量化成效作為行銷主張。",
+      "eyebrow": "FIELD CASES",
+      "title": "從真實場域，看見 SenseL 如何落地。",
+      "description": "匿名呈現目前已核准公開的導入方法與可交付成果。",
       "items": [
         {
           "id": "regional-hospital-edr",
@@ -387,9 +414,9 @@
             "C-008"
           ],
           "sector": "地區型中型醫院（匿名）",
-          "status": "導入模式 · 端點規模待公開核准",
-          "title": "把分散的 EDR 告警，轉成不中斷臨床的可追溯處置節奏",
-          "summary": "SenseL 以院方既有 EDR 為起點，串連資產、身分、網路與網站脈絡，將分散訊號整理為經人工確認的 Episode、改善紀錄與隔離式重測證據。",
+          "status": "匿名導入模式",
+          "title": "醫療 EDR：從分散告警到可追溯處置",
+          "summary": "串接既有 EDR 與資產脈絡，建立人工確認的事件流程、改善紀錄與隔離式重測。",
           "highlights": [
             "既有 EDR 串接",
             "人工確認 Episode",
@@ -419,9 +446,9 @@
             "C-009"
           ],
           "sector": "國際半導體製造場域（匿名）",
-          "status": "EnMS + OT PoC 證據模型",
-          "title": "以能源 CT 遙測，建立 AI 輔助的 OT 情境與改善證據",
-          "summary": "SenseL 整合 CT、Gateway、設備階層與資料品質脈絡，建立可追溯的 EnB、EnPI 與 M&V 工作流，再將能源偏差帶入 OT 資產與網路情境，由 AI 協助排序、工程人員確認。",
+          "status": "匿名 PoC 模式",
+          "title": "半導體 OT：把能源 CT 資料轉成可驗證脈絡",
+          "summary": "整合 CT、Gateway 與設備資料，建立能源基線、資料品質與 OT 安全擴充路徑。",
           "highlights": [
             "CT / Gateway 資料血緣",
             "EnMS + OT 脈絡",
@@ -446,9 +473,9 @@
           "evidenceStatus": "service-blueprint",
           "claimIds": [],
           "sector": "中小企業供應鏈資安",
-          "status": "快速導入服務藍圖 · 非客戶成效",
-          "title": "把供應鏈資安要求，轉成可執行、可提出證據的營運基線",
-          "summary": "SenseL 從關鍵資產、帳號、資料流與客戶要求開始，串接既有或預設的 EDR、NDR、WAF 與身分訊號，建立人工確認的事件節奏、優先改善清單與可交付證據包。",
+          "status": "服務藍圖",
+          "title": "中小企業：快速建立供應鏈資安基線",
+          "summary": "從關鍵資產與客戶要求開始，串接防護訊號，產出改善清單與可交付證據。",
           "highlights": [
             "範圍化快速導入",
             "控制對證據映射",
@@ -611,16 +638,16 @@
       }
     },
     "finalCta": {
-      "eyebrow": "DEFINE A MEASURABLE FIRST PHASE",
-      "title": "不要從全面阻擋開始。先從一個能被重播、修正與重測的風險開始。",
-      "description": "先確認 Agent 或場域範圍、現有訊號、權限與驗收方式，再定義可交付、可量測、可重測的付費評估或 Pilot。",
+      "eyebrow": "START WITH ONE CLEAR SCOPE",
+      "title": "從一個可驗證的場景開始。",
+      "description": "告訴我們您的 AI Agent、IT 或 OT 場景，我們會一起定義範圍、證據與第一階段。",
       "primaryCta": {
-        "label": "預約安全範圍評估",
+        "label": "預約初步評估",
         "href": "/contact"
       },
       "secondaryCta": {
-        "label": "查看 Agent Assurance",
-        "href": "/agent-assurance"
+        "label": "查看 SenseL 平台",
+        "href": "/platform"
       }
     },
     "footer": {
@@ -790,9 +817,9 @@
       }
     },
     "caseStudiesPage": {
-      "eyebrow": "FIELD EVIDENCE & DELIVERY PATTERNS",
-      "title": "三個場域，三種導入路徑，一個可驗證的 SenseL 方法。",
-      "summary": "從醫療 EDR、半導體能源 CT 與 OT，到中小企業供應鏈資安，SenseL 以既有工具為起點，建立脈絡、人工核准與可重測證據；每個案例均依目前可公開的證據狀態標示。",
+      "eyebrow": "FIELD CASES",
+      "title": "三個場域，一套可驗證的方法。",
+      "summary": "從醫療 EDR、半導體能源 CT 與 OT，到中小企業供應鏈資安；每個案例只呈現目前可公開的導入方法與交付。",
       "challengeLabel": "場域挑戰",
       "approachLabel": "SenseL 導入方法",
       "outcomesLabel": "可驗證交付",
@@ -1098,11 +1125,7 @@
       "localeLabel": "Language",
       "items": [
         {
-          "label": "Agent Assurance",
-          "href": "/agent-assurance"
-        },
-        {
-          "label": "SenseL Platform",
+          "label": "SenseL Products",
           "href": "/platform"
         },
         {
@@ -1132,12 +1155,12 @@
       }
     },
     "hero": {
-      "eyebrow": "ACTION-LEVEL SECURITY · EVIDENCE BEFORE ENFORCEMENT",
-      "title": "Make every AI and critical-system action verifiable before execution.",
-      "description": "SenseL turns Agent, Tool, MCP, and existing IT/OT security signals into replayable evidence—so teams can compare versions, validate controls, and retain policy and human approval for high-risk actions.",
+      "eyebrow": "SENSEL · SECURITY FOR AI, IT & OT",
+      "title": "Turn critical actions into verifiable security evidence.",
+      "description": "SenseL connects AI agents, EDR, OT, and operating signals to create traceable episodes, replayable validation, and human-approved workflows.",
       "primaryCta": {
-        "label": "Explore SenseL Agent Assurance",
-        "href": "/agent-assurance"
+        "label": "Explore the SenseL Platform",
+        "href": "/platform"
       },
       "secondaryCta": {
         "label": "Review Field Cases",
@@ -1161,13 +1184,44 @@
       ]
     },
     "proof": {
-      "label": "ONE SENSEL PLATFORM · SECURITY OPERATIONS + AGENT ASSURANCE",
+      "label": "ONE SENSEL PLATFORM",
       "items": [
-        "Action-Level Evidence",
-        "Replayable Validation",
+        "AI Agent Security",
+        "Security Operations",
+        "OT & Edge",
         "Human Approval",
-        "On-Premise Path",
-        "IT · OT · AI Agents"
+        "Flexible Deployment"
+      ]
+    },
+    "productFamily": {
+      "eyebrow": "SENSEL PRODUCT FAMILY",
+      "title": "Three core capabilities. One traceable evidence foundation.",
+      "description": "Start with the problem closest to you. Share context, validation, and human approval without rebuilding the entire security stack.",
+      "items": [
+        {
+          "id": "agent-assurance",
+          "title": "SenseL Agent Assurance",
+          "description": "Validate agent actions, tool access, permissions, and version risk—with tests that rerun on every release.",
+          "tags": ["Assess", "Replay", "Gate"],
+          "href": "/agent-assurance",
+          "linkLabel": "Explore Agent Assurance"
+        },
+        {
+          "id": "security-operations",
+          "title": "SenseL Security Operations",
+          "description": "Connect EDR, NDR, WAF, and threat intelligence to turn fragmented alerts into traceable, actionable episodes.",
+          "tags": ["Context", "AI Triage", "Evidence"],
+          "href": "/solutions/managed-security",
+          "linkLabel": "Explore Security Operations"
+        },
+        {
+          "id": "validation-evidence",
+          "title": "SenseL Validation & Evidence",
+          "description": "Keep tests, approvals, remediation, and retest in one evidence chain across IT, OT, and high-trust environments.",
+          "tags": ["Validate", "Evidence", "Improve"],
+          "href": "/platform",
+          "linkLabel": "Explore Validation & Evidence"
+        }
       ]
     },
     "problem": {
@@ -1318,16 +1372,16 @@
       }
     },
     "solutionsSection": {
-      "eyebrow": "WHERE WE START",
-      "title": "Start where proof matters most.",
-      "description": "SMB supply chains, critical OT and fabs, and healthcare environments start from different constraints—but all need consistent context, evidence, and safe validation."
+      "eyebrow": "SOLUTIONS BY ENVIRONMENT",
+      "title": "Start with the risk that matters most in your environment.",
+      "description": "Three delivery paths share the same SenseL context, validation, and evidence foundation."
     },
     "solutions": [
       {
         "slug": "managed-security",
         "kicker": "SMB SUPPLY-CHAIN SECURITY",
-        "title": "Build an operational, evidence-ready supply-chain security baseline—fast.",
-        "homeSummary": "Start with critical assets, accounts, and customer requirements; connect existing or default security signals; and create human-reviewed incident rhythm, remediation backlog, and evidence packages.",
+        "title": "SMB Supply-Chain Security",
+        "homeSummary": "Build an operational asset, incident, and audit-evidence baseline through phased managed security.",
         "pageSummary": "SenseL Managed Security combines the platform, existing or default EDR/NDR, cross-source analysis, and service workflows into a phased supply-chain security operating model for SMBs.",
         "audiences": [
           "SMB executives",
@@ -1372,8 +1426,8 @@
       {
         "slug": "fab-intelligence",
         "kicker": "CRITICAL OT & FAB",
-        "title": "See the edge and OT environment before validating controls.",
-        "homeSummary": "Start with passive telemetry, assets, and data lineage, then add protocol-aware events and controlled validation within the operating boundary.",
+        "title": "Semiconductor OT & Energy Security",
+        "homeSummary": "Connect CT, gateway, and equipment context into traceable energy and OT evidence.",
         "pageSummary": "SenseL Fab Intelligence enters through measurable energy and data value, creates a traceable Fab Data Foundation, and expands toward OT assets, anomalies, and security validation.",
         "audiences": [
           "Fab and operations leaders",
@@ -1418,8 +1472,8 @@
       {
         "slug": "healthcare-resilience",
         "kicker": "HEALTHCARE RESILIENCE",
-        "title": "Validate resilience without disrupting clinical operations.",
-        "homeSummary": "Connect existing defense signals, move threat hypotheses into isolated or low-disruption workflows, and preserve approval, test, and retest evidence.",
+        "title": "Healthcare Cyber Resilience",
+        "homeSummary": "Connect existing EDR and healthcare signals, then validate controls in low-disruption environments.",
         "pageSummary": "SenseL Healthcare Resilience combines daily AI XDR, healthcare web and API assessment, IoMT and OT visibility, and a governed validation lab as an annual resilience service.",
         "audiences": [
           "Hospital CIOs and CISOs",
@@ -1463,9 +1517,9 @@
       }
     ],
     "caseStudies": {
-      "eyebrow": "FIELD EVIDENCE & DELIVERY PATTERNS",
-      "title": "Turn operating constraints into deliverable, retestable security methods.",
-      "description": "Each example is labeled according to the evidence currently cleared for publication—as an anonymous delivery pattern, PoC evidence model, or service blueprint—without using unapproved customer identity, deployment scale, or quantified results.",
+      "eyebrow": "FIELD CASES",
+      "title": "See how SenseL works in real operating environments.",
+      "description": "Anonymous examples based only on approved delivery methods and publishable outcomes.",
       "items": [
         {
           "id": "regional-hospital-edr",
@@ -1476,9 +1530,9 @@
             "C-008"
           ],
           "sector": "Regional mid-sized hospital — anonymous",
-          "status": "Delivery pattern · endpoint scope pending approval",
-          "title": "Turn fragmented EDR alerts into traceable operations without disrupting clinical care",
-          "summary": "SenseL starts with the hospital's existing EDR, connects asset, identity, network, and web context, and turns fragmented signals into human-reviewed Episodes, remediation records, and isolated retest evidence.",
+          "status": "Anonymous delivery pattern",
+          "title": "Healthcare EDR: From fragmented alerts to traceable response",
+          "summary": "Connect existing EDR and asset context to create human-reviewed incident workflows, remediation records, and isolated retesting.",
           "highlights": [
             "Existing EDR integration",
             "Human-reviewed Episodes",
@@ -1508,9 +1562,9 @@
             "C-009"
           ],
           "sector": "International semiconductor manufacturer — anonymous",
-          "status": "EnMS + OT PoC evidence model",
-          "title": "Use energy CT telemetry to build AI-assisted OT context and improvement evidence",
-          "summary": "SenseL connects current-transformer telemetry, gateways, equipment hierarchy, and data-quality context to create traceable EnB, EnPI, and M&V workflows. Energy deviations can then be reviewed alongside OT asset and network context, with AI-assisted prioritization and engineering confirmation.",
+          "status": "Anonymous PoC pattern",
+          "title": "Semiconductor OT: Turn energy CT data into verifiable context",
+          "summary": "Connect CT, gateway, and equipment data to establish energy baselines, data quality, and an OT-security expansion path.",
           "highlights": [
             "CT / gateway lineage",
             "EnMS + OT context",
@@ -1535,9 +1589,9 @@
           "evidenceStatus": "service-blueprint",
           "claimIds": [],
           "sector": "SMB supply-chain security",
-          "status": "Rapid-onboarding service blueprint · not a deployment claim",
-          "title": "Turn supply-chain security requirements into an actionable, evidence-ready operating baseline",
-          "summary": "SenseL starts with critical assets, accounts, data flows, and customer requirements, then connects existing or default EDR, NDR, WAF, and identity signals to create a human-reviewed incident rhythm, prioritized remediation backlog, and deliverable evidence package.",
+          "status": "Service blueprint",
+          "title": "SMBs: Build a supply-chain security baseline quickly",
+          "summary": "Start with critical assets and customer requirements, connect security signals, and deliver a prioritized improvement plan and evidence package.",
           "highlights": [
             "Scoped rapid onboarding",
             "Control-to-evidence mapping",
@@ -1700,16 +1754,16 @@
       }
     },
     "finalCta": {
-      "eyebrow": "DEFINE A MEASURABLE FIRST PHASE",
-      "title": "Do not begin with blanket enforcement. Start with one risk you can replay, remediate, and retest.",
-      "description": "Align on the agent or operating scope, existing signals, authority, and acceptance evidence—then define a deliverable, measurable assessment or pilot.",
+      "eyebrow": "START WITH ONE CLEAR SCOPE",
+      "title": "Start with one scenario you can verify.",
+      "description": "Share your AI-agent, IT, or OT environment. We will help define the scope, evidence, and first phase.",
       "primaryCta": {
-        "label": "Book a Security Scope Review",
+        "label": "Book an Initial Assessment",
         "href": "/contact"
       },
       "secondaryCta": {
-        "label": "Review Agent Assurance",
-        "href": "/agent-assurance"
+        "label": "Explore the SenseL Platform",
+        "href": "/platform"
       }
     },
     "footer": {
@@ -1879,9 +1933,9 @@
       }
     },
     "caseStudiesPage": {
-      "eyebrow": "FIELD EVIDENCE & DELIVERY PATTERNS",
-      "title": "Three environments. Three delivery paths. One verifiable SenseL method.",
-      "summary": "Across healthcare EDR, semiconductor energy CT and OT, and SMB supply-chain security, SenseL starts with existing tools and builds context, human approval, and retestable evidence. Every example is labeled by its current publication evidence status.",
+      "eyebrow": "FIELD CASES",
+      "title": "Three environments. One verifiable method.",
+      "summary": "From healthcare EDR and semiconductor energy CT to SMB supply-chain security, each case shows only the delivery method and outcomes currently cleared for publication.",
       "challengeLabel": "Operating challenge",
       "approachLabel": "SenseL delivery method",
       "outcomesLabel": "Verifiable deliverables",
