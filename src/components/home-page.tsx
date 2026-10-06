@@ -98,6 +98,15 @@ export function HomePage({ locale, content }: { locale: Locale; content: SiteCon
               </article>
             ))}
           </div>
+          <article className="mt-5 grid gap-5 rounded-[1.6rem] border border-black/10 bg-white p-7 md:grid-cols-[auto_1fr_auto] md:items-center">
+            <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-graphite font-mono text-sm font-bold text-avocado">E200</div>
+            <div>
+              <p className="font-mono text-[0.7rem] font-bold uppercase tracking-[0.12em] text-forest">{content.ndrE200Page.homeEyebrow}</p>
+              <h3 className="mt-2 text-xl font-semibold">{content.ndrE200Page.title}</h3>
+              <p className="mt-2 max-w-2xl text-sm leading-7 text-evidence">{content.ndrE200Page.homeSummary}</p>
+            </div>
+            <Link className="inline-flex min-h-11 items-center gap-2 text-sm font-bold text-forest" href={localizedHref(locale, "/products/ndr-e200")}>{content.ndrE200Page.homeLinkLabel}<ArrowIcon /></Link>
+          </article>
         </Container>
       </section>
 

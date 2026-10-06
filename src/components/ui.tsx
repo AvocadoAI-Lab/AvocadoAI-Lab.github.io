@@ -42,7 +42,7 @@ export function Tag({ children, inverse = false }: { children: ReactNode; invers
   return <span className={`inline-flex rounded-full border px-3 py-1 text-xs font-semibold ${inverse ? "border-white/15 bg-white/5 text-white/70" : "border-black/10 bg-white/70 text-evidence"}`}>{children}</span>;
 }
 
-export function PageHero({ eyebrow, title, summary }: { eyebrow: string; title: string; summary: string }) {
+export function PageHero({ eyebrow, title, summary, actions }: { eyebrow: string; title: string; summary: string; actions?: ReactNode }) {
   return (
     <section className="page-hero border-b border-black/8 py-14 sm:py-20">
       <Container>
@@ -50,6 +50,7 @@ export function PageHero({ eyebrow, title, summary }: { eyebrow: string; title: 
           <Eyebrow>{eyebrow}</Eyebrow>
           <h1 className="mt-5 text-balance text-4xl font-semibold tracking-[-0.045em] text-graphite sm:text-5xl lg:text-6xl">{title}</h1>
           <p className="mt-6 max-w-3xl text-base leading-8 text-evidence sm:text-lg">{summary}</p>
+          {actions ? <div className="mt-8 flex flex-wrap gap-3">{actions}</div> : null}
         </div>
       </Container>
     </section>

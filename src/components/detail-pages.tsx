@@ -1,7 +1,10 @@
+import Link from "next/link";
 import type { Locale, SiteContent, Solution } from "@/types/content";
+import { localizedHref } from "@/lib/links";
 import { bookingUrl, contactEmail, contactName } from "@/lib/site";
 import { EventGallery } from "@/components/event-gallery";
 import { ArrowIcon, Icon } from "@/components/icons";
+import { NdrE200Downloads } from "@/components/ndr-e200-detail";
 import { TechnologyCard } from "@/components/technology-card";
 import { CheckList, Container, CtaLink, Eyebrow, PageHero, SectionHeader, Tag } from "@/components/ui";
 
@@ -58,6 +61,20 @@ export function SolutionDetail({ locale, solution }: { locale: Locale; solution:
   return (
     <>
       <PageHero eyebrow={solution.kicker} summary={solution.pageSummary} title={solution.title} />
+      {solution.relatedProduct ? (
+        <section className="pt-12 pb-4">
+          <Container>
+            <div className="flex flex-col gap-5 rounded-[1.6rem] border border-black/10 bg-[#edf2e9] p-7 sm:p-9 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <p className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-forest">IT/OT PRODUCT</p>
+                <h2 className="mt-3 text-2xl font-semibold">{solution.relatedProduct.title}</h2>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-evidence">{solution.relatedProduct.description}</p>
+              </div>
+              <Link className="inline-flex min-h-11 shrink-0 items-center gap-2 text-sm font-bold text-forest" href={localizedHref(locale, solution.relatedProduct.href)}>{solution.relatedProduct.linkLabel}<ArrowIcon /></Link>
+            </div>
+          </Container>
+        </section>
+      ) : null}
       <section className="soft-grid py-20 sm:py-28">
         <Container>
           <div className="grid gap-5 lg:grid-cols-2">
@@ -440,6 +457,7 @@ export function ResourcesDetail({ locale, content }: { locale: Locale; content: 
   return (
     <>
       <PageHero eyebrow={page.eyebrow} summary={page.summary} title={page.title} />
+      <NdrE200Downloads content={content} />
       <section className="soft-grid py-20 sm:py-28">
         <Container>
           <div className="flex flex-wrap gap-3">{page.topics.map((topic) => <Tag key={topic}>{topic}</Tag>)}</div>

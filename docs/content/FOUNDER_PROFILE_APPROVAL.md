@@ -37,7 +37,6 @@ Proposed long-biography facts requiring final wording approval:
 
 - Ph.D. in Computer Science and Information Engineering, National Taiwan University of Science and Technology.
 - Former advanced technology leader at Wistron NeWeb Corporation.
-- Former leader of a national-level cybersecurity research institute at the Institute for Information Industry.
 - Former founder and CEO of CyFoundry.
 - Visiting scholar experience at Carnegie Mellon University CyLab.
 

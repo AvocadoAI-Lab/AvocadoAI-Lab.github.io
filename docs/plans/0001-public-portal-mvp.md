@@ -14,6 +14,7 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 
 ## Progress
 
+- [x] 2026-10-06: Added a bilingual AvocadoNDR Edge E200 product path, links from the homepage and semiconductor solution, and three reviewed public PDF downloads. Content/route checks, static export, rendered-PDF inspection, extracted-text and metadata scans, and responsive local browser checks passed.
 - [x] 2026-10-05: Simplified the portal into a seven-section, product-led enterprise experience using the user-supplied Genie Networks site only as a hierarchy and spacing reference; preserved Avocado.ai branding, bilingual parity, claims governance, and all SenseL detail routes.
 - [x] 2026-08-31: Added the 新漢 AIoT 新創加速器 2025 成果發表 record and two supplied photographs, then replaced the single-event photo grid with an accessible event and image switcher.
 - [x] 2026-08-31: Migrated the complete portal source to `AvocadoAI-Lab/AvocadoAI-Lab.github.io`, configured root-path static export, and prepared the repository for GitHub Actions Pages at `https://avocadoai-lab.github.io/`.
@@ -39,6 +40,9 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 
 ## Surprises & Discoveries
 
+- All three owner-supplied NDR PDFs contained the withheld institutional statement as selectable first-page text, although metadata and embedded images did not contain it. Public copies needed true PDF redaction and replacement; a visual overlay would have left searchable text behind.
+- The drafts also named a hardware partner and an external scenario-test site. The public copies use neutral product and deployment-scope wording until third-party publication permission is recorded in the claims ledger.
+- The source materials include two short bilingual solution briefs and one detailed Traditional Chinese catalog. The product route can present a locale-first brief while clearly labeling the Chinese-only catalog.
 - The reference site's perceived simplicity comes primarily from grouped product families, contained panels, short value statements, generous whitespace, and one clear contact action—not from its rotating hero. The redesign deliberately keeps a stable Avocado.ai hero and does not copy the carousel, imagery, blue brand system, floating buttons, or form treatment.
 - The prior homepage rendered twelve major sections with several repeated four-card grids and tall minimum heights. Consolidating the same public information into seven sections made the product family, market solutions, platform method, cases, and evidence paths visible without removing their detailed routes.
 - Browser checks at 320, 375, 768, 1024, and 1440 pixels found no horizontal overflow. Traditional Chinese and English retained one H1, equivalent product/case structure, working mobile navigation, and empty browser console error logs.
@@ -59,6 +63,8 @@ Founder titles and biographies are drafts until approved in `docs/content/FOUNDE
 
 ## Decision Log
 
+- Decision: add AvocadoNDR Edge E200 as its own bilingual product page while keeping the existing three SenseL capability cards and three market-solution entries. Rationale: E200 is a concrete IT/OT product with a device-side workflow and downloadable material, while the broader SenseL platform and market paths remain easy to scan.
+- Decision: host reviewed PDFs as static, same-origin downloads, with the public copies and provenance recorded under `public/datasheets/avocado-ndr-e200/`. Rationale: visitors can retrieve a stable datasheet directly and the public site does not need file storage or a form backend.
 - Decision: borrow the reference site's clarity principles rather than its branding or exact composition. Rationale: a contained hero, fewer homepage sections, shorter product cards, generous whitespace, and one CTA per section improve scanability while keeping Avocado.ai visually distinct.
 - Decision: make the homepage a concise decision path—positioning, product lines, SenseL method, market solutions, field cases, trust/resources, and conversion—while keeping detailed maturity, architecture, and evidence content on existing inner pages. Rationale: first-time visitors need orientation before technical depth, and no approved content is lost.
 - Decision: publish the requested GitHub Pages deployment as a public preview, not as the final recommended production host. Rationale: it satisfies the requested review workflow while keeping the production hosting decision open for a platform that can enforce the portal's required response headers and support future server-side integrations.
@@ -105,6 +111,10 @@ Model event records as a bilingual list rather than a single gallery. Add the ow
 ### Milestone 8 — Product-led clarity redesign
 
 Reduce homepage cognitive load without removing the underlying product, solution, field-case, trust, technology, or resource pages. Replace the full-bleed technical hero with a contained light hero and a compact SenseL signal-to-evidence visual. Consolidate Agent Assurance and the three market solutions into a scannable product directory, compress the six-step platform story into three paired stages, shorten homepage case copy, and surface trust plus evidence links in one compact section. Update shared page heroes and card treatments so supporting pages use the same calm enterprise visual language. Preserve semantic headings, keyboard navigation, responsive behavior, claims-safe status labels, and Traditional Chinese/English parity.
+
+### Milestone 9 — AvocadoNDR Edge E200 public product and datasheets
+
+Create `/products/ndr-e200` in Traditional Chinese and English with a concise signal path, capabilities, Monitor/Snapshot modes, Operations and optional modules, scope limits, and a contact action. Link the product from the homepage product section and semiconductor solution. Prepare the two supplied short briefs and one Chinese catalog as reviewed public PDFs by removing withheld institutional, named-partner, and external-test-site statements from the PDF text layer; render and inspect all pages, extracted text, and metadata. Publish them as direct downloads from the product and Resources pages. Add route, content-parity, PDF-file, and static-export checks.
 
 ## Validation and acceptance
 

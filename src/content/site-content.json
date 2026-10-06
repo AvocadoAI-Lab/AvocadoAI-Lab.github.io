@@ -9,8 +9,8 @@
       "localeLabel": "語言",
       "items": [
         {
-          "label": "SenseL 產品",
-          "href": "/platform"
+          "label": "產品",
+          "href": "#products"
         },
         {
           "label": "解決方案",
@@ -107,6 +107,52 @@
           "linkLabel": "了解驗證與證據"
         }
       ]
+    },
+    "ndrE200Page": {
+      "eyebrow": "AVOCADO NDR · IT/OT SECURITY",
+      "title": "AvocadoNDR Edge E200",
+      "summary": "以被動網路觀測掌握半導體設備與廠務網路的通訊，再將風險、調查與交付證據串到集中營運流程。",
+      "model": "產品型號 AVN-E200-M",
+      "heroDownloadLabel": "下載產品資料",
+      "homeEyebrow": "IT/OT PRODUCT · EDGE E200",
+      "homeSummary": "從設備側的 SPAN／TAP 流量或授權 PCAP 開始，建立資產、通訊與工控風險脈絡。",
+      "homeLinkLabel": "探索 AvocadoNDR E200",
+      "heroPoints": ["設備側被動觀測", "授權 PCAP 本機分析", "可追溯調查證據"],
+      "flowTitle": "從設備端到集中營運",
+      "flow": {
+        "source": "設備與廠務網路",
+        "intake": "SPAN／TAP 或 PCAP",
+        "edge": "Edge E200",
+        "operations": "Operations",
+        "note": "被觀測的 PLC／HMI 無須安裝代理程式；原始封包預設留在本地。"
+      },
+      "capabilitiesTitle": "從設備通訊到可調查的風險脈絡",
+      "capabilities": [
+        { "title": "掌握資產與連線", "description": "以被動盤點呈現觀測到的設備角色、協定、通訊關係及 Purdue 分層；資料不足時保留未知。" },
+        { "title": "聚焦工控風險", "description": "依場域政策檢視非預期連線、橫向行為、高風險協定與其他可觀測線索，連回時間與來源證據。" },
+        { "title": "追蹤處理與交付", "description": "讓設備、廠務與資安團隊從相同證據調查事件，記錄改善、複驗與設備生命週期資料。" }
+      ],
+      "modesTitle": "依場域選擇兩種觀測方式",
+      "modes": [
+        { "title": "Monitor · 持續觀測", "description": "接收雙向 SPAN／TAP 鏡像流量，觀測運行期間的資產、通訊與風險。" },
+        { "title": "Snapshot · 封包健檢", "description": "於 E200 本機分析授權 PCAP，支援設備出貨、入廠、維護前後及稽核資料整理。" }
+      ],
+      "extensionsTitle": "從設備端延伸到集中營運",
+      "extensions": [
+        { "title": "Operations", "description": "集中設備、事件、健康與授權工作區，連結觀測結果和調查紀錄。" },
+        { "title": "AI Agent · 選配", "description": "引用授權證據協助查詢、摘要與改善建議；生產相關動作依權限及人工核准流程執行。" },
+        { "title": "Fab Evidence · 選配", "description": "串接設備配置、出貨、入廠與維護履歷，整理 SEMI E187 與 IEC 62443 適用控制的證據。" }
+      ],
+      "scopeNote": "觀測結果取決於鏡像完整度、協定解析器與加密狀態；證據整理不等同符合性評估或產品認證。功能與效能範圍依實際提案及驗收約定。",
+      "downloadsTitle": "下載產品資料",
+      "downloadsSummary": "取得 E200 的產品概覽與詳細型錄，供設備、廠務及資安團隊討論導入範圍。",
+      "downloads": [
+        { "id": "datasheet-zh-hant", "title": "AvocadoNDR E200 產品資料", "detail": "半導體 IT/OT 方案概覽 · 2 頁 PDF", "language": "繁體中文", "href": "/datasheets/avocado-ndr-e200/avocado-ndr-e200-datasheet-zh-hant.pdf" },
+        { "id": "catalog-zh-hant", "title": "AvocadoNDR E200 詳細型錄", "detail": "觀測模式、風險類型與選配模組 · 4 頁 PDF", "language": "繁體中文", "href": "/datasheets/avocado-ndr-e200/avocado-ndr-e200-catalog-zh-hant.pdf" },
+        { "id": "datasheet-en", "title": "AvocadoNDR E200 Datasheet", "detail": "Semiconductor IT/OT solution brief · 2-page PDF", "language": "English", "href": "/datasheets/avocado-ndr-e200/avocado-ndr-e200-datasheet-en.pdf" }
+      ],
+      "downloadLabel": "下載 PDF",
+      "cta": { "label": "討論 E200 場域導入", "href": "/contact" }
     },
     "problem": {
       "eyebrow": "THE ACTION GAP",
@@ -348,6 +394,12 @@
           "M&V 與管理報告",
           "OT Security / Validation 擴充"
         ],
+        "relatedProduct": {
+          "title": "AvocadoNDR Edge E200 · 設備側 IT/OT 觀測",
+          "description": "從半導體設備與廠務網路的被動流量開始，建立資產、通訊風險及調查證據。",
+          "href": "/products/ndr-e200",
+          "linkLabel": "查看 E200 產品與資料下載"
+        },
         "cta": {
           "label": "預約 Fab Data Readiness Workshop",
           "href": "/contact"
@@ -597,7 +649,7 @@
     "resources": {
       "eyebrow": "EVIDENCE HUB",
       "title": "不只告訴你我們正在打造什麼，也提供可以檢視的技術證據。",
-      "description": "查看公開程式庫、研究 artifact、可重現評測與安全驗證方法；每一項內容都標示目前階段。",
+      "description": "取得產品資料，並查看公開程式庫、研究 artifact 與可重現評測；每一項內容都標示目前階段。",
       "items": [
         {
           "type": "Open Engineering",
@@ -1017,9 +1069,10 @@
     },
     "resourcesPage": {
       "eyebrow": "EVIDENCE HUB",
-      "title": "看見技術主張背後的程式、artifact 與公開紀錄。",
-      "summary": "從公開工程、研究方法、可重現評測到活動紀錄，了解 SenseL 如何把安全訊號轉化為可查證的決策依據。",
+      "title": "產品資料、技術證據與公開紀錄。",
+      "summary": "下載 AvocadoNDR E200 產品資料，並查看 SenseL 的公開工程、研究方法、可重現評測與活動紀錄。",
       "topics": [
+        "產品資料",
         "Open Engineering",
         "Evidence Contracts",
         "Reproducible Evaluation",
@@ -1125,8 +1178,8 @@
       "localeLabel": "Language",
       "items": [
         {
-          "label": "SenseL Products",
-          "href": "/platform"
+          "label": "Products",
+          "href": "#products"
         },
         {
           "label": "Solutions",
@@ -1223,6 +1276,52 @@
           "linkLabel": "Explore Validation & Evidence"
         }
       ]
+    },
+    "ndrE200Page": {
+      "eyebrow": "AVOCADO NDR · IT/OT SECURITY",
+      "title": "AvocadoNDR Edge E200",
+      "summary": "Use passive network visibility to understand communications across semiconductor equipment and facility networks, then connect risks, investigations, and delivery evidence in centralized workflows.",
+      "model": "Model AVN-E200-M",
+      "heroDownloadLabel": "Download datasheet",
+      "homeEyebrow": "IT/OT PRODUCT · EDGE E200",
+      "homeSummary": "Start with equipment-side SPAN/TAP traffic or authorized PCAP to build asset, communication, and industrial-risk context.",
+      "homeLinkLabel": "Explore AvocadoNDR E200",
+      "heroPoints": ["Passive equipment visibility", "Local analysis of authorized PCAP", "Traceable investigation evidence"],
+      "flowTitle": "From equipment to operations",
+      "flow": {
+        "source": "Equipment & facilities",
+        "intake": "SPAN/TAP or PCAP",
+        "edge": "Edge E200",
+        "operations": "Operations",
+        "note": "No agent is required on monitored PLCs/HMIs. Raw packets remain local by default."
+      },
+      "capabilitiesTitle": "Turn equipment communications into actionable context",
+      "capabilities": [
+        { "title": "Map assets and connections", "description": "Passive inventory relates observed equipment roles, protocols, communications, and Purdue layers while keeping insufficient evidence marked unknown." },
+        { "title": "Prioritize industrial risk", "description": "Review unexpected connections, lateral activity, high-risk protocols, and other observable signals against site policies and source evidence." },
+        { "title": "Track response and handover", "description": "Give equipment, facilities, and security teams common evidence for investigation, remediation, retesting, and equipment lifecycle records." }
+      ],
+      "modesTitle": "Choose a mode for the environment",
+      "modes": [
+        { "title": "Monitor · Continuous visibility", "description": "Receive bidirectional SPAN/TAP mirrored traffic to observe assets, communications, and risks during operation." },
+        { "title": "Snapshot · Packet assessment", "description": "Analyze authorized PCAP locally on E200 for shipment, fab entry, maintenance comparisons, and audit preparation." }
+      ],
+      "extensionsTitle": "Extend from edge visibility to operations",
+      "extensions": [
+        { "title": "Operations", "description": "Centralize devices, events, health, and authorized workspaces while connecting observations with investigation records." },
+        { "title": "AI Agent · Optional", "description": "Use cited, authorized evidence for queries, summaries, and remediation suggestions. Production-related actions follow permissions and human approval." },
+        { "title": "Fab Evidence · Optional", "description": "Connect configuration, shipment, fab-entry, and maintenance history to evidence for applicable SEMI E187 and IEC 62443 controls." }
+      ],
+      "scopeNote": "Visibility depends on mirroring completeness, protocol parsers, and encryption. Evidence management does not itself establish conformity or product certification. Functions and performance follow the agreed proposal and acceptance scope.",
+      "downloadsTitle": "Download product information",
+      "downloadsSummary": "Share the E200 overview and detailed catalog with equipment, facilities, and security teams as you define the deployment scope.",
+      "downloads": [
+        { "id": "datasheet-en", "title": "AvocadoNDR E200 Datasheet", "detail": "Semiconductor IT/OT solution brief · 2-page PDF", "language": "English", "href": "/datasheets/avocado-ndr-e200/avocado-ndr-e200-datasheet-en.pdf" },
+        { "id": "datasheet-zh-hant", "title": "AvocadoNDR E200 產品資料", "detail": "Semiconductor IT/OT solution brief · 2-page PDF", "language": "繁體中文", "href": "/datasheets/avocado-ndr-e200/avocado-ndr-e200-datasheet-zh-hant.pdf" },
+        { "id": "catalog-zh-hant", "title": "AvocadoNDR E200 詳細型錄", "detail": "Detailed features and options · 4-page PDF", "language": "繁體中文", "href": "/datasheets/avocado-ndr-e200/avocado-ndr-e200-catalog-zh-hant.pdf" }
+      ],
+      "downloadLabel": "Download PDF",
+      "cta": { "label": "Discuss an E200 deployment", "href": "/contact" }
     },
     "problem": {
       "eyebrow": "THE ACTION GAP",
@@ -1464,6 +1563,12 @@
           "M&V and management reporting",
           "OT security and validation expansion"
         ],
+        "relatedProduct": {
+          "title": "AvocadoNDR Edge E200 · Equipment-side IT/OT visibility",
+          "description": "Start with passive traffic across semiconductor equipment and facilities to build asset, communication-risk, and investigation evidence.",
+          "href": "/products/ndr-e200",
+          "linkLabel": "View E200 and download datasheets"
+        },
         "cta": {
           "label": "Book a Fab Data Readiness Workshop",
           "href": "/contact"
@@ -1713,7 +1818,7 @@
     "resources": {
       "eyebrow": "EVIDENCE HUB",
       "title": "We do not only tell you what we are building. We publish evidence you can inspect.",
-      "description": "Review public repositories, research artifacts, reproducible evaluations, and safe validation methods—each with an explicit stage.",
+      "description": "Get product information and review public repositories, research artifacts, and reproducible evaluations, each with an explicit stage.",
       "items": [
         {
           "type": "Open Engineering",
@@ -2133,9 +2238,10 @@
     },
     "resourcesPage": {
       "eyebrow": "EVIDENCE HUB",
-      "title": "Inspect the code, artifacts, and public record behind the technical claims.",
-      "summary": "From open engineering and research methods to reproducible evaluation and event records, see how SenseL turns security signals into verifiable decision evidence.",
+      "title": "Product information, technical evidence, and public record.",
+      "summary": "Download AvocadoNDR E200 product information and explore SenseL's open engineering, research methods, reproducible evaluations, and event records.",
       "topics": [
+        "Product Datasheets",
         "Open Engineering",
         "Evidence Contracts",
         "Reproducible Evaluation",

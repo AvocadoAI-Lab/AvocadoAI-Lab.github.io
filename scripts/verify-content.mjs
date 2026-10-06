@@ -9,6 +9,7 @@ const requiredSlugs = ["managed-security", "fab-intelligence", "healthcare-resil
 const requiredAgentModuleIds = ["assess", "validate", "gate", "lens"];
 const requiredProductFamilyIds = ["agent-assurance", "security-operations", "validation-evidence"];
 const requiredCaseIds = ["regional-hospital-edr", "semiconductor-ot-energy", "smb-supply-chain"];
+const requiredNdrDownloads = ["datasheet-zh-hant", "datasheet-en", "catalog-zh-hant"];
 const forbiddenPublicNames = ["童綜合", "光田", "美光", "鼎新", "Micron", "Tungs", "Kuang Tien"];
 const forbiddenUnapprovedClaims = ["1,000", "1000 endpoints", "千台 EDR", "1,700", "10,207", "6.04%", "33 days", "33 天"];
 const allowedMaturity = new Set(["open-source-mvp", "public-research-artifact", "research-preview", "lab-baseline"]);
@@ -46,6 +47,21 @@ for (const locale of requiredLocales) {
   for (const item of productFamilyItems) {
     if (!item.title || !item.description || item.tags?.length < 3 || !item.href || !item.linkLabel) {
       errors.push(`${locale}: incomplete product-family item ${item.id || "<missing id>"}`);
+    }
+  }
+
+  const ndr = site.ndrE200Page;
+  if (!ndr?.title || !ndr.summary || !ndr.model || !ndr.heroDownloadLabel || !ndr.cta?.href || ndr.heroPoints?.length !== 3 ||
+      ndr.capabilities?.length !== 3 || ndr.modes?.length !== 2 || ndr.extensions?.length !== 3 || !ndr.scopeNote) {
+    errors.push(`${locale}: incomplete AvocadoNDR E200 product page`);
+  }
+  const downloadIds = ndr?.downloads?.map((item) => item.id) ?? [];
+  if (JSON.stringify([...downloadIds].sort()) !== JSON.stringify([...requiredNdrDownloads].sort())) {
+    errors.push(`${locale}: incomplete AvocadoNDR E200 download set`);
+  }
+  for (const download of ndr?.downloads ?? []) {
+    if (!download.title || !download.detail || !download.language || !download.href?.endsWith(".pdf")) {
+      errors.push(`${locale}: incomplete PDF download ${download.id || "<missing id>"}`);
     }
   }
 
@@ -121,12 +137,25 @@ if (JSON.stringify(stableProductFamilyFields(content["zh-Hant"]?.productFamily?.
   errors.push("Product-family ids, links, and order must match across locales");
 }
 
+const stableDownloadFields = (items) => items.map(({ id, href }) => ({ id, href })).sort((a, b) => a.id.localeCompare(b.id));
+if (JSON.stringify(stableDownloadFields(content["zh-Hant"]?.ndrE200Page?.downloads ?? [])) !== JSON.stringify(stableDownloadFields(content.en?.ndrE200Page?.downloads ?? []))) {
+  errors.push("AvocadoNDR E200 download ids and paths must match across locales");
+}
+const relatedProductHref = (locale) => content[locale]?.solutions?.find(({ slug }) => slug === "fab-intelligence")?.relatedProduct?.href;
+if (relatedProductHref("zh-Hant") !== "/products/ndr-e200" || relatedProductHref("en") !== "/products/ndr-e200") {
+  errors.push("The semiconductor solution must link to the AvocadoNDR E200 product in both locales");
+}
+
 const stableCaseFields = (items) => items.map(({ id, evidenceStatus, claimIds }) => ({ id, evidenceStatus, claimIds }));
 if (JSON.stringify(stableCaseFields(content["zh-Hant"]?.caseStudies?.items ?? [])) !== JSON.stringify(stableCaseFields(content.en?.caseStudies?.items ?? []))) {
   errors.push("Field-case ids, evidence status, claim ids, and order must match across locales");
 }
 
 const serialized = JSON.stringify(content);
+// Keep temporarily withheld organization names out of public copy.
+for (const term of ["\u8cc7\u7b56\u6703", ["CyberSecurity", "Technology", "Institute"].join(" "), ["Institute", "for", "Information", "Industry"].join(" "), ["CS", "TI"].join("")]) {
+  if (serialized.includes(term)) errors.push(`Public content contains a withheld institutional reference: ${term}`);
+}
 for (const name of forbiddenPublicNames) {
   if (serialized.includes(name)) errors.push(`Public content contains a forbidden named-customer term: ${name}`);
 }

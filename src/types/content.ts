@@ -49,6 +49,41 @@ export type Solution = {
   capabilities: string[];
   outcomes: string[];
   process: string[];
+  relatedProduct?: { title: string; description: string; href: string; linkLabel: string };
+  cta: Cta;
+};
+
+export type NdrE200Download = {
+  id: "datasheet-zh-hant" | "datasheet-en" | "catalog-zh-hant";
+  title: string;
+  detail: string;
+  language: string;
+  href: string;
+};
+
+export type NdrE200Page = {
+  eyebrow: string;
+  title: string;
+  summary: string;
+  model: string;
+  heroDownloadLabel: string;
+  homeEyebrow: string;
+  homeSummary: string;
+  homeLinkLabel: string;
+  heroPoints: string[];
+  flowTitle: string;
+  flow: { source: string; intake: string; edge: string; operations: string; note: string };
+  capabilitiesTitle: string;
+  capabilities: Principle[];
+  modesTitle: string;
+  modes: Principle[];
+  extensionsTitle: string;
+  extensions: Principle[];
+  scopeNote: string;
+  downloadsTitle: string;
+  downloadsSummary: string;
+  downloads: NdrE200Download[];
+  downloadLabel: string;
   cta: Cta;
 };
 
@@ -165,6 +200,7 @@ export type SiteContent = {
     description: string;
     items: ProductFamilyItem[];
   };
+  ndrE200Page: NdrE200Page;
   problem: { eyebrow: string; title: string; description: string; items: CardItem[] };
   platform: {
     eyebrow: string;

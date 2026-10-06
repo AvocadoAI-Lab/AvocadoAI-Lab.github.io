@@ -23,6 +23,8 @@ No entry below is approved merely because it appears in a draft deck or proposal
 | C-017 | SenseL provides AI-assisted incident analysis, cross-domain context, endpoint and network visibility, and operations-report workflows. | Legacy public site plus explicit reuse instruction, 2026-08-31 | Publication owner / product | Approved for public use |
 | C-018 | Avocado SenseL exhibited at CES 2025; the four supplied event photographs may be reused on the public portal. | Legacy public site plus explicit reuse instruction, 2026-08-31 | Publication owner / media rights | Approved for public use |
 | C-019 | Avocado.ai participated in the 新漢 AIoT 新創加速器 2025 成果發表; the two supplied event photographs may be reused on the public portal. | Explicit publication instruction and supplied photographs, 2026-08-31 | Publication owner / media rights | Approved for public use |
+| C-020 | AvocadoNDR Edge E200 product capabilities: passive SPAN/TAP observation or local authorized PCAP, asset and Purdue views, industrial-risk context, Operations, and optional AI Agent / Fab Evidence. | Owner-supplied product documents and explicit portal publication instruction, 2026-10-06 | Publication owner / product | Approved for public use |
+| C-021 | Named hardware-platform collaboration and external protection-relay scenario test-site claims from the supplied drafts. | Owner-supplied product documents, 2026-10-06; public PDFs use neutral deployment-scope wording | Publication owner / partner and test-record review | Withheld pending third-party publication permission |
 
 ## Release rule
 
